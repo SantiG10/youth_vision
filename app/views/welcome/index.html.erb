@@ -1,3 +1,32 @@
-<h1>Hola</h1>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+		<div class="white-space space-big"></div>
+			<%= image_tag "logo-yv.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid' %>
+		</div>
+		<div class="col-xs-2 col-xs-offset-5">
+			<div class="white-space space-medium"></div>
+			<%= link_to about_us_path do %>
+			<%= image_tag "icon-talk.svg", class:'img-fluid' %>
+			<% end %>
+			<div class="white-space space-small"></div>
+		</div>
+	</div>
 
-<a class="btn btn-primary btn-lg">Click</a>
+	<div class="row text-xs-center">
+		<ul class="lang">
+			<li> <a href=""><span class="borderline">English</span></a></li>
+			<li> <a href=""><span class="borderline">Español</span></a></li>
+			<li> <a href=""><span class="borderline">Français</span></a></li>
+			<li> <a href=""><span class="borderline">Português</span></a></li>
+		</ul>
+	</div>
+
+	<div class="row text-xs-center">
+		<div class="col-xs-6 col-xs-offset-3">
+			<div class="white-space space-medium"></div>
+        <a href="#" class="btn btn-login btn-red">registrarse</a>
+	      <a href="#" class="btn btn-login btn-blue">iniciar sesión</a>
+		</div>
+	</div>
+</div>

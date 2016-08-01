@@ -1,0 +1,121 @@
+/*Styles for all App*/
+*{
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	font-size: 1.3rem;
+	color:#383838;
+	font-weight: 500;
+}
+
+/* White Space */
+.white-space {display: block; width: 100%;}
+.white-space.space-mini { padding:5px 0;}
+.white-space.space-xsmall { padding:10px 0;}
+.white-space.space-small { padding:20px 0;}
+.white-space.space-medium { padding:30px 0;}
+.white-space.space-big { padding:50px 0;}
+ul li{
+	list-style-type: none;
+}
+.lang li span{
+	font-size: 2rem;
+	text-transform: uppercase;
+	color:#383838;
+	font-weight: 700;
+}
+span.borderline:after{
+	content: "";
+    display: block;
+    height: .2rem;
+    margin: .1rem auto .2rem  auto;
+    position: relative;
+    width: 50%;
+   background-color: #383838;
+}
+.btn-login{
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	margin-bottom: 2rem;
+}
+.btn-red{
+	background-color: #EC1C24;
+	padding: 2rem 8rem;
+}
+.btn-blue{
+	background-color: #4BC6E8;
+	padding: 2rem 7rem;
+}
+/*ICON BREADCRUM*/
+i.icon-search{
+	font-size:3rem;
+	padding-top:.8rem;
+	padding-left: 1.5rem;
+}
+i.icon-back{
+	font-size: 4.5rem;
+    padding-top: .2rem;
+    padding-left: 1.5rem;
+}
+.breadcrum{
+	border-bottom: .2rem solid #000;
+	padding-bottom: .2rem;
+}
+span.borderlogo:after{
+	content: "";
+    display: block;
+    height: .2rem;
+    margin: 1.5rem auto .2rem auto;
+    position: relative;
+    width: 100%;
+   background-color: #383838;
+}
+.a-collapse{
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: 900 !important;
+	color: #383838 !important;
+	line-height: 2rem;
+    margin: 2rem 0;
+}
+/* SECUNDARY LIST*/
+.title-2{
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	padding: 2rem 2rem;
+	color:#383838;
+}
+/*LIST*/
+ul.list-red{
+    list-style: none !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+ul.list-red li {
+    position: relative;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-align: left;
+    font-size: 1.3rem
+}
+ul.list-red li:before {
+    content: '';
+    border-radius: 100%;
+    background-color: #EC1C24;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -1.5em;
+    top: 8px;
+    display: block;
+}
+ul.social li{
+	display: inline-block;
+	padding-right:.4rem 0rem;
+}

@@ -1,0 +1,96 @@
+<div class="container-fluid">
+	<div class="row breadcrum">
+		<div class="col-xs-2">
+      <%= link_to root_path do%>
+		    <i class="fa fa-angle-left icon-back" aria-hidden="true"></i>
+      <%end%>
+		</div>
+		<div class="col-xs-8"></div>
+		<div class="col-xs-2">
+			<i class="fa fa-search icon-search" aria-hidden="true"></i>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+		<div class="white-space space-big"></div>
+			<%= image_tag "logo-yv.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid' %>
+		</div>
+		<div class="col-xs-8 col-xs-offset-2">
+			<span class="borderlogo"></span>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<a class="btn a-collapse center-block" data-toggle="collapse" href="#collapseVision" aria-expanded="false" aria-controls="collapseExample"><%= image_tag "vision.svg" %>
+		<br>VISIÓN <br>MISIÓN <br> OBJETIVOS</a>
+
+		<div class="collapse" id="collapseVision">
+			  <div >
+			   <h3 class="title-2">visión</h3>
+				<p>Consiste en la promoción del desarrollo personal y locales de los jóvenes mediante la mejora de sus condiciones de vida, aumentar su autoestima , habilidades de liderazgo y el pleno ejercicio de sus derechos.</p>
+
+				<h3 class="title-2">misión</h3>
+
+				<p>Que las mujeres y los hombres jóvenes obtengan oportunidades de desarrollo tanto personal como a nivel local , a través de la iniciativa empresarial innovadora y sostenible.</p>
+				<h3 class="title-2">objetivos</h3>
+
+				<p>Contribuir al desarrollo personal y local la juventud: <br> <br>
+
+				De que forma: <br> <br>
+
+				<strong>1.    A nivel personal:</strong></p>
+				<ul class="list-red">
+					<li>Jóvenes capacitados.</li>
+					<li>Desarrollo e implementación de proyectos y objetivos personales de los jóvenes participantes.</li>
+					<li>Preparación y consistencia.</li>
+				</ul>
+
+				<p><strong>2.   A nivel local:</strong></p>
+				<ul class="list-red">
+					<li>Contribuyendo el desarrollo sostenible de las comunidades de los jóvenes participantes.</li>
+					<li>Creando y brindando oportunidades a otros jóvenes dentro las comunidades de los jóvenes participantes.</li>
+				</ul>
+
+			  </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<a class="btn a-collapse center-block" data-toggle="collapse" href="#collapseProject" aria-expanded="false" aria-controls="collapseExample"><%= image_tag "project.svg" %>
+		<br>PROYECTOS DE <br>EMPODERAMIENTO <br> DE LA JUVENTUD</a>
+
+		<div class="collapse" id="collapseProject">
+			  <div >
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			  </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<a class="btn a-collapse center-block" data-toggle="collapse" href="#collapseContact" aria-expanded="false" aria-controls="collapseExample"><%= image_tag "contact.svg" %>
+		<br>CONTACTO</a>
+
+		<div class="collapse" id="collapseContact">
+			  <div >
+			  <h3 class="title-2">contacto</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+				<div class="col-xs-6 col-xs-offset-3">
+				<div class="white-space space-medium"></div>
+					<ul class="social">
+						<li><%= image_tag "fb.svg", class:'img-fluid' %></li>
+						<li><%= image_tag "twitter.svg", class:'img-fluid' %></li>
+						<li><%= image_tag "linkedin.svg", class:'img-fluid' %></li>
+						<li><%= image_tag "mail.svg", class:'img-fluid' %></li>
+					</ul>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+</div>
