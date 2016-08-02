@@ -25,8 +25,13 @@
 	<div class="row text-xs-center">
 		<div class="col-xs-6 col-xs-offset-3">
 			<div class="white-space space-medium"></div>
-        <a href="#" class="btn btn-login btn-red">registrarse</a>
-	      <a href="#" class="btn btn-login btn-blue">iniciar sesión</a>
+				<% if user_signed_in? %>
+					<%= link_to "Cerar sesión", destroy_user_session_path, method: :delete,
+								class: "btn btn-login btn-red"%>
+				<% else %>
+					<%= link_to "registrarse", new_user_registration_path, class: "btn btn-login btn-red"%>
+					<%= link_to "iniciar sesión", new_user_session_path, class: "btn btn-login btn-blue"%>
+				<% end %>
 		</div>
 	</div>
 </div>

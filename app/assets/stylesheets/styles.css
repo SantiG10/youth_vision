@@ -42,12 +42,25 @@ span.borderline:after{
 	letter-spacing: .1rem;
 	margin-bottom: 2rem;
 }
+.btn-register{
+	color:#000000;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	margin-bottom: 2rem;
+}
 .btn-red{
 	background-color: #EC1C24;
 	padding: 2rem 8rem;
 }
 .btn-blue{
 	background-color: #4BC6E8;
+	padding: 2rem 7rem;
+}
+
+.btn-orange{
+	background-color: #ff8a05;
 	padding: 2rem 7rem;
 }
 /*ICON BREADCRUM*/
@@ -61,9 +74,17 @@ i.icon-back{
     padding-top: .2rem;
     padding-left: 1.5rem;
 }
+i.icon-user{
+	font-size: 3rem;
+  padding-top: .8rem;
+  padding-left: 1.5rem;
+}
 .breadcrum{
 	border-bottom: .2rem solid #000;
 	padding-bottom: .2rem;
+}
+.color-black{
+	color: #000;
 }
 span.borderlogo:after{
 	content: "";

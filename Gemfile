@@ -50,3 +50,6 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 #Font-Awesome
 gem "font-awesome-rails"
+
+#Devise
+gem 'devise'
