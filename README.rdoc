@@ -1,2 +1,3 @@
-Creación de estilos CSS <br>
-integración de las vistas y modelos
+ > Creación de estilos CSS 
+ > Integración de las vistas y modelos
+ 
