@@ -20,7 +20,7 @@ default: &default
   pool: 5
 
   # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling  
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
 
 development:
   <<: *default
@@ -63,8 +63,8 @@ development:
 test:
   <<: *default
   database: youth_vision_test
-  username: postgres
-  password: gaitan9103
+#username: postgres
+#password: gaitan9103
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
