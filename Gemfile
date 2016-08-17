@@ -7,11 +7,7 @@ gem 'activeadmin', '~> 1.0.0.pre4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-<<<<<<< HEAD
-# Use sqlite3 as the database for Active Record
-=======
-# Use postgresql as the database for Active Record
->>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
+
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -68,11 +64,5 @@ gem "font-awesome-rails"
 #Devise
 gem 'devise'
 
-<<<<<<< HEAD
 #Can can gema para otorgar permisos
 gem 'cancancan', '~> 1.10'
-=======
-source 'http://insecure.rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
->>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
