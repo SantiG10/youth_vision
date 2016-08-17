@@ -17,6 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+<<<<<<< HEAD
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -26,12 +27,29 @@ default: &default
 development:
   <<: *default
   database: postgresapp_development
+=======
+  pool: 5
+
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+
+development:
+  <<: *default
+  database: youth_vision_development
+  #Comentar user & pass
+  username: postgres
+  password: gaitan9103
+>>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
+<<<<<<< HEAD
   #username: postgresapp
+=======
+  #username: contact_list
+>>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,9 +75,16 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+
 test:
   <<: *default
+<<<<<<< HEAD
   database: postgresapp_test
+=======
+  database: youth_vision_test
+#username: postgres
+#password: gaitan9103
+>>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,6 +107,10 @@ test:
 #
 production:
   <<: *default
+<<<<<<< HEAD
   database: postgresapp_production
   username: postgresapp
   password: <%= ENV['POSTGRESAPP_DATABASE_PASSWORD'] %>
+=======
+  database: youth_vision_production
+>>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0

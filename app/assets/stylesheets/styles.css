@@ -32,7 +32,13 @@ span.borderline:after{
     margin: .1rem auto .2rem  auto;
     position: relative;
     width: 50%;
-   background-color: #383838;
+   	background-color: #383838;
+}
+li a span.borderline:hover{
+	color:#6fd1ec;
+}
+a:hover{
+	text-decoration: none!important;
 }
 .btn-login{
 	color:#fff;
@@ -54,13 +60,16 @@ span.borderline:after{
 	background-color: #EC1C24;
 	padding: 2rem 8rem;
 }
+a.btn-red:hover{
+	color:#a91f1f;
+}
 .btn-blue{
 	background-color: #4BC6E8;
 	padding: 2rem 7rem;
 }
 
 .btn-orange{
-	background-color: #ff8a05;
+	background-color: #F68E27;
 	padding: 2rem 7rem;
 }
 /*ICON BREADCRUM*/
@@ -82,6 +91,10 @@ i.icon-user{
 .breadcrum{
 	border-bottom: .2rem solid #000;
 	padding-bottom: .2rem;
+}
+.breadcrum-top{
+	border-top: .2rem solid #000;
+	padding-top: 1.5rem;
 }
 .color-black{
 	color: #000;
@@ -139,4 +152,99 @@ ul.list-red li:before {
 ul.social li{
 	display: inline-block;
 	padding-right:.4rem 0rem;
+}
+_ul.button-bt{
+	border-top: 0.2rem solid #000;
+	padding-top: 1rem;
+}
+ul.button-bt li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: -webkit-center;
+	padding: 0rem 5rem;
+}
+ul.button-bt li a{
+	color:#000;
+	font-weight: 700;
+	font-size: .7rem;
+}
+/*Formateo de estilos del formulario*/
+.form-control.name-last {
+	border-left: 1.4rem solid #FFCC05 !important;
+    display: inline-block !important;
+    width: 49% !important;
+    padding: .44rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #000;
+    background-color: #E6E7E8;
+    background-image: none;
+    border: 0rem solid #ccc;
+    border-radius: 0rem !important;
+}
+/*Corrección de error cuando el cliente no agregue ningun dato en el formulario de regist
+ y pone en dos lineas los campos del formulario*/
+ .field_with_errors{
+	display: inline;
+}
+.form-control.form-orange{
+	border-left: 1.4rem solid #F68E27;
+}
+.form-control.form-red{
+	border-left: 1.4rem solid #EC1C24;
+}
+.form-control.form-blue{
+	border-left: 1.4rem solid #4BC6E8;
+}
+.form-control.form-green{
+	border-left: 1.4rem solid #B0D135;
+}
+.form-control.last-name{
+	display: inline-block !important;
+    width: 49% !important;
+    padding: .44rem 2rem;
+	background-color: #D0D2D3;
+}
+.form-control {
+    display:block;
+    width: 98.5% !important;
+    padding: .44rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color:black;
+    background-color: #E6E7E8;
+    background-image: none;
+    border: 0rem solid #ccc;
+    border-radius: 0rem !important;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+/*Estilos para el color de la letra del placeholder*/
+::-webkit-input-placeholder, {
+   color: black;
+}
+:-moz-placeholder{
+	color: black;
+}
+:-ms-input-placeholder{
+	color: black;
+}
+/*enlaces de iniciar sesión*/
+.link-recover{
+	color:#6fd1ec;
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+/*links de recordar contraseña y registro*/
+.link-recover:hover{
+	text-decoration: none;
+	color:#5aa9bf;
+}
+.link-frame {
+    text-align: center;
+    padding: 1rem 1.5rem;
 }

@@ -6,9 +6,15 @@
 		</div>
 		<div class="col-xs-2 col-xs-offset-5">
 			<div class="white-space space-medium"></div>
-			<%= link_to about_us_path do %>
-			<%= image_tag "icon-talk.svg", class:'img-fluid' %>
+
+			<%= link_to about_us_path, class: "tag-tooltip",
+                    :data => {:toggle=>"tooltip"},
+                    'data-original-title' => "Acerca de Nosotros",
+                    'data-placement' => 'right' do %>
+				<%= image_tag "icon-talk.svg", class:'img-fluid'%>
 			<% end %>
+			
+
 			<div class="white-space space-small"></div>
 		</div>
 	</div>

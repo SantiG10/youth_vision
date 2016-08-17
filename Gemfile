@@ -1,9 +1,17 @@
 source 'https://rubygems.org'
 
+#ruby "2.3.0"
+
+# gema administrador
+gem 'activeadmin', '~> 1.0.0.pre4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+<<<<<<< HEAD
 # Use sqlite3 as the database for Active Record
+=======
+# Use postgresql as the database for Active Record
+>>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -29,6 +37,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# Gema para visualizar bien el log de herokou: heroku logs -t
+gem 'rails_12factor', group: :production
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -45,6 +56,9 @@ group :development do
   #gem 'spring'
 end
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 #Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
@@ -54,5 +68,11 @@ gem "font-awesome-rails"
 #Devise
 gem 'devise'
 
+<<<<<<< HEAD
 #Can can gema para otorgar permisos
 gem 'cancancan', '~> 1.10'
+=======
+source 'http://insecure.rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
+>>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
