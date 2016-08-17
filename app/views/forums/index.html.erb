@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<div class = "container">
+<h1>Listado de foros</h1>
+
+    <% @forums.each do |forum| %>
+      <div>
+        <strong><span>Título: </span></strong><%= forum.title %>
+      </div>
+      <div class="">
+        <strong><span>Contenido: </span></strong><%= forum.description %>
+      </div>
+      <div class="">
+      </div>
+      <strong><span>Categoria del foro: </span></strong><%= forum.forum_type %>
+      <div class="">
+        <strong><span>Usuario: </span></strong><%= forum.user.username %>
+      </div>
+      <div class="">
+        <%= link_to 'Ver', forum %>
+        <%if can? :manage, forum %>
+          <%= link_to 'Editar', edit_forum_path(forum) %></td>
+          <%= link_to 'Eliminar', forum, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%end%>
+      </div><hr>
+    <% end %>
+<br>
+<%if can? :create, Forum%>
+  <%= link_to 'Crear foro', new_forum_path, class:"btn btn-primary" %>
+<%end%>
+<div>

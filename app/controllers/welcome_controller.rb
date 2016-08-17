@@ -4,4 +4,7 @@ class WelcomeController < ApplicationController
 
   end
 
+  def show
+    params[:option]
+  end
 end
