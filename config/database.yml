@@ -26,8 +26,8 @@ development:
   <<: *default
   database: youth_vision_development
   #Comentar user & pass
-  #username: postgres
-  #password: gaitan9103
+  username: postgres
+  password: gaitan9103
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

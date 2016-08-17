@@ -60,3 +60,7 @@ gem "font-awesome-rails"
 
 #Devise
 gem 'devise'
+
+source 'http://insecure.rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end

@@ -92,6 +92,10 @@ i.icon-user{
 	border-bottom: .2rem solid #000;
 	padding-bottom: .2rem;
 }
+.breadcrum-top{
+	border-top: .2rem solid #000;
+	padding-top: 1.5rem;
+}
 .color-black{
 	color: #000;
 }
@@ -149,6 +153,21 @@ ul.social li{
 	display: inline-block;
 	padding-right:.4rem 0rem;
 }
+_ul.button-bt{
+	border-top: 0.2rem solid #000;
+	padding-top: 1rem;
+}
+ul.button-bt li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: -webkit-center;
+	padding: 0rem 5rem;
+}
+ul.button-bt li a{
+	color:#000;
+	font-weight: 700;
+	font-size: .7rem;
+}
 /*Formateo de estilos del formulario*/
 .form-control.name-last {
 	border-left: 1.4rem solid #FFCC05 !important;
@@ -163,6 +182,11 @@ ul.social li{
     background-image: none;
     border: 0rem solid #ccc;
     border-radius: 0rem !important;
+}
+/*Corrección de error cuando el cliente no agregue ningun dato en el formulario de regist
+ y pone en dos lineas los campos del formulario*/
+ .field_with_errors{
+	display: inline;
 }
 .form-control.form-orange{
 	border-left: 1.4rem solid #F68E27;
