@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @comment.comment %>
+</p>
+
+<p>
+  <strong>Tipo de foro:</strong>
+  <%= @comment.forum_id %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @comment.user_id %>
+</p>
+<%= link_to 'Editar', edit_forum_comment_path(@forum,@comment) %> |
+<%= link_to 'Regresar', forum_comments_path(@forum) %>

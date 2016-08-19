@@ -1,0 +1,22 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <h1>Listado de comentarios</h1>
+    <% @comments.each do |comment| %>
+        <div class="">
+          <strong><span>Comentario: </span></strong><%= comment.comment %>
+        </div>
+        <div class="">
+          <strong><span>Tipo de foro: </span></strong><%= comment.forum_id %>
+        </div>
+        <div class="">
+          <strong><span>Usuario: </span></strong><%= comment.user_id %>
+        </div>
+        <div class="">
+          <%= link_to 'Ver', forum_comment_path(@forum, comment) %>
+          <%= link_to 'Editar', edit_forum_comment_path(@forum,comment) %>
+          <%= link_to 'Eliminar', forum_comment_path(@forum,comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div><hr>
+    <% end %>
+  <br>
+  <%= link_to 'Nuevo comentario', new_forum_comment_path(@forum), class:"btn btn-primary" %>
+</div>

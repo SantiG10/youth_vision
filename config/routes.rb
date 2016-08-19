@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  resources :profiles 
+  resources :profiles
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :offers
   devise_for :users
   resources :languages
+  resources :forums do
+    resources :comments
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

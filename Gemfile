@@ -7,7 +7,7 @@ gem 'activeadmin', '~> 1.0.0.pre4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use postgresql as the database for Active Record
+
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -49,7 +49,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  #gem 'spring'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -72,3 +72,6 @@ source 'http://insecure.rails-assets.org' do
 end
 
 gem 'jquery-turbolinks'
+
+#Can can gema para otorgar permisos
+gem 'cancancan', '~> 1.10'

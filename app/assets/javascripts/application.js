@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require tether
+//= require turbolinks
 //= require bootstrap-sprockets
 //= require jquery_nested_form
 //= require_tree .

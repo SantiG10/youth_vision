@@ -1,0 +1,35 @@
+<div class="container">
+    <p id="notice"><%= notice %></p>
+    <p>
+      <strong>Title:</strong>
+      <%= @forum.title %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @forum.description %>
+    </p>
+    <p>
+      <strong>Forum type:</strong>
+      <%= @forum.forum_type %>
+    </p>
+    <p>
+      <strong>User:</strong>
+      <%= @forum.user.first_name%> <%= @forum.user.last_name%>
+    </p><hr>
+
+    <div class="">
+      <p>Comentarios:</p><hr>
+      <%@forum.comments.each do |comment|%>
+          <span>→  <%=comment.comment%></span>-por: <%= comment.user.email%><hr>
+          <% if can? :manage, comment%>
+            <span><%= link_to "Editar" %></span>
+            <span><%= link_to 'Eliminar', forum_comment_path(@forum,comment), method: :delete, data: { confirm: 'Are you sure?' }%></span><hr>
+
+          <% end %>
+      <%end%>
+    </div>
+
+
+  <%= render "comments/form" %>
+  <%= link_to 'Regresar', forums_path %>
+</div>
