@@ -63,3 +63,12 @@ gem "font-awesome-rails"
 
 #Devise
 gem 'devise'
+
+#nested_form
+gem "nested_form"
+
+source 'http://insecure.rails-assets.org' do
+   gem 'rails-assets-tether', '>= 1.1.0'
+end
+
+gem 'jquery-turbolinks'

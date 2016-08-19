@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160810202006) do
+ActiveRecord::Schema.define(version: 20160819155042) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,32 @@ ActiveRecord::Schema.define(version: 20160810202006) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "experiences", force: :cascade do |t|
+    t.string   "position"
+    t.text     "description"
+    t.string   "duration"
+    t.string   "company"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "profile_id"
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string   "language"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "languages_profiles", force: :cascade do |t|
+    t.integer  "language_id"
+    t.integer  "profile_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "languages_profiles", ["language_id"], name: "index_languages_profiles_on_language_id", using: :btree
+  add_index "languages_profiles", ["profile_id"], name: "index_languages_profiles_on_profile_id", using: :btree
+
   create_table "offers", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -60,6 +86,43 @@ ActiveRecord::Schema.define(version: 20160810202006) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
+
+  create_table "profiles", force: :cascade do |t|
+    t.string   "profession"
+    t.string   "last_company"
+    t.string   "last_position"
+    t.string   "country"
+    t.string   "city"
+    t.text     "responsibilities"
+    t.integer  "type_job"
+    t.integer  "user_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "name"
+    t.string   "email"
+    t.text     "honors"
+  end
+
+  add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
+
+  create_table "skills", force: :cascade do |t|
+    t.string   "skill"
+    t.integer  "level"
+    t.integer  "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "skills", ["profile_id"], name: "index_skills_on_profile_id", using: :btree
+
+  create_table "studies", force: :cascade do |t|
+    t.string   "study"
+    t.integer  "profile_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "studies", ["profile_id"], name: "index_studies_on_profile_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -82,4 +145,9 @@ ActiveRecord::Schema.define(version: 20160810202006) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "languages_profiles", "languages"
+  add_foreign_key "languages_profiles", "users", column: "profile_id"
+  add_foreign_key "profiles", "users"
+  add_foreign_key "skills", "profiles"
+  add_foreign_key "studies", "profiles"
 end

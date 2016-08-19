@@ -1,0 +1,120 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+      <br><h1>Perfil Profesional</h1><br><br>
+      <%= nested_form_for(@profile) do |f| %>
+        <% if @profile.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+            <ul>
+            <% @profile.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="form-group">
+          <%= f.label :name %><br>
+          <%= f.text_field :name, placeholder: "NOMBRE", value:"#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}", class:"form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :profession %><br>
+          <%= f.text_field :profession, class:"form-control"%>
+        </div>
+        <div class="form-group">
+          <%= f.label :email %><br>
+          <%= f.text_field :email, placeholder: "EMAIL", value:"#{current_user.email}", class:"form-control"%>
+        </div>
+				<div class="from-group">
+					<label >Studies</label>
+					<%= f.fields_for :studies do |studie_form| %>
+					  <%= studie_form.text_field :study, class:"form-control" , placeholder:"descripción"%>
+					  <%= studie_form.link_to_remove "Remover Estudio" %><br><br>
+					<% end %>
+					<p><%= f.link_to_add "Añadir Estudio", :studies %></p>
+				</div>
+				<div class="from-group">
+					<label >Experiencia</label>
+					<%= f.fields_for :experiences do |experience_form| %>
+						<div class="form-group">
+							<%= experience_form.text_field :position, class:"form-control", placeholder: "posición" %>
+						</div>
+						<div class="form-group">
+							<%= experience_form.text_area :description, class:"form-control", placeholder: "descripción" %>
+						</div>
+						<div class="form-group">
+							<%= experience_form.text_field :company, class:"form-control", placeholder: "Empresa / Compañia" %>
+						</div>
+						<div class="form-group">
+							<label>Duración</label>
+							<%= experience_form.select :duration, options_for_select([["0 - 6 meses","0 - 6 meses"],["6 - 18 meses", "6 - 18 meses"],["18 meses en adelante","18 meses en adelante"]]),{},{class:"form-control"} %>
+						</div>
+						<%= experience_form.link_to_remove "Remover Experiencia" %><br><br>
+					<% end %>
+					<p><%= f.link_to_add "Añadir Experiencia", :experiences %></p>
+				</div>
+        <div class="form-group">
+          <%= f.label :country %><br>
+          <%= f.select :country, {}, {}, {class:"form-control bfh-countries", "data-country" => "US", "data-name" => "country" }%>
+        </div>
+        <div class="form-group">
+          <%= f.label :city, "State" %><br>
+					<%= f.select :city, {}, {}, {class:"form-control bfh-states" , "data-country" => "profile_country" }%>
+				</div>
+        <div class="form-group">
+          <%= f.label :last_company %><br>
+          <%= f.text_field :last_company, class:"form-control"%>
+        </div>
+        <div class="form-group">
+          <%= f.label :last_position %><br>
+          <%= f.text_field :last_position, class:"form-control"%>
+        </div>
+        <div class="form-group">
+          <%= f.label :responsibilities %><br>
+          <%= f.text_area :responsibilities, class:"form-control"%>
+        </div>
+				<div class="from-group">
+					<label >Habilidades</label>
+					<%= f.fields_for :skills do |skill_form| %>
+						<div class="form-group">
+							<%= skill_form.text_field :skill, class:"form-control", placeholder: "Descripción" %>
+						</div>
+						<div class="form-group">
+							<label>Nivel</label>
+							<%= skill_form.select :level, options_for_select([["Básico", :Basico],["Medio", :Medio],["Avanzado", :Avanzado]]),{},{class:"form-control"} %>
+						</div>
+						<%= skill_form.link_to_remove "Remover Habilidad" %><br><br>
+					<% end %>
+					<p><%= f.link_to_add "Añadir Habilidad", :skills %></p>
+				</div>
+				<div class="form-group">
+					<%= f.label :honors %><br>
+					<%= f.text_area :honors, class:"form-control"%>
+				</div>
+				<div class="from-group">
+					<%= f.label :language, "Idiomas" %><br>
+					<%= f.collection_check_boxes :language_ids, Language.all, :id, :language, {}, {class:"checkbox-inline"} %>
+				</div>
+
+        <div class="form-group">
+          <%= f.label :type_job, "Buscando para:" %><br>
+          <%= f.select :type_job, options_for_select([["Practicas", :Practicas], ["Trabajo", :Trabajo]]), {}, { class: 'form-control' }%>
+        </div>
+        <div>
+          <%= f.submit "GUARDAR", class: "btn btn-register btn-orange center-block" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script>
+
+$('#profile_country').bfhcountries({country: 'US'});
+
+document.getElementById("#profile_contry").addEventListener("change", myFunction);
+function myFunction() {
+	alert('hi');
+}
+</script>

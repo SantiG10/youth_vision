@@ -1,0 +1,97 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+      <p>
+        <br><strong>Nombre:</strong>
+        <%= @profile.name %>
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <%= @profile.email %>
+      </p>
+
+      <p>
+        <strong>Profesión:</strong>
+        <%= @profile.profession %>
+      </p>
+
+			<p>
+				<strong>Estudios:</strong>
+				<% @profile.studies.each do |study| %>
+					<li>
+						<%= study.study%>
+					</li>
+				<% end %>
+			</p>
+
+			<p>
+				<strong>Experiencia:</strong>
+				<% @profile.experiences.each do |experience| %>
+					<li>
+						<strong>Posición:</strong> <%= experience.position%><br>
+						<strong>Descripción:</strong> <%= experience.description%><br>
+						<strong>Empresa / Compañia:</strong> <%= experience.company%><br>
+						<strong>Duración:</strong> <%= experience.duration %><br>
+					</li>
+				<% end %>
+			</p>
+
+      <p>
+        <strong>Ultima Empresa:</strong>
+        <%= @profile.last_company %>
+      </p>
+
+      <p>
+        <strong>Ultima posición:</strong>
+        <%= @profile.last_position %>
+      </p>
+
+      <p>
+        <strong>País:</strong>
+        <%= @profile.country %>
+      </p>
+
+      <p>
+        <strong>Departmento:</strong>
+        <%= @profile.city %>
+      </p>
+
+      <p>
+        <strong>Responsabilidades de trabajo / Proyectos / Éxitos:</strong>
+        <%= @profile.responsibilities %>
+      </p>
+
+			<p>
+				<strong>Habilidades:</strong>
+				<% @profile.skills.each do |skill| %>
+					<li>
+						<%= skill.skill%> - Nivel: <%= skill.level %>
+					</li>
+				<% end %>
+			</p>
+
+      <p>
+        <strong>Buscando para:</strong>
+        <%= @profile.type_job %>
+      </p>
+
+      <p>
+        <strong>Honores / Premios / Actividades:</strong>
+        <%= @profile.honors %>
+      </p>
+
+			<p>
+				<strong>Idiomas:</strong>
+				<% @profile.languages.each do |language| %>
+					<li>
+						<%= language.language%>
+					</li>
+				<% end %>
+			</p>
+
+      <%= link_to 'Edit', edit_profile_path(@profile) %> |
+      <%= link_to 'Back', profiles_path %>
+    </div>
+  </div>
+</div>
