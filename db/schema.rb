@@ -11,32 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20160809204213) do
-=======
 ActiveRecord::Schema.define(version: 20160810202006) do
->>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-  create_table "comments", force: :cascade do |t|
-    t.text     "comment"
-    t.integer  "forum_id"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "forums", force: :cascade do |t|
-    t.text     "title"
-    t.text     "description"
-    t.integer  "forum_type"
-    t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-=======
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
     t.text     "body"
@@ -70,6 +49,23 @@ ActiveRecord::Schema.define(version: 20160810202006) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "comments", force: :cascade do |t|
+    t.text     "comment"
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "forums", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "forum_type"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "offers", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -80,7 +76,6 @@ ActiveRecord::Schema.define(version: 20160810202006) do
     t.string   "location"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
->>>>>>> 31c064cf310000f28c40dbd3fca08e51aa4477c0
   end
 
   create_table "users", force: :cascade do |t|

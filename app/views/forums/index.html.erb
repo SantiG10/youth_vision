@@ -1,30 +1,42 @@
-<p id="notice"><%= notice %></p>
-<div class = "container">
-<h1>Listado de foros</h1>
+ <div class="row">
+      <div class="col-xs-12">
+          <div class="col-xs-2">
+              <%= link_to root_path do %>
+              <i class="fa fa-angle-left icon-back color-black" aria-hidden="true"></i>
+            <%end%>
+          </div>
+          <div class="col-xs-2 push-xs-3 forum">
+            <%= image_tag "forum.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid  center-block' %>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="bar-forum">
+      <div class="white-space space-medium"></div>
+        <p class="text-xs-center">Por favor, comparta sus experiencias y preguntas aquí con otros jóvenes de unirse a uno de los tres foros de abajo. </p>
+        <div class="text-xs-center link-forums">
+        <%= link_to 'desarrollo profesional', root_path%><%= image_tag "proffesional-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+        </div>
+    </div>
+  </div>
 
-    <% @forums.each do |forum| %>
-      <div>
-        <strong><span>Título: </span></strong><%= forum.title %>
-      </div>
-      <div class="">
-        <strong><span>Contenido: </span></strong><%= forum.description %>
-      </div>
-      <div class="">
-      </div>
-      <strong><span>Categoria del foro: </span></strong><%= forum.forum_type %>
-      <div class="">
-        <strong><span>Usuario: </span></strong><%= forum.user.username %>
-      </div>
-      <div class="">
-        <%= link_to 'Ver', forum %>
-        <%if can? :manage, forum %>
-          <%= link_to 'Editar', edit_forum_path(forum) %></td>
-          <%= link_to 'Eliminar', forum, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <%end%>
-      </div><hr>
-    <% end %>
-<br>
-<%if can? :create, Forum%>
-  <%= link_to 'Crear foro', new_forum_path, class:"btn btn-primary" %>
-<%end%>
-<div>
+  <div class="row">
+    <div class="bar-forum-2">
+        <div class="text-xs-center link-forums">
+        <%= link_to 'desarrollo de emprendimiento', root_path%><%= image_tag "endeavor-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="bar-forum-2">
+        <div class="text-xs-center link-forums">
+        <%= link_to 'desarrollo de vida', root_path%><%= image_tag "life-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+        </div>
+    </div>
+
+    <div class="bar-forum-btn"></div>
+  </div>
+</div>
