@@ -14,10 +14,9 @@
 //= require jquery_ujs
 //= require tether
 //= require turbolinks
-//= require_tree . 
 //= require bootstrap-sprockets
-
-
+//= require jquery_nested_form
+//= require_tree .
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })

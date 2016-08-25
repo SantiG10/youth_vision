@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  resources :profiles
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :offers
   devise_for :users
-
+  resources :languages
   resources :forums do
     resources :comments
   end

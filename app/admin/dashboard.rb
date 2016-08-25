@@ -23,9 +23,19 @@ ActiveAdmin.register_page "Dashboard" do
         end
       end
 
+        column do
+          panel "Recent languages" do
+            ul do
+              Language.take(5).map do |language|
+                li link_to(language.language, admin_language_path(language))
+              end
+            end
+          end
+        end
+
       column do
         panel "Info" do
-          para "Welcome to ActiveAdmin."
+          para "Welcome Administrator."
         end
       end
     end
