@@ -94,8 +94,7 @@ test:
 #
 production:
   <<: *default
-  database: postgresapp_production
-  username: postgresapp
-  password: <%= ENV['POSTGRESAPP_DATABASE_PASSWORD'] %>
-
-  # database: youth_vision_production
+  #database: postgresapp_production
+  #username: postgresapp
+  #password: <%= ENV['POSTGRESAPP_DATABASE_PASSWORD'] %>
+  database: youth_vision_production
