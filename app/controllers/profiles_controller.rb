@@ -1,6 +1,7 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  load_and_authorize_resource
 
   # GET /profiles
   # GET /profiles.json
@@ -74,7 +75,7 @@ class ProfilesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
       params.require(:profile).permit(:name, :email, :profession, :last_company,
-              :last_position, :country, :city, :responsibilities, :type_job,
+              :last_position, :country, :state, :responsibilities, :type_job,
               :honors, :user_id, { language_ids:[] } ,studies_attributes: [:id, :study, :_destroy],
               experiences_attributes: [:id, :position, :description, :duration,
               :company, :_destroy], skills_attributes: [:id, :skill, :level, :_destroy])

@@ -27,13 +27,15 @@
         <td><%= profile.last_company %></td>
         <td><%= profile.last_position %></td>
         <td><%= profile.country %></td>
-        <td><%= profile.city %></td>
+        <td><%= profile.state %></td>
         <td><%= profile.responsibilities %></td>
         <td><%= profile.type_job %></td>
         <td><%= profile.honors %></td>
         <td><%= link_to 'Show', profile %></td>
-        <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if can? :manage, profile%>
+          <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+          <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

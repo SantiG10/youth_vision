@@ -1,37 +1,47 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<% if @forum.errors.any? %>
+				<div id="error_explanation">
+					<div class="alert alert-danger" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<h2 class="text-xs-center"> Se ha producido un Error</h2>
+						<ul class="list-red">
+							<% @forum.errors.each do |attribute, error| %>
+								<li>
+									<%= error %>
+								</li>
+							<% end %>
+						</ul>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
 <div class="container">
+  <%= form_for(@forum) do |f| %>
+    <div class="field form-group">
+      <strong><%= f.label :title, "Título del foro" %></strong><br>
+      <%= f.text_area :title, placeholder: "Títul del foro", class: "form-control" %>
+    </div>
+    <div class="field form-group">
+      <strong><%= f.label :description, "Descriptción" %></strong><br>
+      <%= f.text_area :description, placeholder: "Comentanos de que se va a tratar el contenido de tu foro", class:"form-control" %>
+    </div>
 
-<%= form_for(@forum) do |f| %>
-  <% if @forum.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@forum.errors.count, "error") %> prohibited this forum from being saved:</h2>
-
-      <ul>
-      <% @forum.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+    <div class="form-group">
+       <strong><%= f.label :forum_type, 'Seleccione tipo de foro' %></strong>
+       <%= f.select  :forum_type, options_for_select([["Desarrollo personal",:Personal], ["Desarrollo de emprendimiento",:Emprendimiento], ["Desarrollo de vida",:Vida]]), class:"form-control" %>
+   </div>
+     <!--<div class="field">
+      <%= f.label :user_id %><br>
+      <%= f.number_field :user_id %>
+    </div> -->
+    <div class="actions">
+      <%= f.submit class:"btn btn-primary"%>
     </div>
   <% end %>
-
-  <div class="field form-group">
-    <strong><%= f.label :title, "Título del foro" %></strong><br>
-    <%= f.text_area :title, placeholder: "Títul del foro", class: "form-control" %>
-  </div>
-  <div class="field form-group">
-    <strong><%= f.label :description, "Descriptción" %></strong><br>
-    <%= f.text_area :description, placeholder: "Comentanos de que se va a tratar el contenido de tu foro", class:"form-control" %>
-  </div>
-
-  <div class="form-group">
-     <strong><%= f.label :forum_type, 'Seleccione tipo de foro' %></strong>
-     <%= f.select  :forum_type, options_for_select([["Desarrollo personal",:Personal], ["Desarrollo de emprendimiento",:Emprendimiento], ["Desarrollo de vida",:Vida]]), class:"form-control" %>
- </div>
-   <!--<div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div> -->
-  <div class="actions">
-    <%= f.submit class:"btn btn-primary"%>
-  </div>
 </div>
-<% end %>

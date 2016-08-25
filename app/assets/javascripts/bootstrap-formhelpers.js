@@ -23,7 +23,7 @@ if (!jQuery) { throw new Error("Bootstrap Form Helpers requires jQuery"); }
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHCountriesList = {
   'AF': 'Afghanistan',
   'AL': 'Albania',
@@ -286,7 +286,7 @@ var BFHCountriesList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHCurrenciesList = {
   'AED':{'label':'United Arab Emirates dirham','currencyflag':'','symbol':'د.إ'},
   'AFN':{'label':'Afghan afghani','currencyflag':'','symbol':'؋'},
@@ -467,7 +467,7 @@ var BFHCurrenciesList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHMonthsList = [
   'January',
   'February',
@@ -482,7 +482,7 @@ var BFHMonthsList = [
   'November',
   'December'
 ];
- 
+
 var BFHDaysList = [
   'SUN',
   'MON',
@@ -492,7 +492,7 @@ var BFHDaysList = [
   'FRI',
   'SAT'
 ];
- 
+
 var BFHDayOfWeekStart = 0;
 
 /* ==========================================================
@@ -513,7 +513,7 @@ var BFHDayOfWeekStart = 0;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHFontsList = {
   'Andale Mono': '"Andale Mono", AndaleMono, monospace',
   'Arial': 'Arial, "Helvetica Neue", Helvetica, sans-serif',
@@ -581,7 +581,7 @@ var BFHFontsList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHFontSizesList = {
   '8': '8px',
   '9': '9px',
@@ -7678,7 +7678,7 @@ var BFHGoogleFontsList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHLanguagesList = {
   'om': 'Afaan Oromoo',
   'aa': 'Afaraf',
@@ -7883,7 +7883,7 @@ var BFHLanguagesList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHPhoneFormatList = {
   'AF': '+93 0dd ddd dddd',
   'AL': '+355 0dd ddd ddd',
@@ -8145,7 +8145,7 @@ var BFHPhoneFormatList = {
  * ========================================================== */
 
 var BFHStatesList = {
-  'AF':{
+  'Afghanistan':{
     '1' : {'code':'BAL','name':'Balkh'},
     '2' : {'code':'BAM','name':'Bamian'},
     '3' : {'code':'BDG','name':'Badghis'},
@@ -8179,7 +8179,7 @@ var BFHStatesList = {
     '31' : {'code':'WAR','name':'Wardak'},
     '32' : {'code':'ZAB','name':'Zabol'}
   },
-  'AL':{
+  'Albania':{
     '1' : {'code':'BR','name':'Berat'},
     '2' : {'code':'BU','name':'Bulqize'},
     '3' : {'code':'DI','name':'Diber'},
@@ -8217,7 +8217,7 @@ var BFHStatesList = {
     '35' : {'code':'TR','name':'Tirane'},
     '36' : {'code':'VL','name':'Vlore'}
   },
-  'DZ':{
+  'Algeria':{
     '1' : {'code':'ADE','name':'Ain Defla'},
     '2' : {'code':'ADR','name':'Adrar'},
     '3' : {'code':'ALG','name':'Alger'},
@@ -8267,14 +8267,14 @@ var BFHStatesList = {
     '47' : {'code':'TLE','name':'Tlemcen'},
     '48' : {'code':'TOU','name':'Tizi Ouzou'}
   },
-  'AS':{
+  'American Samoa':{
     '1' : {'code':'E','name':'Eastern'},
     '2' : {'code':'M','name':'Manu\'a'},
     '3' : {'code':'R','name':'Rose Island'},
     '4' : {'code':'S','name':'Swains Island'},
     '5' : {'code':'W','name':'Western'}
   },
-  'AD':{
+  'Andorra':{
     '1' : {'code':'ALV','name':'Andorra la Vella'},
     '2' : {'code':'CAN','name':'Canillo'},
     '3' : {'code':'ENC','name':'Encamp'},
@@ -8283,7 +8283,7 @@ var BFHStatesList = {
     '6' : {'code':'ORD','name':'Ordino'},
     '7' : {'code':'SJL','name':'Sant Julià de Lòria'}
   },
-  'AO':{
+  'Angola':{
     '1' : {'code':'BGO','name':'Bengo'},
     '2' : {'code':'BGU','name':'Benguela'},
     '3' : {'code':'BIE','name':'Bie'},
@@ -8303,7 +8303,7 @@ var BFHStatesList = {
     '17' : {'code':'UIG','name':'Uige'},
     '18' : {'code':'ZAI','name':'Zaire'}
   },
-  'AI':{
+  'Anguilla':{
     '1' : {'code':'ANG','name':'Anguillita'},
     '2' : {'code':'ANG','name':'Anguila'},
     '3' : {'code':'DOG','name':'Dog'},
@@ -8314,7 +8314,7 @@ var BFHStatesList = {
     '8' : {'code':'SEA','name':'Seal'},
     '9' : {'code':'SOM','name':'Sombrero'}
   },
-  'AQ':{
+  'Antarctica':{
     '1' : {'code':'ASG','name':'Saint George'},
     '2' : {'code':'ASH','name':'Saint Philip'},
     '3' : {'code':'ASJ','name':'Saint John'},
@@ -8324,7 +8324,7 @@ var BFHStatesList = {
     '7' : {'code':'BAR','name':'Barbuda'},
     '8' : {'code':'RED','name':'Redonda'}
   },
-  'AR':{
+  'Argentina':{
     '1' : {'code':'AN','name':'Antartida e Islas del Atlantico'},
     '2' : {'code':'BA','name':'Buenos Aires'},
     '3' : {'code':'CA','name':'Catamarca'},
@@ -8351,7 +8351,7 @@ var BFHStatesList = {
     '24' : {'code':'TF','name':'Tierra del Fuego'},
     '25' : {'code':'TU','name':'Tucuman'}
   },
-  'AM':{
+  'Armenia':{
     '1' : {'code':'AGT','name':'Aragatsotn'},
     '2' : {'code':'ARR','name':'Ararat'},
     '3' : {'code':'ARM','name':'Armavir'},
@@ -8364,7 +8364,7 @@ var BFHStatesList = {
     '10' : {'code':'VAY','name':'Vayots\' Dzor'},
     '11' : {'code':'YER','name':'Yerevan'}
   },
-  'AW':{
+  'Aruba':{
     '1' : {'code':'ARU','name':'Aruba'},
     '2' : {'code':'DRU','name':'Druif Beach'},
     '3' : {'code':'MAN','name':'Manchebo Beach'},
@@ -8376,7 +8376,7 @@ var BFHStatesList = {
     '9' : {'code':'SIN','name':'Sint Nicolas'},
     '10' : {'code':'WAY','name':'Wayaca'}
   },
-  'AU':{
+  'Australia':{
     '1' : {'code':'ACT','name':'Australian Capital Territory'},
     '2' : {'code':'NSW','name':'New South Wales'},
     '3' : {'code':'NT','name':'Northern Territory'},
@@ -8386,7 +8386,7 @@ var BFHStatesList = {
     '7' : {'code':'VIC','name':'Victoria'},
     '8' : {'code':'WA','name':'Western Australia'}
   },
-  'AT':{
+  'Austria':{
     '1' : {'code':'BUR','name':'Burgenland'},
     '2' : {'code':'KAR','name':'Krnten'},
     '3' : {'code':'NOS','name':'Niederöesterreich'},
@@ -8397,7 +8397,7 @@ var BFHStatesList = {
     '8' : {'code':'VOR','name':'Vorarlberg'},
     '9' : {'code':'WIE','name':'Wien'}
   },
-  'AZ':{
+  'Azerbaijan':{
     '1' : {'code':'AB','name':'Ali Bayramli'},
     '2' : {'code':'ABS','name':'Abseron'},
     '3' : {'code':'AGC','name':'AgcabAdi'},
@@ -8475,7 +8475,7 @@ var BFHStatesList = {
     '75' : {'code':'ZAQ','name':'Zaqatala'},
     '76' : {'code':'ZAR','name':'Zardab'}
   },
-  'BS':{
+  'The Bahamas':{
     '1' : {'code':'ACK','name':'Acklins'},
     '2' : {'code':'BER','name':'Berry Islands'},
     '3' : {'code':'BIM','name':'Bimini'},
@@ -8508,14 +8508,14 @@ var BFHStatesList = {
     '30' : {'code':'SWE','name':'Spanish Wells'},
     '31' : {'code':'WGB','name':'West Grand Bahama'}
   },
-  'BH':{
+  'Bahrain':{
     '1' : {'code':'CAP','name':'Capital'},
     '2' : {'code':'CEN','name':'Central'},
     '3' : {'code':'MUH','name':'Muharraq'},
     '4' : {'code':'NOR','name':'Northern'},
     '5' : {'code':'SOU','name':'Southern'}
   },
-  'BD':{
+  'Bangladesh':{
     '1' : {'code':'BAR','name':'Barisal'},
     '2' : {'code':'CHI','name':'Chittagong'},
     '3' : {'code':'DHA','name':'Dhaka'},
@@ -8523,7 +8523,7 @@ var BFHStatesList = {
     '5' : {'code':'RAJ','name':'Rajshahi'},
     '6' : {'code':'SYL','name':'Sylhet'}
   },
-  'BB':{
+  'Barbados':{
     '1' : {'code':'CC','name':'Christ Church'},
     '2' : {'code':'AND','name':'Saint Andrew'},
     '3' : {'code':'GEO','name':'Saint George'},
@@ -8536,7 +8536,7 @@ var BFHStatesList = {
     '10' : {'code':'PHI','name':'Saint Philip'},
     '11' : {'code':'THO','name':'Saint Thomas'}
   },
-  'BY':{
+  'Belarus':{
     '1' : {'code':'BR','name':'Brestskaya (Brest)'},
     '2' : {'code':'HO','name':'Homyel\'skaya (Homyel\')'},
     '3' : {'code':'HM','name':'Horad Minsk'},
@@ -8545,7 +8545,7 @@ var BFHStatesList = {
     '6' : {'code':'MI','name':'Minskaya'},
     '7' : {'code':'VI','name':'Vitsyebskaya (Vitsyebsk)'}
   },
-  'BE':{
+  'Belgium':{
     '1' : {'code':'VAN','name':'Antwerpen'},
     '2' : {'code':'WBR','name':'Brabant Wallon'},
     '3' : {'code':'WHT','name':'Hainaut'},
@@ -8557,7 +8557,7 @@ var BFHStatesList = {
     '9' : {'code':'VBR','name':'Vlaams Brabant'},
     '10' : {'code':'VWV','name':'West-Vlaanderen'}
   },
-  'BZ':{
+  'Belize':{
     '1' : {'code':'BZ','name':'Belize'},
     '2' : {'code':'CY','name':'Cayo'},
     '3' : {'code':'CR','name':'Corozal'},
@@ -8565,7 +8565,7 @@ var BFHStatesList = {
     '5' : {'code':'SC','name':'Stann Creek'},
     '6' : {'code':'TO','name':'Toledo'}
   },
-  'BJ':{
+  'Benin':{
     '1' : {'code':'AL','name':'Alibori'},
     '2' : {'code':'AK','name':'Atakora'},
     '3' : {'code':'AQ','name':'Atlantique'},
@@ -8579,7 +8579,7 @@ var BFHStatesList = {
     '11' : {'code':'PL','name':'Plateau'},
     '12' : {'code':'ZO','name':'Zou'}
   },
-  'BM':{
+  'Bermuda':{
     '1' : {'code':'DS','name':'Devonshire'},
     '2' : {'code':'HC','name':'Hamilton City'},
     '3' : {'code':'HA','name':'Hamilton'},
@@ -8592,7 +8592,7 @@ var BFHStatesList = {
     '10' : {'code':'SH','name':'Southampton'},
     '11' : {'code':'WA','name':'Warwick'}
   },
-  'BT':{
+  'Bhutan':{
     '1' : {'code':'BUM','name':'Bumthang'},
     '2' : {'code':'CHU','name':'Chukha'},
     '3' : {'code':'DAG','name':'Dagana'},
@@ -8614,7 +8614,7 @@ var BFHStatesList = {
     '19' : {'code':'WPH','name':'Wangdue Phodrang'},
     '20' : {'code':'ZHE','name':'Zhemgang'}
   },
-  'BO':{
+  'Bolivia':{
     '1' : {'code':'BEN','name':'Beni'},
     '2' : {'code':'CHU','name':'Chuquisaca'},
     '3' : {'code':'COC','name':'Cochabamba'},
@@ -8625,7 +8625,7 @@ var BFHStatesList = {
     '8' : {'code':'SCZ','name':'Santa Cruz'},
     '9' : {'code':'TAR','name':'Tarija'}
   },
-  'BA':{
+  'Bosnia and Herzegovina':{
     '1' : {'code':'BRO','name':'Brcko district'},
     '2' : {'code':'FBP','name':'Bosanskopodrinjski Kanton'},
     '3' : {'code':'FHN','name':'Hercegovacko-neretvanski Kanton'},
@@ -8645,7 +8645,7 @@ var BFHStatesList = {
     '17' : {'code':'STR','name':'Trebinje'},
     '18' : {'code':'SVL','name':'Vlasenica'}
   },
-  'BW':{
+  'Botswana':{
     '1' : {'code':'CE','name':'Central'},
     '2' : {'code':'GH','name':'Ghanzi'},
     '3' : {'code':'KD','name':'Kgalagadi'},
@@ -8657,7 +8657,7 @@ var BFHStatesList = {
     '9' : {'code':'SE','name':'South East'},
     '10' : {'code':'SO','name':'Southern'}
   },
-  'BR':{
+  'Brazil':{
     '1' : {'code':'AC','name':'Acre'},
     '2' : {'code':'AL','name':'Alagoas'},
     '3' : {'code':'AP','name':'Amapa'},
@@ -8686,7 +8686,7 @@ var BFHStatesList = {
     '26' : {'code':'SE','name':'Sergipe'},
     '27' : {'code':'TO','name':'Tocantins'}
   },
-  'IO':{
+  'British Indian Ocean Territory':{
     '1' : {'code':'DG','name':'Diego Garcia'},
     '2' : {'code':'DI','name':'Danger Island'},
     '3' : {'code':'EA','name':'Eagle Islands'},
@@ -8696,13 +8696,13 @@ var BFHStatesList = {
     '7' : {'code':'SI','name':'Salomon Islands'},
     '8' : {'code':'TB','name':'Three Brothers'}
   },
-  'BN':{
+  'Brunei':{
     '1' : {'code':'BEL','name':'Belait'},
     '2' : {'code':'BRM','name':'Brunei and Muara'},
     '3' : {'code':'TEM','name':'Temburong'},
     '4' : {'code':'TUT','name':'Tutong'}
   },
-  'BG':{
+  'Bulgaria':{
     '1' : {'code':'BG-01','name':'Blagoevgrad'},
     '2' : {'code':'BG-02','name':'Burgas'},
     '3' : {'code':'BG-03','name':'Dobrich'},
@@ -8731,7 +8731,7 @@ var BFHStatesList = {
     '26' : {'code':'BG-26','name':'Vratza'},
     '27' : {'code':'BG-27','name':'Yambol'}
   },
-  'BF':{
+  'Burkina Faso':{
     '1' : {'code':'BAL','name':'Bale'},
     '2' : {'code':'BAM','name':'Bam'},
     '3' : {'code':'BAN','name':'Banwa'},
@@ -8778,7 +8778,7 @@ var BFHStatesList = {
     '44' : {'code':'ZOD','name':'Zondoma'},
     '45' : {'code':'ZOW','name':'Zoundweogo'}
   },
-  'BI':{
+  'Burundi':{
     '1' : {'code':'BB','name':'Bubanza'},
     '2' : {'code':'BJ','name':'Bujumbura'},
     '3' : {'code':'BR','name':'Bururi'},
@@ -8796,7 +8796,7 @@ var BFHStatesList = {
     '15' : {'code':'RT','name':'Rutana'},
     '16' : {'code':'RY','name':'Ruyigi'}
   },
-  'KH':{
+  'Cambodia':{
     '1' : {'code':'BA','name':'Battambang'},
     '2' : {'code':'BM','name':'Banteay Meanchey'},
     '3' : {'code':'KB','name':'Keb'},
@@ -8823,7 +8823,7 @@ var BFHStatesList = {
     '24' : {'code':'ST','name':'Stung Treng'},
     '25' : {'code':'TK','name':'Takeo'}
   },
-  'CM':{
+  'Cameroon':{
     '1' : {'code':'ADA','name':'Adamawa (Adamaoua)'},
     '2' : {'code':'CEN','name':'Centre'},
     '3' : {'code':'EST','name':'East (Est)'},
@@ -8835,7 +8835,7 @@ var BFHStatesList = {
     '9' : {'code':'SUD','name':'South (Sud)'},
     '10' : {'code':'SOU','name':'Southwest (Sud-Ouest)'}
   },
-  'CA':{
+  'Canada':{
     '1' : {'code':'AB','name':'Alberta'},
     '2' : {'code':'BC','name':'British Columbia'},
     '3' : {'code':'MB','name':'Manitoba'},
@@ -8850,7 +8850,7 @@ var BFHStatesList = {
     '12' : {'code':'SK','name':'Saskatchewan'},
     '13' : {'code':'YT','name':'Yukon Territory'}
   },
-  'CV':{
+  'Cape Verde':{
     '1' : {'code':'BV','name':'Boa Vista'},
     '2' : {'code':'BR','name':'Brava'},
     '3' : {'code':'CS','name':'Calheta de Sao Miguel'},
@@ -8869,7 +8869,7 @@ var BFHStatesList = {
     '16' : {'code':'SV','name':'Sao Vicente'},
     '17' : {'code':'TA','name':'Tarrafal'}
   },
-  'KY':{
+  'Cayman Islands':{
     '1' : {'code':'CR','name':'Creek'},
     '2' : {'code':'EA','name':'Eastern'},
     '3' : {'code':'ML','name':'Midland'},
@@ -8879,7 +8879,7 @@ var BFHStatesList = {
     '7' : {'code':'WD','name':'West End'},
     '8' : {'code':'WN','name':'Western'}
   },
-  'CF':{
+  'Central African Republic':{
     '1' : {'code':'BAN','name':'Bangui'},
     '2' : {'code':'BBA','name':'Bamingui-Bangoran'},
     '3' : {'code':'BKO','name':'Basse-Kotto'},
@@ -8898,7 +8898,7 @@ var BFHStatesList = {
     '16' : {'code':'SMB','name':'Sangha-Mbaere'},
     '17' : {'code':'VAK','name':'Vakaga'}
   },
-  'TD':{
+  'Chad':{
     '1' : {'code':'BA','name':'Batha'},
     '2' : {'code':'BI','name':'Biltine'},
     '3' : {'code':'BE','name':'Borkou-Ennedi-Tibesti'},
@@ -8914,7 +8914,7 @@ var BFHStatesList = {
     '13' : {'code':'SA','name':'Salamat'},
     '14' : {'code':'TA','name':'Tandjile'}
   },
-  'CL':{
+  'Chile':{
     '1' : {'code':'AI','name':'Aisen del General Carlos Ibanez'},
     '2' : {'code':'AN','name':'Antofagasta'},
     '3' : {'code':'AR','name':'Araucania'},
@@ -8929,7 +8929,7 @@ var BFHStatesList = {
     '12' : {'code':'TA','name':'Tarapaca'},
     '13' : {'code':'VS','name':'Valparaiso'}
   },
-  'CN':{
+  'China':{
     '1' : {'code':'AN','name':'Anhui'},
     '2' : {'code':'BE','name':'Beijing'},
     '3' : {'code':'CH','name':'Chongqing'},
@@ -8962,14 +8962,14 @@ var BFHStatesList = {
     '30' : {'code':'YU','name':'Yunnan'},
     '31' : {'code':'ZH','name':'Zhejiang'}
   },
-  'CC':{
+  'Cocos (Keeling) Islands':{
     '1' : {'code':'D','name':'Direction Island'},
     '2' : {'code':'H','name':'Home Island'},
     '3' : {'code':'O','name':'Horsburgh Island'},
     '4' : {'code':'S','name':'South Island'},
     '5' : {'code':'W','name':'West Island'}
   },
-  'CO':{
+  'Colombia':{
     '1' : {'code':'AMZ','name':'Amazonas'},
     '2' : {'code':'ANT','name':'Antioquia'},
     '3' : {'code':'ARA','name':'Arauca'},
@@ -9004,12 +9004,12 @@ var BFHStatesList = {
     '32' : {'code':'VAU','name':'Vaupes'},
     '33' : {'code':'VIC','name':'Vichada'}
   },
-  'KM':{
+  'Comoros':{
     '1' : {'code':'G','name':'Grande Comore'},
     '2' : {'code':'A','name':'Anjouan'},
     '3' : {'code':'M','name':'Moheli'}
   },
-  'CG':{
+  'Congo':{
     '1' : {'code':'BO','name':'Bouenza'},
     '2' : {'code':'BR','name':'Brazzaville'},
     '3' : {'code':'CU','name':'Cuvette'},
@@ -9022,7 +9022,7 @@ var BFHStatesList = {
     '10' : {'code':'PO','name':'Pool'},
     '11' : {'code':'SA','name':'Sangha'}
   },
-  'CK':{
+  'Cook Islands':{
     '1' : {'code':'AI','name':'Aitutaki'},
     '2' : {'code':'AT','name':'Atiu'},
     '3' : {'code':'MA','name':'Manuae'},
@@ -9039,7 +9039,7 @@ var BFHStatesList = {
     '14' : {'code':'SU','name':'Surwarrow'},
     '15' : {'code':'TA','name':'Takutea'}
   },
-  'CR':{
+  'Costa Rica':{
     '1' : {'code':'AL','name':'Alajuela'},
     '2' : {'code':'CA','name':'Cartago'},
     '3' : {'code':'GU','name':'Guanacaste'},
@@ -9048,7 +9048,7 @@ var BFHStatesList = {
     '6' : {'code':'PU','name':'Puntarenas'},
     '7' : {'code':'SJ','name':'San Jose'}
   },
-  'CI':{
+  'Côte d\'Ivoire':{
     '1' : {'code':'ABE','name':'Abengourou'},
     '2' : {'code':'ABI','name':'Abidjan'},
     '3' : {'code':'ABO','name':'Aboisso'},
@@ -9108,7 +9108,7 @@ var BFHStatesList = {
     '57' : {'code':'YAM','name':'Yamoussoukro'},
     '58' : {'code':'ZUE','name':'Zuenoula'}
   },
-  'HR':{
+  'Croatia':{
     '1' : {'code':'BB','name':'Bjelovar-Bilogora'},
     '2' : {'code':'CZ','name':'City of Zagreb'},
     '3' : {'code':'DN','name':'Dubrovnik-Neretva'},
@@ -9131,7 +9131,7 @@ var BFHStatesList = {
     '20' : {'code':'ZK','name':'Zadar-Knin'},
     '21' : {'code':'ZA','name':'Zagreb'}
   },
-  'CU':{
+  'Cuba':{
     '1' : {'code':'CA','name':'Camaguey'},
     '2' : {'code':'CD','name':'Ciego de Avila'},
     '3' : {'code':'CI','name':'Cienfuegos'},
@@ -9148,7 +9148,7 @@ var BFHStatesList = {
     '14' : {'code':'SC','name':'Santiago de Cuba'},
     '15' : {'code':'VC','name':'Villa Clara'}
   },
-  'CY':{
+  'Cyprus':{
     '1' : {'code':'F','name':'Famagusta'},
     '2' : {'code':'K','name':'Kyrenia'},
     '3' : {'code':'A','name':'Larnaca'},
@@ -9156,7 +9156,7 @@ var BFHStatesList = {
     '5' : {'code':'N','name':'Nicosia'},
     '6' : {'code':'P','name':'Paphos'}
   },
-  'CZ':{
+  'Czech Republic':{
     '1' : {'code':'A','name':'Hlavní město Praha'},
     '2' : {'code':'B','name':'Jihomoravský'},
     '3' : {'code':'C','name':'Jihočeský'},
@@ -9172,7 +9172,7 @@ var BFHStatesList = {
     '13' : {'code':'U','name':'Ústecký'},
     '14' : {'code':'Z','name':'Zlínský'}
   },
-  'DK':{
+  'Denmark':{
     '1' : {'code':'AR','name':'Arhus'},
     '2' : {'code':'BH','name':'Bornholm'},
     '3' : {'code':'CO','name':'Copenhagen'},
@@ -9190,14 +9190,14 @@ var BFHStatesList = {
     '15' : {'code':'VJ','name':'Vestjælland'},
     '16' : {'code':'VB','name':'Viborg'}
   },
-  'DJ':{
+  'Djibouti':{
     '1' : {'code':'S','name':'\'Ali Sabih'},
     '2' : {'code':'K','name':'Dikhil'},
     '3' : {'code':'J','name':'Djibouti'},
     '4' : {'code':'O','name':'Obock'},
     '5' : {'code':'T','name':'Tadjoura'}
   },
-  'DM':{
+  'Dominica':{
     '1' : {'code':'AND','name':'Saint Andrew Parish'},
     '2' : {'code':'DAV','name':'Saint David Parish'},
     '3' : {'code':'GEO','name':'Saint George Parish'},
@@ -9209,7 +9209,7 @@ var BFHStatesList = {
     '9' : {'code':'PAU','name':'Saint Paul Parish'},
     '10' : {'code':'PET','name':'Saint Peter Parish'}
   },
-  'DO':{
+  'Dominican Republic':{
     '1' : {'code':'DN','name':'Distrito Nacional'},
     '2' : {'code':'AZ','name':'Azua'},
     '3' : {'code':'BC','name':'Baoruco'},
@@ -9243,7 +9243,7 @@ var BFHStatesList = {
     '31' : {'code':'SD','name':'Santo Domingo'},
     '32' : {'code':'VA','name':'Valverde'}
   },
-  'TP':{
+  'East Timor':{
     '1' : {'code':'AL','name':'Aileu'},
     '2' : {'code':'AN','name':'Ainaro'},
     '3' : {'code':'BA','name':'Baucau'},
@@ -9258,7 +9258,7 @@ var BFHStatesList = {
     '12' : {'code':'OE','name':'Oecussi'},
     '13' : {'code':'VI','name':'Viqueque'}
   },
-  'EC':{
+  'Ecuador':{
     '1' : {'code':'AZU','name':'Azuay'},
     '2' : {'code':'BOL','name':'Bolivar'},
     '3' : {'code':'CAN','name':'Cañar'},
@@ -9282,7 +9282,7 @@ var BFHStatesList = {
     '21' : {'code':'TUN','name':'Tungurahua'},
     '22' : {'code':'ZCH','name':'Zamora Chinchipe'}
   },
-  'EG':{
+  'Egypt':{
     '1' : {'code':'DHY','name':'Ad Daqahliyah'},
     '2' : {'code':'BAM','name':'Al Bahr al Ahmar'},
     '3' : {'code':'BHY','name':'Al Buhayrah'},
@@ -9310,7 +9310,7 @@ var BFHStatesList = {
     '25' : {'code':'SHS','name':'Shamal Sina\''},
     '26' : {'code':'SUH','name':'Suhaj'}
   },
-  'SV':{
+  'El Salvador':{
     '1' : {'code':'AH','name':'Ahuachapan'},
     '2' : {'code':'CA','name':'Cabanas'},
     '3' : {'code':'CH','name':'Chalatenango'},
@@ -9326,7 +9326,7 @@ var BFHStatesList = {
     '13' : {'code':'SO','name':'Sonsonate'},
     '14' : {'code':'US','name':'Usulutan'}
   },
-  'GQ':{
+  'Equatorial Guinea':{
     '1' : {'code':'AN','name':'Provincia Annobon'},
     '2' : {'code':'BN','name':'Provincia Bioko Norte'},
     '3' : {'code':'BS','name':'Provincia Bioko Sur'},
@@ -9335,7 +9335,7 @@ var BFHStatesList = {
     '6' : {'code':'LI','name':'Provincia Litoral'},
     '7' : {'code':'WN','name':'Provincia Wele-Nzas'}
   },
-  'ER':{
+  'Eritrea':{
     '1' : {'code':'MA','name':'Central (Maekel)'},
     '2' : {'code':'KE','name':'Anseba (Keren)'},
     '3' : {'code':'DK','name':'Southern Red Sea (Debub-Keih-Bah)'},
@@ -9343,7 +9343,7 @@ var BFHStatesList = {
     '5' : {'code':'DE','name':'Southern (Debub)'},
     '6' : {'code':'BR','name':'Gash-Barka (Barentu)'}
   },
-  'EE':{
+  'Estonia':{
     '1' : {'code':'HA','name':'Harjumaa (Tallinn)'},
     '2' : {'code':'HI','name':'Hiiumaa (Kardla)'},
     '3' : {'code':'IV','name':'Ida-Virumaa (Johvi)'},
@@ -9360,7 +9360,7 @@ var BFHStatesList = {
     '14' : {'code':'VI','name':'Viljandimaa (Viljandi)'},
     '15' : {'code':'VO','name':'Vorumaa (Voru)'}
   },
-  'ET':{
+  'Ethiopia':{
     '1' : {'code':'AF','name':'Afar'},
     '2' : {'code':'AH','name':'Amhara'},
     '3' : {'code':'BG','name':'Benishangul-Gumaz'},
@@ -9373,7 +9373,7 @@ var BFHStatesList = {
     '10' : {'code':'AA','name':'Addis Ababa'},
     '11' : {'code':'DD','name':'Dire Dawa'}
   },
-  'FO':{
+  'Faeroe Islands':{
     '1' : {'code':'TÛR','name':'Tûrshavnar Kommuna'},
     '2' : {'code':'KLA','name':'Klaksvík'},
     '3' : {'code':'RUN','name':'Runavík'},
@@ -9409,14 +9409,14 @@ var BFHStatesList = {
     '33' : {'code':'SVí','name':'Svínoy'},
     '34' : {'code':'FUG','name':'Fugloy'}
   },
-  'FJ':{
+  'Fiji':{
     '1' : {'code':'C','name':'Central Division'},
     '2' : {'code':'E','name':'Eastern Division'},
     '3' : {'code':'N','name':'Northern Division'},
     '4' : {'code':'R','name':'Rotuma'},
     '5' : {'code':'W','name':'Western Division'}
   },
-  'FI':{
+  'Finland':{
     '1' : {'code':'AL','name':'Ahvenanmaan Laani'},
     '2' : {'code':'ES','name':'Etela-Suomen Laani'},
     '3' : {'code':'IS','name':'Ita-Suomen Laani'},
@@ -9424,7 +9424,7 @@ var BFHStatesList = {
     '5' : {'code':'LA','name':'Lapin Lanani'},
     '6' : {'code':'OU','name':'Oulun Laani'}
   },
-  'FR':{
+  'France':{
     '1' : {'code':'AL','name':'Alsace'},
     '2' : {'code':'AQ','name':'Aquitaine'},
     '3' : {'code':'AU','name':'Auvergne'},
@@ -9448,7 +9448,7 @@ var BFHStatesList = {
     '21' : {'code':'RI','name':'Riviera'},
     '22' : {'code':'WE','name':'Western Loire Valley'}
   },
-  'FX':{
+  'France, Metropolitan':{
     '1' : {'code':'Et','name':'Etranger'},
     '2' : {'code':'01','name':'Ain'},
     '3' : {'code':'02','name':'Aisne'},
@@ -9547,7 +9547,7 @@ var BFHStatesList = {
     '96' : {'code':'94','name':'Val de Marne'},
     '97' : {'code':'95','name':'Val d\'oise'}
   },
-  'GF':{
+  'French Guiana':{
     '1' : {'code':'AWA','name':'Awala-Yalimapo'},
     '2' : {'code':'MAN','name':'Mana'},
     '3' : {'code':'SAI','name':'Saint-Laurent-Du-Maroni'},
@@ -9571,21 +9571,21 @@ var BFHStatesList = {
     '21' : {'code':'CAY','name':'Cayenne'},
     '22' : {'code':'REM','name':'Remire-Montjoly'}
   },
-  'PF':{
+  'French Polynesia':{
     '1' : {'code':'M','name':'Archipel des Marquises'},
     '2' : {'code':'T','name':'Archipel des Tuamotu'},
     '3' : {'code':'I','name':'Archipel des Tubuai'},
     '4' : {'code':'V','name':'Iles du Vent'},
     '5' : {'code':'S','name':'Iles Sous-le-Vent'}
   },
-  'TF':{
+  'French Southern Territories':{
     '1' : {'code':'C','name':'Iles Crozet'},
     '2' : {'code':'K','name':'Iles Kerguelen'},
     '3' : {'code':'A','name':'Ile Amsterdam'},
     '4' : {'code':'P','name':'Ile Saint-Paul'},
     '5' : {'code':'D','name':'Adelie Land'}
   },
-  'GA':{
+  'Gabon':{
     '1' : {'code':'ES','name':'Estuaire'},
     '2' : {'code':'HO','name':'Haut-Ogooue'},
     '3' : {'code':'MO','name':'Moyen-Ogooue'},
@@ -9596,7 +9596,7 @@ var BFHStatesList = {
     '8' : {'code':'OM','name':'Ogooue-Maritime'},
     '9' : {'code':'WN','name':'Woleu-Ntem'}
   },
-  'GM':{
+  'The Gambia':{
     '1' : {'code':'BJ','name':'Banjul'},
     '2' : {'code':'BS','name':'Basse'},
     '3' : {'code':'BR','name':'Brikama'},
@@ -9611,7 +9611,7 @@ var BFHStatesList = {
     '12' : {'code':'UR','name':'Upper River'},
     '13' : {'code':'WE','name':'Western'}
   },
-  'GE':{
+  'Georgia':{
     '1' : {'code':'AB','name':'Abkhazia'},
     '2' : {'code':'AJ','name':'Ajaria'},
     '3' : {'code':'GU','name':'Guria'},
@@ -9625,7 +9625,7 @@ var BFHStatesList = {
     '11' : {'code':'SZ','name':'Samegrelo-Zemo Svaneti'},
     '12' : {'code':'TB','name':'Tbilisi'}
   },
-  'DE':{
+  'Germany':{
     '1' : {'code':'BAW','name':'Baden-Württemberg'},
     '2' : {'code':'BAY','name':'Bayern'},
     '3' : {'code':'BER','name':'Berlin'},
@@ -9643,7 +9643,7 @@ var BFHStatesList = {
     '15' : {'code':'SCN','name':'Schleswig-Holstein'},
     '16' : {'code':'THE','name':'Thüringen'}
   },
-  'GH':{
+  'Ghana':{
     '1' : {'code':'AS','name':'Ashanti Region'},
     '2' : {'code':'BA','name':'Brong-Ahafo Region'},
     '3' : {'code':'CE','name':'Central Region'},
@@ -9655,7 +9655,7 @@ var BFHStatesList = {
     '9' : {'code':'VO','name':'Volta Region'},
     '10' : {'code':'WE','name':'Western Region'}
   },
-  'GI':{
+  'Gibraltar':{
     '1' : {'code':'EAS','name':'East Side'},
     '2' : {'code':'NOR','name':'North District'},
     '3' : {'code':'REC','name':'Reclamation Areas'},
@@ -9665,7 +9665,7 @@ var BFHStatesList = {
     '7' : {'code':'UPP','name':'Upper Town'},
     '8' : {'code':'OTH','name':'Other'}
   },
-  'GR':{
+  'Greece':{
     '1' : {'code':'AT','name':'Attica'},
     '2' : {'code':'CN','name':'Central Greece'},
     '3' : {'code':'CM','name':'Central Macedonia'},
@@ -9680,7 +9680,7 @@ var BFHStatesList = {
     '12' : {'code':'WG','name':'West Greece'},
     '13' : {'code':'WM','name':'West Macedonia'}
   },
-  'GL':{
+  'Greenland':{
     '1' : {'code':'A','name':'Avannaa'},
     '2' : {'code':'T','name':'Tunu'},
     '3' : {'code':'K','name':'Kitaa'}
@@ -9695,12 +9695,12 @@ var BFHStatesList = {
     '7' : {'code':'C','name':'Carriacou'},
     '8' : {'code':'Q','name':'Petit Martinique'}
   },
-  'GP':{
+  'Guadeloupe':{
     '1' : {'code':'ARR','name':'Arrondissements Of The Guadeloup'},
     '2' : {'code':'CAN','name':'Cantons Of The Guadeloup Depart'},
     '3' : {'code':'COM','name':'Communes Of The Guadeloup Depart'}
   },
-  'GU':{
+  'Guam':{
     '1' : {'code':'AGA','name':'Agana Heights'},
     '2' : {'code':'AGA','name':'Agat'},
     '3' : {'code':'ASA','name':'Asan Maina'},
@@ -9721,7 +9721,7 @@ var BFHStatesList = {
     '18' : {'code':'YIG','name':'Yigo'},
     '19' : {'code':'YON','name':'Yona'}
   },
-  'GT':{
+  'Guatemala':{
     '1' : {'code':'AV','name':'Alta Verapaz'},
     '2' : {'code':'BV','name':'Baja Verapaz'},
     '3' : {'code':'CM','name':'Chimaltenango'},
@@ -9745,7 +9745,7 @@ var BFHStatesList = {
     '21' : {'code':'TO','name':'Totonicapan'},
     '22' : {'code':'ZA','name':'Zacapa'}
   },
-  'GN':{
+  'Guinea':{
     '1' : {'code':'CNK','name':'Conakry'},
     '2' : {'code':'BYL','name':'Beyla'},
     '3' : {'code':'BFA','name':'Boffa'},
@@ -9781,7 +9781,7 @@ var BFHStatesList = {
     '33' : {'code':'TOG','name':'Tougue'},
     '34' : {'code':'YOM','name':'Yomou'}
   },
-  'GW':{
+  'Guinea-Bissau':{
     '1' : {'code':'BF','name':'Bafata Region'},
     '2' : {'code':'BB','name':'Biombo Region'},
     '3' : {'code':'BS','name':'Bissau Region'},
@@ -9792,7 +9792,7 @@ var BFHStatesList = {
     '8' : {'code':'QU','name':'Quinara Region'},
     '9' : {'code':'TO','name':'Tombali Region'}
   },
-  'GY':{
+  'Guyana':{
     '1' : {'code':'BW','name':'Barima-Waini'},
     '2' : {'code':'CM','name':'Cuyuni-Mazaruni'},
     '3' : {'code':'DM','name':'Demerara-Mahaica'},
@@ -9804,7 +9804,7 @@ var BFHStatesList = {
     '9' : {'code':'UD','name':'Upper Demerara-Berbice'},
     '10' : {'code':'UT','name':'Upper Takutu-Upper Essequibo'}
   },
-  'HT':{
+  'Haiti':{
     '1' : {'code':'AR','name':'Artibonite'},
     '2' : {'code':'CE','name':'Centre'},
     '3' : {'code':'GA','name':'Grand\'Anse'},
@@ -9815,13 +9815,13 @@ var BFHStatesList = {
     '8' : {'code':'SD','name':'Sud'},
     '9' : {'code':'SE','name':'Sud-Est'}
   },
-  'HM':{
+  'Heard and Mc Donald Islands':{
     '1' : {'code':'F','name':'Flat Island'},
     '2' : {'code':'M','name':'McDonald Island'},
     '3' : {'code':'S','name':'Shag Island'},
     '4' : {'code':'H','name':'Heard Island'}
   },
-  'HN':{
+  'Honduras':{
     '1' : {'code':'AT','name':'Atlantida'},
     '2' : {'code':'CH','name':'Choluteca'},
     '3' : {'code':'CL','name':'Colon'},
@@ -9841,7 +9841,7 @@ var BFHStatesList = {
     '17' : {'code':'VA','name':'Valle'},
     '18' : {'code':'YO','name':'Yoro'}
   },
-  'HK':{
+  'Hong Kong':{
     '1' : {'code':'HCW','name':'Central and Western Hong Kong Is'},
     '2' : {'code':'HEA','name':'Eastern Hong Kong Island'},
     '3' : {'code':'HSO','name':'Southern Hong Kong Island'},
@@ -9861,7 +9861,7 @@ var BFHStatesList = {
     '17' : {'code':'NTM','name':'Tuen Mun New Territories'},
     '18' : {'code':'NYL','name':'Yuen Long New Territories'}
   },
-  'HU':{
+  'Hungary':{
     '1' : {'code':'BK','name':'Bacs-Kiskun'},
     '2' : {'code':'BA','name':'Baranya'},
     '3' : {'code':'BE','name':'Bekes'},
@@ -9902,7 +9902,7 @@ var BFHStatesList = {
     '38' : {'code':'ZA','name':'Zala'},
     '39' : {'code':'ZZ','name':'Zalaegerszeg'}
   },
-  'IS':{
+  'Iceland':{
     '1' : {'code':'AL','name':'Austurland'},
     '2' : {'code':'HF','name':'Hofuoborgarsvaeoi'},
     '3' : {'code':'NE','name':'Norourland eystra'},
@@ -9912,7 +9912,7 @@ var BFHStatesList = {
     '7' : {'code':'VF','name':'Vestfiroir'},
     '8' : {'code':'VL','name':'Vesturland'}
   },
-  'IN':{
+  'India':{
     '1' : {'code':'AN','name':'Andaman and Nicobar Islands'},
     '2' : {'code':'AP','name':'Andhra Pradesh'},
     '3' : {'code':'AR','name':'Arunachal Pradesh'},
@@ -9946,7 +9946,7 @@ var BFHStatesList = {
     '31' : {'code':'UP','name':'Uttar Pradesh'},
     '32' : {'code':'WB','name':'West Bengal'}
   },
-  'ID':{
+  'Indonesia':{
     '1' : {'code':'DA','name':'Daista Aceh'},
     '2' : {'code':'SU','name':'Sumatera Utara'},
     '3' : {'code':'SB','name':'Sumatera Barat'},
@@ -9980,7 +9980,7 @@ var BFHStatesList = {
     '31' : {'code':'BB','name':'Bangka Belitung'},
     '32' : {'code':'GO','name':'Gorontalo'}
   },
-  'IR':{
+  'Iran':{
     '1' : {'code':'ARD','name':'Ardabil'},
     '2' : {'code':'BSH','name':'Bushehr'},
     '3' : {'code':'CMB','name':'Chahar Mahaal and Bakhtiari'},
@@ -10012,7 +10012,7 @@ var BFHStatesList = {
     '29' : {'code':'YZD','name':'Yazd'},
     '30' : {'code':'ZAN','name':'Zanjan'}
   },
-  'IQ':{
+  'Iraq':{
     '1' : {'code':'AB','name':'Al Anbar'},
     '2' : {'code':'AL','name':'Arbil'},
     '3' : {'code':'BA','name':'Al Basrah'},
@@ -10032,7 +10032,7 @@ var BFHStatesList = {
     '17' : {'code':'TM','name':'At Ta\'mim'},
     '18' : {'code':'WS','name':'Wasit'}
   },
-  'IE':{
+  'Ireland':{
     '1' : {'code':'CA','name':'Carlow'},
     '2' : {'code':'CV','name':'Cavan'},
     '3' : {'code':'CL','name':'Clare'},
@@ -10060,7 +10060,7 @@ var BFHStatesList = {
     '25' : {'code':'WX','name':'Wexford'},
     '26' : {'code':'WI','name':'Wicklow'}
   },
-  'IL':{
+  'Israel':{
     '1' : {'code':'BS','name':'Be\'er Sheva'},
     '2' : {'code':'BH','name':'Bika\'at Hayarden'},
     '3' : {'code':'EA','name':'Eilat and Arava'},
@@ -10073,7 +10073,7 @@ var BFHStatesList = {
     '11' : {'code':'SH','name':'Sharon'},
     '12' : {'code':'TA','name':'Tel Aviv (Gosh Dan)'}
   },
-  'IT':{
+  'Italy':{
     '1' : {'code':'AG','name':'Agrigento'},
     '2' : {'code':'AL','name':'Alessandria'},
     '3' : {'code':'AN','name':'Ancona'},
@@ -10185,7 +10185,7 @@ var BFHStatesList = {
     '109' : {'code':'FM','name':'Fermo'},
     '110' : {'code':'BT','name':'Barletta-Andria-Trani'}
   },
-  'JM':{
+  'Jamaica':{
     '1' : {'code':'CLA','name':'Clarendon Parish'},
     '2' : {'code':'HAN','name':'Hanover Parish'},
     '3' : {'code':'KIN','name':'Kingston Parish'},
@@ -10201,7 +10201,7 @@ var BFHStatesList = {
     '13' : {'code':'TRL','name':'Trelawny Parish'},
     '14' : {'code':'WML','name':'Westmoreland Parish'}
   },
-  'JP':{
+  'Japan':{
     '1' : {'code':'AI','name':'Aichi'},
     '2' : {'code':'AK','name':'Akita'},
     '3' : {'code':'AO','name':'Aomori'},
@@ -10250,7 +10250,7 @@ var BFHStatesList = {
     '46' : {'code':'YM','name':'Yamaguchi'},
     '47' : {'code':'YN','name':'Yamanashi'}
   },
-  'JO':{
+  'Jordan':{
     '1' : {'code':'AM','name':'\'Amman'},
     '2' : {'code':'AJ','name':'Ajlun'},
     '3' : {'code':'AA','name':'Al\'Aqabah'},
@@ -10264,7 +10264,7 @@ var BFHStatesList = {
     '11' : {'code':'MA','name':'Ma\'an'},
     '12' : {'code':'MD','name':'Madaba'}
   },
-  'KZ':{
+  'Kazakhstan':{
     '1' : {'code':'AL','name':'Almaty'},
     '2' : {'code':'AC','name':'Almaty City'},
     '3' : {'code':'AM','name':'Aqmola'},
@@ -10283,7 +10283,7 @@ var BFHStatesList = {
     '16' : {'code':'SO','name':'Soltustik Qazaqstan'},
     '17' : {'code':'ZH','name':'Zhambyl'}
   },
-  'KE':{
+  'Kenya':{
     '1' : {'code':'CE','name':'Central'},
     '2' : {'code':'CO','name':'Coast'},
     '3' : {'code':'EA','name':'Eastern'},
@@ -10293,7 +10293,7 @@ var BFHStatesList = {
     '7' : {'code':'RV','name':'Rift Valley'},
     '8' : {'code':'WE','name':'Western'}
   },
-  'KI':{
+  'Kiribati':{
     '1' : {'code':'AG','name':'Abaiang'},
     '2' : {'code':'AM','name':'Abemama'},
     '3' : {'code':'AK','name':'Aranuka'},
@@ -10316,7 +10316,7 @@ var BFHStatesList = {
     '20' : {'code':'TW','name':'Tarawa'},
     '21' : {'code':'TE','name':'Teraina'}
   },
-  'KP':{
+  'North Korea':{
     '1' : {'code':'CHA','name':'Chagang-do'},
     '2' : {'code':'HAB','name':'Hamgyong-bukto'},
     '3' : {'code':'HAN','name':'Hamgyong-namdo'},
@@ -10329,7 +10329,7 @@ var BFHStatesList = {
     '10' : {'code':'NAJ','name':'Rason Directly Governed City'},
     '11' : {'code':'PYO','name':'P\'yongyang Special City'}
   },
-  'KR':{
+  'South Korea':{
     '1' : {'code':'CO','name':'Ch\'ungch\'ong-bukto'},
     '2' : {'code':'CH','name':'Ch\'ungch\'ong-namdo'},
     '3' : {'code':'CD','name':'Cheju-do'},
@@ -10346,14 +10346,14 @@ var BFHStatesList = {
     '14' : {'code':'TA','name':'Taegu-gwangyoksi'},
     '15' : {'code':'TG','name':'Taejon-gwangyoksi'}
   },
-  'KW':{
+  'Kuwait':{
     '1' : {'code':'AL','name':'Al\'Asimah'},
     '2' : {'code':'AA','name':'Al Ahmadi'},
     '3' : {'code':'AF','name':'Al Farwaniyah'},
     '4' : {'code':'AJ','name':'Al Jahra\''},
     '5' : {'code':'HA','name':'Hawalli'}
   },
-  'KG':{
+  'Kyrgyzstan':{
     '1' : {'code':'GB','name':'Bishkek'},
     '2' : {'code':'B','name':'Batken'},
     '3' : {'code':'C','name':'Chu'},
@@ -10363,7 +10363,7 @@ var BFHStatesList = {
     '7' : {'code':'T','name':'Talas'},
     '8' : {'code':'Y','name':'Ysyk-Kol'}
   },
-  'LA':{
+  'Laos':{
     '1' : {'code':'VT','name':'Vientiane'},
     '2' : {'code':'AT','name':'Attapu'},
     '3' : {'code':'BK','name':'Bokeo'},
@@ -10383,7 +10383,7 @@ var BFHStatesList = {
     '17' : {'code':'XI','name':'Xiangkhoang'},
     '18' : {'code':'XN','name':'Xaisomboun'}
   },
-  'LV':{
+  'Latvia':{
     '1' : {'code':'AIZ','name':'Aizkraukles Rajons'},
     '2' : {'code':'ALU','name':'Aluksnes Rajons'},
     '3' : {'code':'BAL','name':'Balvu Rajons'},
@@ -10418,7 +10418,7 @@ var BFHStatesList = {
     '32' : {'code':'RGA','name':'Riga'},
     '33' : {'code':'VSL','name':'Ventspils'}
   },
-  'LB':{
+  'Lebanon':{
     '1' : {'code':'BIN','name':'Bint Jbeil'},
     '2' : {'code':'HAS','name':'Hasbaya'},
     '3' : {'code':'MAR','name':'Marjeyoun'},
@@ -10445,7 +10445,7 @@ var BFHStatesList = {
     '24' : {'code':'SID','name':'Sidon'},
     '25' : {'code':'TYR','name':'Tyre'}
   },
-  'LS':{
+  'Lesotho':{
     '1' : {'code':'BE','name':'Berea'},
     '2' : {'code':'BB','name':'Butha-Buthe'},
     '3' : {'code':'LE','name':'Leribe'},
@@ -10457,7 +10457,7 @@ var BFHStatesList = {
     '9' : {'code':'QT','name':'Quthing'},
     '10' : {'code':'TT','name':'Thaba-Tseka'}
   },
-  'LR':{
+  'Liberia':{
     '1' : {'code':'BI','name':'Bomi'},
     '2' : {'code':'BG','name':'Bong'},
     '3' : {'code':'GB','name':'Grand Bassa'},
@@ -10472,7 +10472,7 @@ var BFHStatesList = {
     '12' : {'code':'RC','name':'River Cess'},
     '13' : {'code':'SN','name':'Sinoe'}
   },
-  'LY':{
+  'Libya':{
     '1' : {'code':'AJ','name':'Ajdabiya'},
     '2' : {'code':'AZ','name':'Al \'Aziziyah'},
     '3' : {'code':'FA','name':'Al Fatih'},
@@ -10499,7 +10499,7 @@ var BFHStatesList = {
     '24' : {'code':'YA','name':'Yafran'},
     '25' : {'code':'ZL','name':'Zlitan'}
   },
-  'LI':{
+  'Liechtenstein':{
     '1' : {'code':'V','name':'Vaduz'},
     '2' : {'code':'A','name':'Schaan'},
     '3' : {'code':'B','name':'Balzers'},
@@ -10512,7 +10512,7 @@ var BFHStatesList = {
     '10' : {'code':'L','name':'Schellenberg'},
     '11' : {'code':'P','name':'Planken'}
   },
-  'LT':{
+  'Lithuania':{
     '1' : {'code':'AL','name':'Alytus'},
     '2' : {'code':'KA','name':'Kaunas'},
     '3' : {'code':'KL','name':'Klaipeda'},
@@ -10524,7 +10524,7 @@ var BFHStatesList = {
     '9' : {'code':'UT','name':'Utena'},
     '10' : {'code':'VI','name':'Vilnius'}
   },
-  'LU':{
+  'Luxembourg':{
     '1' : {'code':'DD','name':'Diekirch'},
     '2' : {'code':'DC','name':'Clervaux'},
     '3' : {'code':'DR','name':'Redange'},
@@ -10538,14 +10538,14 @@ var BFHStatesList = {
     '11' : {'code':'LE','name':'Esch-sur-Alzette'},
     '12' : {'code':'LM','name':'Mersch'}
   },
-  'MO':{
+  'Macau':{
     '1' : {'code':'OLF','name':'Our Lady Fatima Parish'},
     '2' : {'code':'ANT','name':'St. Anthony Parish'},
     '3' : {'code':'LAZ','name':'St. Lazarus Parish'},
     '4' : {'code':'CAT','name':'Cathedral Parish'},
     '5' : {'code':'LAW','name':'St. Lawrence Parish'}
   },
-  'MK':{
+  'Former Yugoslav Republic of Macedonia':{
     '1' : {'code':'AER','name':'Aerodrom'},
     '2' : {'code':'ARA','name':'Aračinovo'},
     '3' : {'code':'BER','name':'Berovo'},
@@ -10631,7 +10631,7 @@ var BFHStatesList = {
     '83' : {'code':'ŽEL','name':'Želino'},
     '84' : {'code':'ZRN','name':'Zrnovci'}
   },
-  'MG':{
+  'Madagascar':{
     '1' : {'code':'AN','name':'Antananarivo'},
     '2' : {'code':'AS','name':'Antsiranana'},
     '3' : {'code':'FN','name':'Fianarantsoa'},
@@ -10639,7 +10639,7 @@ var BFHStatesList = {
     '5' : {'code':'TM','name':'Toamasina'},
     '6' : {'code':'TL','name':'Toliara'}
   },
-  'MW':{
+  'Malawi':{
     '1' : {'code':'BLK','name':'Balaka'},
     '2' : {'code':'BLT','name':'Blantyre'},
     '3' : {'code':'CKW','name':'Chikwawa'},
@@ -10668,7 +10668,7 @@ var BFHStatesList = {
     '26' : {'code':'THY','name':'Thyolo'},
     '27' : {'code':'ZBA','name':'Zomba'}
   },
-  'MY':{
+  'Malaysia':{
     '1' : {'code':'Johor','name':'Johor'},
     '2' : {'code':'Kedah','name':'Kedah'},
     '3' : {'code':'Kelantan','name':'Kelantan'},
@@ -10685,7 +10685,7 @@ var BFHStatesList = {
     '14' : {'code':'Terengganu','name':'Terengganu'},
     '15' : {'code':'Kuala Lumpur','name':'Kuala Lumpur'}
   },
-  'MV':{
+  'Maldives':{
     '1' : {'code':'AAD','name':'Ari Atoll Dheknu'},
     '2' : {'code':'AAU','name':'Ari Atoll Uthuru'},
     '3' : {'code':'ADD','name':'Addu'},
@@ -10707,7 +10707,7 @@ var BFHStatesList = {
     '19' : {'code':'THD','name':'Thiladhunmathi Dhekunu'},
     '20' : {'code':'THU','name':'Thiladhunmathi Uthuru'}
   },
-  'ML':{
+  'Mali':{
     '1' : {'code':'GA','name':'Gao'},
     '2' : {'code':'KY','name':'Kayes'},
     '3' : {'code':'KD','name':'Kidal'},
@@ -10718,7 +10718,7 @@ var BFHStatesList = {
     '8' : {'code':'TB','name':'Tombouctou'},
     '9' : {'code':'CD','name':'Bamako Capital District'}
   },
-  'MT':{
+  'Malta':{
     '1' : {'code':'ATT','name':'Attard'},
     '2' : {'code':'BAL','name':'Balzan'},
     '3' : {'code':'BGU','name':'Birgu'},
@@ -10788,7 +10788,7 @@ var BFHStatesList = {
     '67' : {'code':'XEW','name':'Xewkija'},
     '68' : {'code':'ZEB','name':'Zebbug'}
   },
-  'MH':{
+  'Marshall Islands':{
     '1' : {'code':'ALG','name':'Ailinginae'},
     '2' : {'code':'ALL','name':'Ailinglaplap'},
     '3' : {'code':'ALK','name':'Ailuk'},
@@ -10823,7 +10823,7 @@ var BFHStatesList = {
     '32' : {'code':'WTH','name':'Wotho'},
     '33' : {'code':'WTJ','name':'Wotje'}
   },
-  'MQ':{
+  'Martinique':{
     '1' : {'code':'LAJ','name':'L\'Ajoupa-Bouillon'},
     '2' : {'code':'LES','name':'Les Anses-d\'Arlet'},
     '3' : {'code':'BAS','name':'Basse-Pointe'},
@@ -10859,7 +10859,7 @@ var BFHStatesList = {
     '33' : {'code':'LES','name':'Les Trois-Îlets'},
     '34' : {'code':'LE','name':'Le Vauclin'}
   },
-  'MR':{
+  'Mauritania':{
     '1' : {'code':'AD','name':'Adrar'},
     '2' : {'code':'AS','name':'Assaba'},
     '3' : {'code':'BR','name':'Brakna'},
@@ -10874,7 +10874,7 @@ var BFHStatesList = {
     '12' : {'code':'TR','name':'Trarza'},
     '13' : {'code':'NO','name':'Nouakchott'}
   },
-  'MU':{
+  'Mauritius':{
     '1' : {'code':'AG','name':'Agalega Islands'},
     '2' : {'code':'BL','name':'Black River'},
     '3' : {'code':'BR','name':'Beau Bassin-Rose Hill'},
@@ -10893,7 +10893,7 @@ var BFHStatesList = {
     '16' : {'code':'SA','name':'Savanne'},
     '17' : {'code':'VP','name':'Vacoas-Phoenix'}
   },
-  'YT':{
+  'Mayotte':{
     '1' : {'code':'DZA','name':'Dzaoudzi'},
     '2' : {'code':'PAM','name':'Pamandzi'},
     '3' : {'code':'MAM','name':'Mamoudzou'},
@@ -10912,7 +10912,7 @@ var BFHStatesList = {
     '16' : {'code':'BAN','name':'Bandraboua'},
     '17' : {'code':'KOU','name':'Koungou'}
   },
-  'MX':{
+  'Mexico':{
     '1' : {'code':'AGU','name':'Aguascalientes'},
     '2' : {'code':'BCN','name':'Baja California Norte'},
     '3' : {'code':'BCS','name':'Baja California Sur'},
@@ -10946,13 +10946,13 @@ var BFHStatesList = {
     '31' : {'code':'YUC','name':'Yucatan'},
     '32' : {'code':'ZAC','name':'Zacatecas'}
   },
-  'FM':{
+  'Micronesia':{
     '1' : {'code':'C','name':'Chuuk'},
     '2' : {'code':'K','name':'Kosrae'},
     '3' : {'code':'P','name':'Pohnpei'},
     '4' : {'code':'Y','name':'Yap'}
   },
-  'MD':{
+  'Moldova':{
     '1' : {'code':'GA','name':'Gagauzia'},
     '2' : {'code':'CU','name':'Chisinau'},
     '3' : {'code':'BA','name':'Balti'},
@@ -10965,13 +10965,13 @@ var BFHStatesList = {
     '10' : {'code':'UN','name':'Ungheni'},
     '11' : {'code':'SN','name':'Stânga Nistrului'}
   },
-  'MC':{
+  'Monaco':{
     '1' : {'code':'FV','name':'Fontvieille'},
     '2' : {'code':'LC','name':'La Condamine'},
     '3' : {'code':'MV','name':'Monaco-Ville'},
     '4' : {'code':'MC','name':'Monte-Carlo'}
   },
-  'MN':{
+  'Mongolia':{
     '1' : {'code':'1','name':'Ulanbaatar'},
     '2' : {'code':'035','name':'Orhon'},
     '3' : {'code':'037','name':'Darhan uul'},
@@ -10995,12 +10995,12 @@ var BFHStatesList = {
     '21' : {'code':'071','name':'Bayan-Olgiy'},
     '22' : {'code':'073','name':'Arhangay'}
   },
-  'MS':{
+  'Montserrat':{
     '1' : {'code':'A','name':'Saint Anthony'},
     '2' : {'code':'G','name':'Saint Georges'},
     '3' : {'code':'P','name':'Saint Peter'}
   },
-  'MA':{
+  'Morocco':{
     '1' : {'code':'AGD','name':'Agadir'},
     '2' : {'code':'HOC','name':'Al Hoceima'},
     '3' : {'code':'AZI','name':'Azilal'},
@@ -11044,7 +11044,7 @@ var BFHStatesList = {
     '41' : {'code':'BJD','name':'Boujdour'},
     '42' : {'code':'ESM','name':'Es Smara'}
   },
-  'MZ':{
+  'Mozambique':{
     '1' : {'code':'CD','name':'Cabo Delgado'},
     '2' : {'code':'GZ','name':'Gaza'},
     '3' : {'code':'IN','name':'Inhambane'},
@@ -11057,7 +11057,7 @@ var BFHStatesList = {
     '10' : {'code':'TE','name':'Tete'},
     '11' : {'code':'ZA','name':'Zambezia'}
   },
-  'MM':{
+  'Myanmar':{
     '1' : {'code':'AY','name':'Ayeyarwady'},
     '2' : {'code':'BG','name':'Bago'},
     '3' : {'code':'MG','name':'Magway'},
@@ -11073,7 +11073,7 @@ var BFHStatesList = {
     '13' : {'code':'RK','name':'Rakhine State'},
     '14' : {'code':'SH','name':'Shan State'}
   },
-  'NA':{
+  'Namibia':{
     '1' : {'code':'CA','name':'Caprivi'},
     '2' : {'code':'ER','name':'Erongo'},
     '3' : {'code':'HA','name':'Hardap'},
@@ -11088,7 +11088,7 @@ var BFHStatesList = {
     '12' : {'code':'OO','name':'Oshikoto'},
     '13' : {'code':'OJ','name':'Otjozondjupa'}
   },
-  'NR':{
+  'Nauru':{
     '1' : {'code':'AO','name':'Aiwo'},
     '2' : {'code':'AA','name':'Anabar'},
     '3' : {'code':'AT','name':'Anetan'},
@@ -11104,7 +11104,7 @@ var BFHStatesList = {
     '13' : {'code':'UA','name':'Uaboe'},
     '14' : {'code':'YA','name':'Yaren'}
   },
-  'NP':{
+  'Nepal':{
     '1' : {'code':'BA','name':'Bagmati'},
     '2' : {'code':'BH','name':'Bheri'},
     '3' : {'code':'DH','name':'Dhawalagiri'},
@@ -11120,7 +11120,7 @@ var BFHStatesList = {
     '13' : {'code':'SA','name':'Sagarmatha'},
     '14' : {'code':'SE','name':'Seti'}
   },
-  'NL':{
+  'Netherlands':{
     '1' : {'code':'DR','name':'Drenthe'},
     '2' : {'code':'FL','name':'Flevoland'},
     '3' : {'code':'FR','name':'Friesland'},
@@ -11134,19 +11134,19 @@ var BFHStatesList = {
     '11' : {'code':'ZE','name':'Zeeland'},
     '12' : {'code':'ZH','name':'Zuid Holland'}
   },
-  'AN':{
+  'Netherlands Antilles':{
     '1' : {'code':'BON','name':'Bonaire'},
     '2' : {'code':'CUR','name':'Curaçao'},
     '3' : {'code':'SAB','name':'Saba'},
     '4' : {'code':'SEU','name':'Sint Eustatius'},
     '5' : {'code':'SMA','name':'Sint Maarten'}
   },
-  'NC':{
+  'New Caledonia':{
     '1' : {'code':'L','name':'Iles Loyaute'},
     '2' : {'code':'N','name':'Nord'},
     '3' : {'code':'S','name':'Sud'}
   },
-  'NZ':{
+  'New Zealand':{
     '1' : {'code':'AUK','name':'Auckland'},
     '2' : {'code':'BOP','name':'Bay of Plenty'},
     '3' : {'code':'CAN','name':'Canterbury'},
@@ -11167,7 +11167,7 @@ var BFHStatesList = {
     '18' : {'code':'WAI','name':'Wairprarapa'},
     '19' : {'code':'WTC','name':'West Coast'}
   },
-  'NI':{
+  'Nicaragua':{
     '1' : {'code':'AN','name':'Atlantico Norte'},
     '2' : {'code':'AS','name':'Atlantico Sur'},
     '3' : {'code':'BO','name':'Boaco'},
@@ -11186,7 +11186,7 @@ var BFHStatesList = {
     '16' : {'code':'RS','name':'Rio San Juan'},
     '17' : {'code':'RI','name':'Rivas'}
   },
-  'NE':{
+  'Niger':{
     '1' : {'code':'AG','name':'Agadez'},
     '2' : {'code':'DF','name':'Diffa'},
     '3' : {'code':'DS','name':'Dosso'},
@@ -11196,7 +11196,7 @@ var BFHStatesList = {
     '7' : {'code':'TL','name':'Tillaberi'},
     '8' : {'code':'ZD','name':'Zinder'}
   },
-  'NG':{
+  'Nigeria':{
     '1' : {'code':'AB','name':'Abia'},
     '2' : {'code':'CT','name':'Abuja Federal Capital Territory'},
     '3' : {'code':'AD','name':'Adamawa'},
@@ -11235,7 +11235,7 @@ var BFHStatesList = {
     '36' : {'code':'YO','name':'Yobe'},
     '37' : {'code':'ZA','name':'Zamfara'}
   },
-  'NU':{
+  'Niue':{
     '1' : {'code':'MAK','name':'Makefu'},
     '2' : {'code':'TUA','name':'Tuapa'},
     '3' : {'code':'NAM','name':'Namukulu'},
@@ -11251,16 +11251,16 @@ var BFHStatesList = {
     '13' : {'code':'ALO','name':'Alofi South'},
     '14' : {'code':'ALO','name':'Alofi North'}
   },
-  'NF':{
+  'Norfolk Island':{
     '1' : {'code':'NOR','name':'Norfolk Island'}
   },
-  'MP':{
+  'Northern Marianas':{
     '1' : {'code':'N','name':'Northern Islands'},
     '2' : {'code':'R','name':'Rota'},
     '3' : {'code':'S','name':'Saipan'},
     '4' : {'code':'T','name':'Tinian'}
   },
-  'NO':{
+  'Norway':{
     '1' : {'code':'AK','name':'Akershus'},
     '2' : {'code':'AA','name':'Aust-Agder'},
     '3' : {'code':'BU','name':'Buskerud'},
@@ -11282,7 +11282,7 @@ var BFHStatesList = {
     '19' : {'code':'VF','name':'Vestfold'},
     '20' : {'code':'OF','name':'Østfold'}
   },
-  'OM':{
+  'Oman':{
     '1' : {'code':'DA','name':'Ad Dakhiliyah'},
     '2' : {'code':'BA','name':'Al Batinah'},
     '3' : {'code':'WU','name':'Al Wusta'},
@@ -11292,7 +11292,7 @@ var BFHStatesList = {
     '7' : {'code':'MU','name':'Musandam'},
     '8' : {'code':'ZU','name':'Zufar'}
   },
-  'PK':{
+  'Pakistan':{
     '1' : {'code':'B','name':'Balochistan'},
     '2' : {'code':'T','name':'Federally Administered Tribal Ar'},
     '3' : {'code':'I','name':'Islamabad Capital Territory'},
@@ -11300,7 +11300,7 @@ var BFHStatesList = {
     '5' : {'code':'P','name':'Punjab'},
     '6' : {'code':'S','name':'Sindh'}
   },
-  'PW':{
+  'Palau':{
     '1' : {'code':'AM','name':'Aimeliik'},
     '2' : {'code':'AR','name':'Airai'},
     '3' : {'code':'AN','name':'Angaur'},
@@ -11318,7 +11318,7 @@ var BFHStatesList = {
     '15' : {'code':'PE','name':'Peleliu'},
     '16' : {'code':'SO','name':'Sonsorol'}
   },
-  'PA':{
+  'Panama':{
     '1' : {'code':'BT','name':'Bocas del Toro'},
     '2' : {'code':'CH','name':'Chiriqui'},
     '3' : {'code':'CC','name':'Cocle'},
@@ -11330,7 +11330,7 @@ var BFHStatesList = {
     '9' : {'code':'SB','name':'San Blas'},
     '10' : {'code':'VG','name':'Veraguas'}
   },
-  'PG':{
+  'Papua New Guinea':{
     '1' : {'code':'BV','name':'Bougainville'},
     '2' : {'code':'CE','name':'Central'},
     '3' : {'code':'CH','name':'Chimbu'},
@@ -11352,7 +11352,7 @@ var BFHStatesList = {
     '19' : {'code':'WH','name':'Western Highlands'},
     '20' : {'code':'WB','name':'West New Britain'}
   },
-  'PY':{
+  'Paraguay':{
     '1' : {'code':'AG','name':'Alto Paraguay'},
     '2' : {'code':'AN','name':'Alto Parana'},
     '3' : {'code':'AM','name':'Amambay'},
@@ -11372,7 +11372,7 @@ var BFHStatesList = {
     '17' : {'code':'PH','name':'Presidente Hayes'},
     '18' : {'code':'SP','name':'San Pedro'}
   },
-  'PE':{
+  'Peru':{
     '1' : {'code':'AM','name':'Amazonas'},
     '2' : {'code':'AN','name':'Ancash'},
     '3' : {'code':'AP','name':'Apurimac'},
@@ -11399,7 +11399,7 @@ var BFHStatesList = {
     '24' : {'code':'TU','name':'Tumbes'},
     '25' : {'code':'UC','name':'Ucayali'}
   },
-  'PH':{
+  'Philippines':{
     '1' : {'code':'ABR','name':'Abra'},
     '2' : {'code':'ANO','name':'Agusan del Norte'},
     '3' : {'code':'ASU','name':'Agusan del Sur'},
@@ -11480,10 +11480,10 @@ var BFHStatesList = {
     '78' : {'code':'ZSU','name':'Zamboanga del Sur'},
     '79' : {'code':'ZSI','name':'Zamboanga Sibugay'}
   },
-  'PN':{
+  'Pitcairn Islands':{
     '1' : {'code':'PIT','name':'Pitcairn Island'}
   },
-  'PL':{
+  'Poland':{
     '1': {'code':'DO','name':'Dolnośląskie'},
     '2' : {'code':'KP','name':'Kujawsko-Pomorskie'},
     '3': {'code':'LL','name':'Lubelskie'},
@@ -11501,7 +11501,7 @@ var BFHStatesList = {
     '15' : {'code':'WP','name':'Wielkopolskie'},
     '16' : {'code':'ZA','name':'Zachodniopomorskie'}
   },
-  'PT':{
+  'Portugal':{
     '1' : {'code':'AC','name':'Açores'},
     '2' : {'code':'AV','name':'Aveiro'},
     '3' : {'code':'BE','name':'Beja'},
@@ -11523,7 +11523,7 @@ var BFHStatesList = {
     '20' : {'code':'VR','name':'Vila Real'},
     '21' : {'code':'VI','name':'Viseu'}
   },
-  'PR':{
+  'Puerto Rico':{
     '1' : {'code':'A-A','name':'Añasco'},
     '2' : {'code':'ADJ','name':'Adjuntas'},
     '3' : {'code':'AGU','name':'Aguada'},
@@ -11603,7 +11603,7 @@ var BFHStatesList = {
     '77' : {'code':'YAB','name':'Yabucoa'},
     '78' : {'code':'YAU','name':'Yauco'}
   },
-  'QA':{
+  'Qatar':{
     '1' : {'code':'DW','name':'Ad Dawhah'},
     '2' : {'code':'GW','name':'Al Ghuwayriyah'},
     '3' : {'code':'JM','name':'Al Jumayliyah'},
@@ -11615,7 +11615,7 @@ var BFHStatesList = {
     '9' : {'code':'UD','name':'Umm Sa\'id'},
     '10' : {'code':'UL','name':'Umm Salal'}
   },
-  'RO':{
+  'Romania':{
     '1' : {'code':'AB','name':'Alba'},
     '2' : {'code':'AR','name':'Arad'},
     '3' : {'code':'AG','name':'Arges'},
@@ -11659,7 +11659,7 @@ var BFHStatesList = {
     '41' : {'code':'VL','name':'Valcea'},
     '42' : {'code':'VN','name':'Vrancea'}
   },
-  'RU':{
+  'Russia':{
     '1' : {'code':'AB','name':'Abakan'},
     '2' : {'code':'AG','name':'Aginskoye'},
     '3' : {'code':'AN','name':'Anadyr'},
@@ -11749,7 +11749,7 @@ var BFHStatesList = {
     '87' : {'code':'YE','name':'Yekaterinburg'},
     '88' : {'code':'YO','name':'Yoshkar-Ola'}
   },
-  'RW':{
+  'Rwanda':{
     '1' : {'code':'BU','name':'Butare'},
     '2' : {'code':'BY','name':'Byumba'},
     '3' : {'code':'CY','name':'Cyangugu'},
@@ -11763,7 +11763,7 @@ var BFHStatesList = {
     '11' : {'code':'RU','name':'Ruhengeri'},
     '12' : {'code':'UM','name':'Umutara'}
   },
-  'KN':{
+  'Saint Kitts and Nevis':{
     '1' : {'code':'CCN','name':'Christ Church Nichola Town'},
     '2' : {'code':'SAS','name':'Saint Anne Sandy Point'},
     '3' : {'code':'SGB','name':'Saint George Basseterre'},
@@ -11779,7 +11779,7 @@ var BFHStatesList = {
     '13' : {'code':'STM','name':'Saint Thomas Middle Island'},
     '14' : {'code':'TPP','name':'Trinity Palmetto Point'}
   },
-  'LC':{
+  'Saint Lucia':{
     '1' : {'code':'AR','name':'Anse-la-Raye'},
     '2' : {'code':'CA','name':'Castries'},
     '3' : {'code':'CH','name':'Choiseul'},
@@ -11792,7 +11792,7 @@ var BFHStatesList = {
     '10' : {'code':'SO','name':'Soufriere'},
     '11' : {'code':'VF','name':'Vieux-Fort'}
   },
-  'VC':{
+  'Saint Vincent and the Grenadines':{
     '1' : {'code':'C','name':'Charlotte'},
     '2' : {'code':'R','name':'Grenadines'},
     '3' : {'code':'A','name':'Saint Andrew'},
@@ -11800,7 +11800,7 @@ var BFHStatesList = {
     '5' : {'code':'G','name':'Saint George'},
     '6' : {'code':'P','name':'Saint Patrick'}
   },
-  'WS':{
+  'Samoa':{
     '1' : {'code':'AN','name':'A\'ana'},
     '2' : {'code':'AI','name':'Aiga-i-le-Tai'},
     '3' : {'code':'AT','name':'Atua'},
@@ -11813,7 +11813,7 @@ var BFHStatesList = {
     '10' : {'code':'VF','name':'Va\'a-o-Fonoti'},
     '11' : {'code':'VS','name':'Vaisigano'}
   },
-  'SM':{
+  'San Marino':{
     '1' : {'code':'AC','name':'Acquaviva'},
     '2' : {'code':'BM','name':'Borgo Maggiore'},
     '3' : {'code':'CH','name':'Chiesanuova'},
@@ -11824,11 +11824,11 @@ var BFHStatesList = {
     '8' : {'code':'SM','name':'Citta di San Marino'},
     '9' : {'code':'SE','name':'Serravalle'}
   },
-  'ST':{
+  'São Tomé and Príncipe':{
     '1' : {'code':'S','name':'Sao Tome'},
     '2' : {'code':'P','name':'Principe'}
   },
-  'SA':{
+  'Saudi Arabia':{
     '1' : {'code':'BH','name':'Al Bahah'},
     '2' : {'code':'HS','name':'Al Hudud ash Shamaliyah'},
     '3' : {'code':'JF','name':'Al Jawf'},
@@ -11843,7 +11843,7 @@ var BFHStatesList = {
     '12' : {'code':'NR','name':'Najran'},
     '13' : {'code':'TB','name':'Tabuk'}
   },
-  'SN':{
+  'Senegal':{
     '1' : {'code':'DA','name':'Dakar'},
     '2' : {'code':'DI','name':'Diourbel'},
     '3' : {'code':'FA','name':'Fatick'},
@@ -11856,7 +11856,7 @@ var BFHStatesList = {
     '10' : {'code':'TH','name':'Thies'},
     '11' : {'code':'ZI','name':'Ziguinchor'}
   },
-  'SC':{
+  'Seychelles':{
     '1' : {'code':'AP','name':'Anse aux Pins'},
     '2' : {'code':'AB','name':'Anse Boileau'},
     '3' : {'code':'AE','name':'Anse Etoile'},
@@ -11881,13 +11881,13 @@ var BFHStatesList = {
     '22' : {'code':'SL','name':'Saint Louis'},
     '23' : {'code':'TA','name':'Takamaka'}
   },
-  'SL':{
+  'Sierra Leone':{
     '1' : {'code':'E','name':'Eastern'},
     '2' : {'code':'N','name':'Northern'},
     '3' : {'code':'S','name':'Southern'},
     '4' : {'code':'W','name':'Western'}
   },
-  'SK':{
+  'Slovakia':{
     '1' : {'code':'BA','name':'Banskobystricky'},
     '2' : {'code':'BR','name':'Bratislavsky'},
     '3' : {'code':'KO','name':'Kosicky'},
@@ -11897,7 +11897,7 @@ var BFHStatesList = {
     '7' : {'code':'TV','name':'Trnavsky'},
     '8' : {'code':'ZI','name':'Zilinsky'}
   },
-  'SI':{
+  'Slovenia':{
     '1' : {'code':'4','name':'Štajerska'},
     '2' : {'code':'2A','name':'Gorenjska'},
     '3' : {'code':'5','name':'Prekmurje'},
@@ -11907,7 +11907,7 @@ var BFHStatesList = {
     '7' : {'code':'2C','name':'Dolenjska'},
     '8' : {'code':'2C','name':'Bela Krajina'}
   },
-  'SB':{
+  'Solomon Islands':{
     '1' : {'code':'CE','name':'Central'},
     '2' : {'code':'CH','name':'Choiseul'},
     '3' : {'code':'GC','name':'Guadalcanal'},
@@ -11919,7 +11919,7 @@ var BFHStatesList = {
     '9' : {'code':'TM','name':'Temotu'},
     '10' : {'code':'WE','name':'Western'}
   },
-  'SO':{
+  'Somalia':{
     '1' : {'code':'AW','name':'Awdal'},
     '2' : {'code':'BK','name':'Bakool'},
     '3' : {'code':'BN','name':'Banaadir'},
@@ -11939,7 +11939,7 @@ var BFHStatesList = {
     '17' : {'code':'TO','name':'Togdheer'},
     '18' : {'code':'WG','name':'Woqooyi Galbeed'}
   },
-  'ZA':{
+  'South Africa':{
     '1' : {'code':'EC','name':'Eastern Cape'},
     '2' : {'code':'FS','name':'Free State'},
     '3' : {'code':'GT','name':'Gauteng'},
@@ -11950,7 +11950,7 @@ var BFHStatesList = {
     '8' : {'code':'NC','name':'Northern Cape'},
     '9' : {'code':'WC','name':'Western Cape'}
   },
-  'ES':{
+  'Spain':{
     '1' : {'code':'CA','name':'La Coruña'},
     '2' : {'code':'AL','name':'Álava'},
     '3' : {'code':'AB','name':'Albacete'},
@@ -12004,7 +12004,7 @@ var BFHStatesList = {
     '51' : {'code':'ZM','name':'Zamora'},
     '52' : {'code':'ZR','name':'Zaragoza'}
   },
-  'LK':{
+  'Sri Lanka':{
     '1' : {'code':'CE','name':'Central'},
     '2' : {'code':'EA','name':'Eastern'},
     '3' : {'code':'NC','name':'North Central'},
@@ -12015,16 +12015,16 @@ var BFHStatesList = {
     '8' : {'code':'UV','name':'Uva'},
     '9' : {'code':'WE','name':'Western'}
   },
-  'SH':{
+  'Saint Helena':{
     '1' : {'code':'A','name':'Ascension'},
     '2' : {'code':'S','name':'Saint Helena'},
     '3' : {'code':'T','name':'Tristan da Cunha'}
   },
-  'PM':{
+  'St. Pierre and Miquelon':{
     '1' : {'code':'P','name':'Saint Pierre'},
     '2' : {'code':'M','name':'Miquelon'}
   },
-  'SD':{
+  'Sudan':{
     '1' : {'code':'ANL','name':'A\'ali an Nil'},
     '2' : {'code':'BAM','name':'Al Bahr al Ahmar'},
     '3' : {'code':'BRT','name':'Al Buhayrat'},
@@ -12052,7 +12052,7 @@ var BFHStatesList = {
     '25' : {'code':'SNR','name':'Sinnar'},
     '26' : {'code':'WRB','name':'Warab'}
   },
-  'SR':{
+  'Suriname':{
     '1' : {'code':'BR','name':'Brokopondo'},
     '2' : {'code':'CM','name':'Commewijne'},
     '3' : {'code':'CR','name':'Coronie'},
@@ -12064,13 +12064,13 @@ var BFHStatesList = {
     '10' : {'code':'SI','name':'Sipaliwini'},
     '11' : {'code':'WA','name':'Wanica'}
   },
-  'SZ':{
+  'Swaziland':{
     '1' : {'code':'H','name':'Hhohho'},
     '2' : {'code':'L','name':'Lubombo'},
     '3' : {'code':'M','name':'Manzini'},
     '4' : {'code':'S','name':'Shishelweni'}
   },
-  'SE':{
+  'Sweden':{
     '1' : {'code':'K','name':'Blekinge'},
     '2' : {'code':'W','name':'Dalama'},
     '3' : {'code':'I','name':'Gotland'},
@@ -12093,7 +12093,7 @@ var BFHStatesList = {
     '20' : {'code':'T','name':'Örebro'},
     '21' : {'code':'E','name':'Östergötland'}
   },
-  'CH':{
+  'Switzerland':{
     '1' : {'code':'AG','name':'Aargau'},
     '2' : {'code':'AR','name':'Appenzell Ausserrhoden'},
     '3' : {'code':'AI','name':'Appenzell Innerrhoden'},
@@ -12121,7 +12121,7 @@ var BFHStatesList = {
     '25' : {'code':'ZG','name':'Zug'},
     '26' : {'code':'ZH','name':'Zürich'}
   },
-  'SY':{
+  'Syria':{
     '1' : {'code':'HA','name':'Al Hasakah'},
     '2' : {'code':'LA','name':'Al Ladhiqiyah'},
     '3' : {'code':'QU','name':'Al Qunaytirah'},
@@ -12137,7 +12137,7 @@ var BFHStatesList = {
     '13' : {'code':'RD','name':'Rif Dimashq'},
     '14' : {'code':'TA','name':'Tartus'}
   },
-  'TW':{
+  'Taiwan':{
     '1' : {'code':'CH','name':'Chang-hua'},
     '2' : {'code':'CI','name':'Chia-i'},
     '3' : {'code':'HS','name':'Hsin-chu'},
@@ -12164,12 +12164,12 @@ var BFHStatesList = {
     '24' : {'code':'KC','name':'Kao-hsiung city'},
     '25' : {'code':'TC','name':'T\'ai-pei city'}
   },
-  'TJ':{
+  'Tajikistan':{
     '1' : {'code':'GB','name':'Gorno-Badakhstan'},
     '2' : {'code':'KT','name':'Khatlon'},
     '3' : {'code':'SU','name':'Sughd'}
   },
-  'TZ':{
+  'Tanzania':{
     '1' : {'code':'AR','name':'Arusha'},
     '2' : {'code':'DS','name':'Dar es Salaam'},
     '3' : {'code':'DO','name':'Dodoma'},
@@ -12197,7 +12197,7 @@ var BFHStatesList = {
     '25' : {'code':'ZN','name':'Zanzibar North'},
     '26' : {'code':'ZU','name':'Zanzibar Urban/West'}
   },
-  'TH':{
+  'Thailand':{
     '1' : {'code':'Amnat Charoen','name':'Amnat Charoen'},
     '2' : {'code':'Ang Thong','name':'Ang Thong'},
     '3' : {'code':'Ayutthaya','name':'Ayutthaya'},
@@ -12275,24 +12275,24 @@ var BFHStatesList = {
     '75' : {'code':'Yala','name':'Yala'},
     '76' : {'code':'Yasothon','name':'Yasothon'}
   },
-  'TG':{
+  'Togo':{
     '1' : {'code':'K','name':'Kara'},
     '2' : {'code':'P','name':'Plateaux'},
     '3' : {'code':'S','name':'Savanes'},
     '4' : {'code':'C','name':'Centrale'},
     '5' : {'code':'M','name':'Maritime'}
   },
-  'TK':{
+  'Tokelau':{
     '1' : {'code':'A','name':'Atafu'},
     '2' : {'code':'F','name':'Fakaofo'},
     '3' : {'code':'N','name':'Nukunonu'}
   },
-  'TO':{
+  'Tonga':{
     '1' : {'code':'H','name':'Ha\'apai'},
     '2' : {'code':'T','name':'Tongatapu'},
     '3' : {'code':'V','name':'Vava\'u'}
   },
-  'TT':{
+  'Trinidad and Tobago':{
     '1' : {'code':'CT','name':'Couva/Tabaquite/Talparo'},
     '2' : {'code':'DM','name':'Diego Martin'},
     '3' : {'code':'MR','name':'Mayaro/Rio Claro'},
@@ -12309,7 +12309,7 @@ var BFHStatesList = {
     '14' : {'code':'CH','name':'Chaguanas'},
     '15' : {'code':'TO','name':'Tobago'}
   },
-  'TN':{
+  'Tunisia':{
     '1' : {'code':'AR','name':'Ariana'},
     '2' : {'code':'BJ','name':'Beja'},
     '3' : {'code':'BA','name':'Ben Arous'},
@@ -12335,7 +12335,7 @@ var BFHStatesList = {
     '23' : {'code':'TU','name':'Tunis'},
     '24' : {'code':'ZA','name':'Zaghouan'}
   },
-  'TR':{
+  'Turkey':{
     '1' : {'code':'ADA','name':'Adana'},
     '2' : {'code':'ADI','name':'Adiyaman'},
     '3' : {'code':'AFY','name':'Afyonkarahisar'},
@@ -12418,14 +12418,14 @@ var BFHStatesList = {
     '80' : {'code':'YOZ','name':'Yozgat'},
     '81' : {'code':'ZON','name':'Zonguldak'}
   },
-  'TM':{
+  'Turkmenistan':{
     '1' : {'code':'A','name':'Ahal Welayaty'},
     '2' : {'code':'B','name':'Balkan Welayaty'},
     '3' : {'code':'D','name':'Dashhowuz Welayaty'},
     '4' : {'code':'L','name':'Lebap Welayaty'},
     '5' : {'code':'M','name':'Mary Welayaty'}
   },
-  'TC':{
+  'Turks and Caicos Islands':{
     '1' : {'code':'AC','name':'Ambergris Cays'},
     '2' : {'code':'DC','name':'Dellis Cay'},
     '3' : {'code':'FC','name':'French Cay'},
@@ -12441,7 +12441,7 @@ var BFHStatesList = {
     '13' : {'code':'PR','name':'Providenciales'},
     '14' : {'code':'WC','name':'West Caicos'}
   },
-  'TV':{
+  'Tuvalu':{
     '1' : {'code':'NMG','name':'Nanumanga'},
     '2' : {'code':'NLK','name':'Niulakita'},
     '3' : {'code':'NTO','name':'Niutao'},
@@ -12452,7 +12452,7 @@ var BFHStatesList = {
     '8' : {'code':'NLL','name':'Nukulaelae'},
     '9' : {'code':'VAI','name':'Vaitupu'}
   },
-  'UG':{
+  'Uganda':{
     '1' : {'code':'KAL','name':'Kalangala'},
     '2' : {'code':'KMP','name':'Kampala'},
     '3' : {'code':'KAY','name':'Kayunga'},
@@ -12510,7 +12510,7 @@ var BFHStatesList = {
     '55' : {'code':'NTU','name':'Ntungamo'},
     '56' : {'code':'RUK','name':'Rukungiri'}
   },
-  'UA':{
+  'Ukraine':{
     '1' : {'code':'CK','name':'Cherkasy'},
     '2' : {'code':'CH','name':'Chernihiv'},
     '3' : {'code':'CV','name':'Chernivtsi'},
@@ -12538,7 +12538,7 @@ var BFHStatesList = {
     '25' : {'code':'ZA','name':'Zaporizhzhya'},
     '26' : {'code':'ZH','name':'Zhytomyr'}
   },
-  'AE':{
+  'United Arab Emirates':{
     '1' : {'code':'AZ','name':'Abu Zaby'},
     '2' : {'code':'AJ','name':'\'Ajman'},
     '3' : {'code':'FU','name':'Al Fujayrah'},
@@ -12547,7 +12547,7 @@ var BFHStatesList = {
     '6' : {'code':'RK','name':'R\'as al Khaymah'},
     '7' : {'code':'UQ','name':'Umm al Qaywayn'}
   },
-  'GB':{
+  'United Kingdom':{
     '1' : {'code':'ABN','name':'Aberdeen'},
     '2' : {'code':'ABNS','name':'Aberdeenshire'},
     '3' : {'code':'ANG','name':'Anglesey'},
@@ -12649,7 +12649,7 @@ var BFHStatesList = {
     '99' : {'code':'WORCS','name':'Worcestershire'},
     '100' : {'code':'WRX','name':'Wrexham'}
   },
-  'US':{
+  'United States':{
     '1' : {'code':'AL','name':'Alabama'},
     '2' : {'code':'AK','name':'Alaska'},
     '3' : {'code':'AS','name':'American Samoa'},
@@ -12716,7 +12716,7 @@ var BFHStatesList = {
     '64' : {'code':'WI','name':'Wisconsin'},
     '65' : {'code':'WY','name':'Wyoming'}
   },
-  'UM':{
+  'United States Minor Outlying Islands':{
     '1' : {'code':'BI','name':'Baker Island'},
     '2' : {'code':'HI','name':'Howland Island'},
     '3' : {'code':'JI','name':'Jarvis Island'},
@@ -12727,7 +12727,7 @@ var BFHStatesList = {
     '8' : {'code':'PA','name':'Palmyra Atoll'},
     '9' : {'code':'WI','name':'Wake Island'}
   },
-  'UY':{
+  'Uruguay':{
     '1' : {'code':'AR','name':'Artigas'},
     '2' : {'code':'CA','name':'Canelones'},
     '3' : {'code':'CL','name':'Cerro Largo'},
@@ -12748,7 +12748,7 @@ var BFHStatesList = {
     '18' : {'code':'TA','name':'Tacuarembo'},
     '19' : {'code':'TT','name':'Treinta y Tres'}
   },
-  'UZ':{
+  'Uzbekistan':{
     '1' : {'code':'AN','name':'Andijon'},
     '2' : {'code':'BU','name':'Buxoro'},
     '3' : {'code':'FA','name':'Farg\'ona'},
@@ -12764,7 +12764,7 @@ var BFHStatesList = {
     '13' : {'code':'TO','name':'Toshkent Region'},
     '14' : {'code':'XO','name':'Xorazm'}
   },
-  'VU':{
+  'Vanuatu':{
     '1' : {'code':'MA','name':'Malampa'},
     '2' : {'code':'PE','name':'Penama'},
     '3' : {'code':'SA','name':'Sanma'},
@@ -12772,7 +12772,7 @@ var BFHStatesList = {
     '5' : {'code':'TA','name':'Tafea'},
     '6' : {'code':'TO','name':'Torba'}
   },
-  'VE':{
+  'Venezuela':{
     '1' : {'code':'AM','name':'Amazonas'},
     '2' : {'code':'AN','name':'Anzoategui'},
     '3' : {'code':'AP','name':'Apure'},
@@ -12799,7 +12799,7 @@ var BFHStatesList = {
     '24' : {'code':'YA','name':'Yaracuy'},
     '25' : {'code':'ZU','name':'Zulia'}
   },
-  'VN':{
+  'Vietnam':{
     '1' : {'code':'AG','name':'An Giang'},
     '2' : {'code':'BG','name':'Bac Giang'},
     '3' : {'code':'BK','name':'Bac Kan'},
@@ -12833,17 +12833,17 @@ var BFHStatesList = {
     '31' : {'code':'HU','name':'Hau Giang'},
     '32' : {'code':'HY','name':'Hung Yen'}
   },
-  'VI':{
+  'US Virgin Islands':{
     '1' : {'code':'C','name':'Saint Croix'},
     '2' : {'code':'J','name':'Saint John'},
     '3' : {'code':'T','name':'Saint Thomas'}
   },
-  'WF':{
+  'Wallis and Futuna Islands':{
     '1' : {'code':'A','name':'Alo'},
     '2' : {'code':'S','name':'Sigave'},
     '3' : {'code':'W','name':'Wallis'}
   },
-  'YE':{
+  'Yemen':{
     '1' : {'code':'AB','name':'Abyan'},
     '2' : {'code':'AD','name':'Adan'},
     '3' : {'code':'AM','name':'Amran'},
@@ -12883,7 +12883,7 @@ var BFHStatesList = {
     '10' : {'code':'OR','name':'Orientale'},
     '11' : {'code':'SK','name':'Sud-Kivu'}
   },
-  'ZM':{
+  'Zambia':{
     '1' : {'code':'CE','name':'Central'},
     '2' : {'code':'CB','name':'Copperbelt'},
     '3' : {'code':'EA','name':'Eastern'},
@@ -12894,7 +12894,7 @@ var BFHStatesList = {
     '8' : {'code':'SO','name':'Southern'},
     '9' : {'code':'WE','name':'Western'}
   },
-  'ZW':{
+  'Zimbabwe':{
     '1' : {'code':'BU','name':'Bulawayo'},
     '2' : {'code':'HA','name':'Harare'},
     '3' : {'code':'ML','name':'Manicaland'},
@@ -12926,7 +12926,7 @@ var BFHStatesList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHTimePickerDelimiter = ':';
 
 var BFHTimePickerModes = {
@@ -12951,7 +12951,7 @@ var BFHTimePickerModes = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
+
 var BFHTimezonesList = {
   'AF': {
     'Asia/Kabul': 'Kabul'
@@ -13788,13 +13788,13 @@ var BFHTimezonesList = {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * ========================================================== */
- 
- 
+
+
 +function ($) {
 
   'use strict';
-  
-  
+
+
   /* COLORPICKER CLASS DEFINITION
   * ========================= */
 
@@ -13814,12 +13814,12 @@ var BFHTimezonesList = {
       var $canvas,
           context,
           gradient;
-          
+
       $canvas = this.$element.find('canvas');
       context = $canvas[0].getContext('2d');
-      
+
       gradient = context.createLinearGradient(0, 0, $canvas.width(), 0);
-      
+
       gradient.addColorStop(0,    'rgb(255, 255, 255)');
       gradient.addColorStop(0.1,  'rgb(255,   0,   0)');
       gradient.addColorStop(0.25, 'rgb(255,   0, 255)');
@@ -13828,20 +13828,20 @@ var BFHTimezonesList = {
       gradient.addColorStop(0.7,  'rgb(0,   255,   0)');
       gradient.addColorStop(0.85, 'rgb(255, 255,   0)');
       gradient.addColorStop(1,    'rgb(255,   0,   0)');
-      
+
       context.fillStyle = gradient;
       context.fillRect(0, 0, context.canvas.width, context.canvas.height);
-      
+
       gradient = context.createLinearGradient(0, 0, 0, $canvas.height());
       gradient.addColorStop(0,   'rgba(255, 255, 255, 1)');
       gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0)');
       gradient.addColorStop(0.5, 'rgba(0,     0,   0, 0)');
       gradient.addColorStop(1,   'rgba(0,     0,   0, 1)');
-      
+
       context.fillStyle = gradient;
       context.fillRect(0, 0, context.canvas.width, context.canvas.height);
     },
-    
+
     initPopover: function() {
       var iconLeft,
           iconRight;
@@ -13871,10 +13871,10 @@ var BFHTimezonesList = {
         .on('click.bfhcolorpicker.data-api touchstart.bfhcolorpicker.data-api', '.bfh-colorpicker-popover', function() { return false; });
 
       this.initPalette();
-      
+
       this.$element.val(this.options.color);
     },
-    
+
     updateVal: function(positionX, positionY) {
       var $canvas,
           context,
@@ -13883,71 +13883,71 @@ var BFHTimezonesList = {
           snappiness,
           imageData,
           newColor;
-      
+
       snappiness = 5;
-      
+
       $canvas = this.$element.find('canvas');
       context = $canvas[0].getContext('2d');
-      
+
       colorX = positionX - $canvas.offset().left;
       colorY = positionY - $canvas.offset().top;
-      
+
       colorX = Math.round(colorX / snappiness) * snappiness;
       colorY = Math.round(colorY / snappiness) * snappiness;
-      
+
       if (colorX < 0) {
         colorX = 0;
       }
       if (colorX >= $canvas.width()) {
         colorX = $canvas.width() - 1;
       }
-      
+
       if (colorY < 0) {
         colorY = 0;
       }
       if (colorY > $canvas.height()) {
         colorY = $canvas.height();
       }
-      
+
       imageData = context.getImageData(colorX, colorY, 1, 1);
       newColor = rgbToHex(imageData.data[0], imageData.data[1], imageData.data[2]);
-      
+
       if (newColor !== this.$element.val()) {
         this.$element.val(newColor);
-        
+
         this.$element.trigger('change.bfhcolorpicker');
       }
     },
-    
+
     mouseDown: function(e) {
       var $this,
           $parent;
-      
+
       $this = $(this);
       $parent = getParent($this);
-      
+
       $(document)
         .on('mousemove.bfhcolorpicker.data-api', {colorpicker: $parent}, BFHColorPicker.prototype.mouseMove)
         .one('mouseup.bfhcolorpicker.data-api', {colorpicker: $parent}, BFHColorPicker.prototype.mouseUp);
     },
-    
+
     mouseMove: function(e) {
       var $this;
-      
+
       $this = e.data.colorpicker;
-      
+
       $this.data('bfhcolorpicker').updateVal(e.pageX, e.pageY);
     },
-    
+
     mouseUp: function(e) {
       var $this;
-      
+
       $this = e.data.colorpicker;
-      
+
       $this.data('bfhcolorpicker').updateVal(e.pageX, e.pageY);
-      
+
       $(document).off('mousemove.bfhcolorpicker.data-api');
-      
+
       if ($this.data('bfhcolorpicker').options.close === true) {
         clearMenus();
       }
@@ -13986,7 +13986,7 @@ var BFHTimezonesList = {
       return false;
     }
   };
-  
+
   function componentToHex(c) {
     var hex = c.toString(16);
     return hex.length === 1 ? '0' + hex : hex;
@@ -13995,7 +13995,7 @@ var BFHTimezonesList = {
   function rgbToHex(r, g, b) {
     return '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
   }
-      
+
   function clearMenus() {
     var $parent;
 
@@ -14021,8 +14021,8 @@ var BFHTimezonesList = {
   function getParent($this) {
     return $this.closest('.bfh-colorpicker');
   }
-  
-  
+
+
   /* COLORPICKER PLUGIN DEFINITION
    * ========================== */
 
@@ -14058,8 +14058,8 @@ var BFHTimezonesList = {
     color: '#000000',
     close: true
   };
-  
-  
+
+
   /* COLORPICKER NO CONFLICT
    * ========================== */
 
@@ -14067,8 +14067,8 @@ var BFHTimezonesList = {
     $.fn.bfhcolorpicker = old;
     return this;
   };
-  
-  
+
+
   /* COLORPICKER VALHOOKS
    * ========================== */
 
@@ -14093,8 +14093,8 @@ var BFHTimezonesList = {
       }
     }
   };
-  
-  
+
+
   /* COLORPICKER DATA-API
    * ============== */
 
@@ -14107,8 +14107,8 @@ var BFHTimezonesList = {
       $colorpicker.bfhcolorpicker($colorpicker.data());
     });
   });
-  
-  
+
+
   /* APPLY TO STANDARD COLORPICKER ELEMENTS
    * =================================== */
 
@@ -14171,9 +14171,9 @@ var BFHTimezonesList = {
       if (this.options.available) {
         if (typeof this.options.available === 'string') {
           countries = [];
-  
+
           this.options.available = this.options.available.split(',');
-  
+
           for (country in BFHCountriesList) {
             if (BFHCountriesList.hasOwnProperty(country)) {
               if ($.inArray(country, this.options.available) >= 0) {
@@ -14207,7 +14207,7 @@ var BFHTimezonesList = {
 
       for (country in countries) {
         if (countries.hasOwnProperty(country)) {
-          this.$element.append('<option value="' + country + '">' + countries[country] + '</option>');
+          this.$element.append('<option value="' + countries[country] + '">' + countries[country] + '</option>');
         }
       }
 
@@ -14308,7 +14308,7 @@ var BFHTimezonesList = {
   /* COUNTRY DATA-API
    * ============== */
 
-  $(document).ready( function () {
+  document.addEventListener("turbolinks:load", function() {
     $('form select.bfh-countries, span.bfh-countries, div.bfh-countries').each(function () {
       var $countries;
 
@@ -15967,37 +15967,37 @@ var BFHTimezonesList = {
 
     initInput: function() {
       var value;
-      
+
       if (this.options.buttons === true) {
         this.$element.wrap('<div class="input-group"></div>');
         this.$element.parent().append('<span class="input-group-addon bfh-number-btn inc"><span class="glyphicon glyphicon-chevron-up"></span></span>');
         this.$element.parent().append('<span class="input-group-addon bfh-number-btn dec"><span class="glyphicon glyphicon-chevron-down"></span></span>');
       }
-      
+
       this.$element.on('change.bfhnumber.data-api', BFHNumber.prototype.change);
-        
+
       if (this.options.keyboard === true) {
         this.$element.on('keydown.bfhnumber.data-api', BFHNumber.prototype.keydown);
       }
-      
+
       if (this.options.buttons === true) {
         this.$element.parent()
           .on('mousedown.bfhnumber.data-api', '.inc', BFHNumber.prototype.btninc)
           .on('mousedown.bfhnumber.data-api', '.dec', BFHNumber.prototype.btndec);
       }
-      
+
       this.formatNumber();
     },
-    
+
     keydown: function(e) {
       var $this;
-      
+
       $this = $(this).data('bfhnumber');
-      
+
       if ($this.$element.is('.disabled') || $this.$element.attr('disabled') !== undefined) {
         return true;
       }
-      
+
       switch (e.which) {
         case 38:
           $this.increment();
@@ -16007,35 +16007,35 @@ var BFHTimezonesList = {
           break;
         default:
       }
-      
+
       return true;
     },
-    
+
     mouseup: function(e) {
       var $this,
           timer,
           interval;
-      
+
       $this = e.data.btn;
       timer = $this.$element.data('timer');
       interval = $this.$element.data('interval');
-      
+
       clearTimeout(timer);
       clearInterval(interval);
     },
-    
+
     btninc: function() {
       var $this,
           timer;
-      
+
       $this = $(this).parent().find('.bfh-number').data('bfhnumber');
-      
+
       if ($this.$element.is('.disabled') || $this.$element.attr('disabled') !== undefined) {
         return true;
       }
-      
+
       $this.increment();
-      
+
       timer = setTimeout(function() {
         var interval;
         interval = setInterval(function() {
@@ -16044,24 +16044,24 @@ var BFHTimezonesList = {
         $this.$element.data('interval', interval);
       }, 750);
       $this.$element.data('timer', timer);
-      
+
       $(document).one('mouseup', {btn: $this}, BFHNumber.prototype.mouseup);
-      
+
       return true;
     },
-    
+
     btndec: function() {
       var $this,
           timer;
-      
+
       $this = $(this).parent().find('.bfh-number').data('bfhnumber');
-      
+
       if ($this.$element.is('.disabled') || $this.$element.attr('disabled') !== undefined) {
         return true;
       }
-      
+
       $this.decrement();
-      
+
       timer = setTimeout(function() {
         var interval;
         interval = setInterval(function() {
@@ -16070,12 +16070,12 @@ var BFHTimezonesList = {
         $this.$element.data('interval', interval);
       }, 750);
       $this.$element.data('timer', timer);
-      
+
       $(document).one('mouseup', {btn: $this}, BFHNumber.prototype.mouseup);
-      
+
       return true;
     },
-    
+
     change: function() {
       var $this;
 
@@ -16089,30 +16089,30 @@ var BFHTimezonesList = {
 
       return true;
     },
-    
+
     increment: function() {
       var value;
-      
+
       value = this.getValue();
-      
+
       value = value + 1;
-      
+
       this.$element.val(value).change();
     },
-    
+
     decrement: function() {
       var value;
-      
+
       value = this.getValue();
-      
+
       value = value - 1;
-      
+
       this.$element.val(value).change();
     },
-    
+
     getValue: function() {
       var value;
-      
+
       value = this.$element.val();
       if (value !== '-1') {
         value = String(value).replace(/\D/g, '');
@@ -16120,18 +16120,18 @@ var BFHTimezonesList = {
       if (String(value).length === 0) {
         value = this.options.min;
       }
-      
+
       return parseInt(value);
     },
-    
+
     formatNumber: function() {
       var value,
           maxLength,
           length,
           zero;
-      
+
       value = this.getValue();
-      
+
       if (value > this.options.max) {
         if (this.options.wrap === true) {
           value = this.options.min;
@@ -16139,7 +16139,7 @@ var BFHTimezonesList = {
           value = this.options.max;
         }
       }
-      
+
       if (value < this.options.min) {
         if (this.options.wrap === true) {
           value = this.options.max;
@@ -16147,7 +16147,7 @@ var BFHTimezonesList = {
           value = this.options.min;
         }
       }
-      
+
       if (this.options.zeros === true) {
         maxLength = String(this.options.max).length;
         length = String(value).length;
@@ -16155,7 +16155,7 @@ var BFHTimezonesList = {
           value = '0' + value;
         }
       }
-      
+
       if (value !== this.$element.val()) {
         this.$element.val(value);
       }
@@ -16285,7 +16285,7 @@ var BFHTimezonesList = {
           this.options.format = BFHPhoneFormatList[this.options.country];
         }
       }
-      
+
       this.$element.on('keyup.bfhphone.data-api', BFHPhone.prototype.change);
 
       this.loadFormatter();
@@ -16342,17 +16342,17 @@ var BFHTimezonesList = {
       if (cursorPosition === $this.$element.val().length) {
         cursorEnd = true;
       }
-      
+
       if (e.which === 8 && $this.options.format.charAt($this.$element.val().length) !== 'd') {
         $this.$element.val(String($this.$element.val()).substring(0, $this.$element.val().length - 1));
       }
 
       formattedNumber = formatNumber($this.options.format, $this.$element.val());
-      
+
       if (formattedNumber === $this.$element.val()) {
         return true;
       }
-      
+
       $this.$element.val(formattedNumber);
 
       if (cursorEnd) {
@@ -16396,7 +16396,7 @@ var BFHTimezonesList = {
         }
       }
     }
-    
+
     lastCharacter = format.charAt(formattedNumber.length);
     if (lastCharacter !== 'd') {
       formattedNumber += lastCharacter;
@@ -16875,7 +16875,7 @@ var BFHTimezonesList = {
   var BFHSlider = function (element, options) {
         this.options = $.extend({}, $.fn.bfhslider.defaults, options);
         this.$element = $(element);
-        
+
         this.initSlider();
       };
 
@@ -16887,95 +16887,95 @@ var BFHTimezonesList = {
       if (this.options.value === '') {
         this.options.value = this.options.min;
       }
-      
+
       this.$element.html(
         '<input type="hidden" name="' + this.options.name + '" value="">' +
         '<div class="bfh-slider-handle"><div class="bfh-slider-value"></div></div>'
       );
-      
+
       this.$element.find('input[type="hidden"]').val(this.options.value);
       this.updateHandle(this.options.value);
-      
+
       this.$element.on('mousedown.bfhslider.data-api', BFHSlider.prototype.mouseDown);
     },
-    
+
     updateHandle: function(val) {
       var positionX,
           width,
           left,
           span;
-          
+
       span = this.options.max - this.options.min;
       width = this.$element.width();
       left = this.$element.position().left;
-      
+
       positionX = Math.round((val - this.options.min) * (width - 20) / span + left);
-      
+
       this.$element.find('.bfh-slider-handle').css('left', positionX + 'px');
       this.$element.find('.bfh-slider-value').text(val);
     },
-    
+
     updateVal: function(positionX) {
       var width,
           left,
           right,
           val,
           span;
-      
+
       span = this.options.max - this.options.min;
       width = this.$element.width();
       left = this.$element.offset().left;
       right = left + width;
-      
+
       if (positionX < left) {
         positionX = left;
       }
-      
+
       if (positionX + 20 > right) {
         positionX = right;
       }
-      
+
       val = (positionX - left) / width;
       val = Math.ceil(val * span + this.options.min);
-      
+
       if (val === this.$element.val()) {
         return true;
       }
-      
+
       this.$element.val(val);
-      
+
       this.$element.trigger('change.bfhslider');
     },
-    
+
     mouseDown: function() {
       var $this;
-      
+
       $this = $(this);
-      
+
       if ($this.is('.disabled') || $this.attr('disabled') !== undefined) {
         return true;
       }
-      
+
       $(document)
         .on('mousemove.bfhslider.data-api', {slider: $this}, BFHSlider.prototype.mouseMove)
         .one('mouseup.bfhslider.data-api', {slider: $this}, BFHSlider.prototype.mouseUp);
     },
-    
+
     mouseMove: function(e) {
       var $this;
-      
+
       $this = e.data.slider;
-      
+
       $this.data('bfhslider').updateVal(e.pageX);
     },
-    
+
     mouseUp: function(e) {
       var $this;
-      
+
       $this = e.data.slider;
-      
+
       $this.data('bfhslider').updateVal(e.pageX);
-      
+
       $(document).off('mousemove.bfhslider.data-api');
     }
   };
@@ -17146,7 +17146,7 @@ var BFHTimezonesList = {
 
       for (state in BFHStatesList[country]) {
         if (BFHStatesList[country].hasOwnProperty(state)) {
-          this.$element.append('<option value="' + BFHStatesList[country][state].code + '">' + BFHStatesList[country][state].name + '</option>');
+          this.$element.append('<option value="' + BFHStatesList[country][state].name + '">' + BFHStatesList[country][state].name + '</option>');
         }
       }
 
@@ -17297,7 +17297,7 @@ var BFHTimezonesList = {
   /* STATES DATA-API
    * ============== */
 
-  $(document).ready( function () {
+  document.addEventListener("turbolinks:load", function() {
     $('form select.bfh-states, span.bfh-states, div.bfh-states').each(function () {
       var $states;
 
@@ -17364,13 +17364,13 @@ var BFHTimezonesList = {
       time = this.options.time;
       mode = '';
       currentMode = '';
-      
+
       if (time === '' || time === 'now' || time === undefined) {
         today = new Date();
 
         hours = today.getHours();
         minutes = today.getMinutes();
-        
+
         if (this.options.mode === '12h') {
           if (hours > 12) {
             hours = hours - 12;
@@ -17381,7 +17381,7 @@ var BFHTimezonesList = {
             currentMode = 'am';
           }
         }
-        
+
         if (time === 'now') {
           this.$element.find('.bfh-timepicker-toggle > input[type="text"]').val(formatTime(hours, minutes) + mode);
         }
@@ -17393,7 +17393,7 @@ var BFHTimezonesList = {
         timeParts = String(time).split(BFHTimePickerDelimiter);
         hours = timeParts[0];
         minutes = timeParts[1];
-        
+
         if (this.options.mode === '12h') {
           timeParts = String(minutes).split(' ');
           minutes = timeParts[0];
@@ -17403,7 +17403,7 @@ var BFHTimezonesList = {
             currentMode = 'am';
           }
         }
-        
+
         this.$element.find('.bfh-timepicker-toggle > input[type="text"]').val(time);
         this.$element.data('hour', hours);
         this.$element.data('minute', minutes);
@@ -17429,7 +17429,7 @@ var BFHTimezonesList = {
         }
         iconAddon = 'input-group';
       }
-      
+
       modeAddon = '';
       modeMax = '23';
       if (this.options.mode === '12h') {
@@ -17475,20 +17475,20 @@ var BFHTimezonesList = {
         $number = $(this);
 
         $number.bfhnumber($number.data());
-        
+
         $number.on('change', BFHTimePicker.prototype.change);
       });
-      
+
       this.$element.find('.bfh-selectbox').each(function() {
         var $selectbox;
 
         $selectbox = $(this);
 
         $selectbox.bfhselectbox($selectbox.data());
-        
+
         $selectbox.on('change.bfhselectbox', BFHTimePicker.prototype.change);
       });
-      
+
       this.setTime();
 
       this.updatePopover();
@@ -17507,7 +17507,7 @@ var BFHTimezonesList = {
       this.$element.find('.minute input[type=text]').val(minute).change();
       this.$element.find('.bfh-selectbox').val(mode);
     },
-    
+
     change: function() {
       var $this,
           $parent,
@@ -17516,15 +17516,15 @@ var BFHTimezonesList = {
 
       $this = $(this);
       $parent = getParent($this);
-      
+
       $timePicker = $parent.data('bfhtimepicker');
-      
+
       if ($timePicker && $timePicker !== 'undefined') {
         mode = '';
         if ($timePicker.options.mode === '12h') {
           mode = ' ' + BFHTimePickerModes[$parent.find('.bfh-selectbox').val()];
         }
-        
+
         $parent.find('.bfh-timepicker-toggle > input[type="text"]').val($parent.find('.hour input[type=text]').val() + BFHTimePickerDelimiter + $parent.find('.minute input[type=text]').val() + mode);
 
         $parent.trigger('change.bfhtimepicker');
@@ -17580,7 +17580,7 @@ var BFHTimezonesList = {
 
     return hour + BFHTimePickerDelimiter + minute;
   }
-  
+
   function clearMenus() {
     var $parent;
 

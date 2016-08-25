@@ -23,17 +23,16 @@
         <td><%= offer.description %></td>
         <td><%= offer.salary %></td>
         <td><%= offer.type_offer %></td>
-        <td><%= offer.url %></td>
+        <% if offer.url =! nil%>
+          <td>
+            <%=link_to "External link", offer.url, target: "_blank", rel: "nofollow"%>
+          </td>
+        <% end %>
         <td><%= offer.requirements %></td>
         <td><%= offer.location %></td>
-        <td><%= link_to 'Show', offer %></td>
-        <td><%= link_to 'Edit', edit_offer_path(offer) %></td>
-        <td><%= link_to 'Destroy', offer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Offer', new_offer_path %>

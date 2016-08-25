@@ -8,6 +8,7 @@ class Ability
       can :manage, Forum, :user_id => user.id
       can :create, Comment
       can :manage, Comment, :user_id => user.id
+      can :manage, Profile, :user_id => user.id
     end
     # Define abilities for the passed in user here. For example:
     #

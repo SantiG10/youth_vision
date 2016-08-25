@@ -1,19 +1,31 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-6 col-xs-offset-3">
+		<div class="col-xs-12">
+			<% if @profile.errors.any? %>
+				<div id="error_explanation">
+					<div class="alert alert-danger" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<h2 class="text-xs-center"> Se ha producido un Error</h2>
+						<ul class="list-red">
+							<% @profile.errors.each do |attribute, error| %>
+								<li>
+									<%= error %>
+								</li>
+							<% end %>
+						</ul>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-6 push-xs-3">
       <br><h1>Perfil Profesional</h1><br><br>
       <%= nested_form_for(@profile) do |f| %>
-        <% if @profile.errors.any? %>
-          <div id="error_explanation">
-            <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
-
-            <ul>
-            <% @profile.errors.full_messages.each do |message| %>
-              <li><%= message %></li>
-            <% end %>
-            </ul>
-          </div>
-        <% end %>
         <div class="form-group">
           <%= f.label :name %><br>
           <%= f.text_field :name, placeholder: "NOMBRE", value:"#{current_user.first_name.capitalize} #{current_user.last_name.capitalize}", class:"form-control" %>
@@ -56,11 +68,11 @@
 				</div>
         <div class="form-group">
           <%= f.label :country %><br>
-          <%= f.select :country, {}, {}, {class:"form-control bfh-countries", "data-country" => "US", "data-name" => "country" }%>
+          <%= f.select :country, {}, {}, {class:"form-control bfh-countries", "data-country" => "Colombia" }%>
         </div>
         <div class="form-group">
-          <%= f.label :city, "State" %><br>
-					<%= f.select :city, {}, {}, {class:"form-control bfh-states" , "data-country" => "profile_country" }%>
+          <%= f.label :state, "State" %><br>
+					<%= f.select :state, {}, {}, {class:"form-control bfh-states" , "data-country" => "profile_country" }%>
 				</div>
         <div class="form-group">
           <%= f.label :last_company %><br>
@@ -108,13 +120,3 @@
     </div>
   </div>
 </div>
-
-<script>
-
-$('#profile_country').bfhcountries({country: 'US'});
-
-document.getElementById("#profile_contry").addEventListener("change", myFunction);
-function myFunction() {
-	alert('hi');
-}
-</script>

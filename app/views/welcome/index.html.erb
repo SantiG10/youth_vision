@@ -13,7 +13,7 @@
                     'data-placement' => 'right' do %>
 				<%= image_tag "icon-talk.svg", class:'img-fluid'%>
 			<% end %>
-			
+
 
 			<div class="white-space space-small"></div>
 		</div>
@@ -21,8 +21,8 @@
 
 	<div class="row text-xs-center">
 		<ul class="lang">
-			<li> <a href=""><span class="borderline">English</span></a></li>
-			<li> <a href=""><span class="borderline">Español</span></a></li>
+			<li> <a href="/?lang=en"><span class="borderline">English</span></a></li>
+			<li> <a href="/?lang=es"><span class="borderline">Español</span></a></li>
 			<li> <a href=""><span class="borderline">Français</span></a></li>
 			<li> <a href=""><span class="borderline">Português</span></a></li>
 		</ul>
@@ -32,11 +32,11 @@
 		<div class="col-xs-6 col-xs-offset-3">
 			<div class="white-space space-medium"></div>
 				<% if user_signed_in? %>
-					<%= link_to "Cerar sesión", destroy_user_session_path, method: :delete,
-								class: "btn btn-login btn-red"%>
+					<%= link_to(t("logout"), destroy_user_session_path, method: :delete,
+								class: "btn btn-login btn-red")%>
 				<% else %>
-					<%= link_to "registrarse", new_user_registration_path, class: "btn btn-login btn-red"%>
-					<%= link_to "iniciar sesión", new_user_session_path, class: "btn btn-login btn-blue"%>
+					<%= link_to(t("sing"), new_user_registration_path, class: "btn btn-login btn-red") %>
+					<%= link_to(t('login'), new_user_session_path, class: "btn btn-login btn-blue")%>
 				<% end %>
 		</div>
 	</div>

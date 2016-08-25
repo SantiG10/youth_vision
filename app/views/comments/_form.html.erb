@@ -1,16 +1,29 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<% if @comment.errors.any? %>
+				<div id="error_explanation">
+					<div class="alert alert-danger" role="alert">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<h2 class="text-xs-center"> Se ha producido un Error</h2>
+						<ul class="list-red">
+							<% @comment.errors.each do |attribute, error| %>
+								<li>
+									<%= error %>
+								</li>
+							<% end %>
+						</ul>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+
 <div class="container">
   <%= form_for ([@forum, @comment]) do |f| %>
-    <% if @comment.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
-        <ul>
-        <% @comment.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
     <div class="field">
       <strong><%= f.label :comment, "Comentario" %></strong><br>
       <%= f.text_area :comment,placeholder:"Comenta tu opinion", class:"form-control" %>

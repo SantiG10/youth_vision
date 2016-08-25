@@ -54,7 +54,7 @@
 
       <p>
         <strong>Departmento:</strong>
-        <%= @profile.city %>
+        <%= @profile.state %>
       </p>
 
       <p>
@@ -89,9 +89,10 @@
 					</li>
 				<% end %>
 			</p>
-
-      <%= link_to 'Edit', edit_profile_path(@profile) %> |
-      <%= link_to 'Back', profiles_path %>
+			<% if can? :manage, @profile%>
+      	<%= link_to 'Edit', edit_profile_path(@profile) %>
+			<% end %>	
+      <!-- <%= link_to 'Back', profiles_path %> -->
     </div>
   </div>
 </div>
