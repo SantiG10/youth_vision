@@ -17,9 +17,10 @@
     </p><hr>
 
     <div class="">
-      <p>Comentarios:</p><hr>
       <%@forum.comments.each do |comment|%>
-          <span>→  <%=comment.comment%></span>-por: <%= comment.user.email%><hr>
+          <%= comment.user.username%>
+          <br>
+          <span class="title-2"><%=comment.comment%></span><hr>
           <% if can? :manage, comment%>
             <span><%= link_to "Editar", edit_forum_comment_path(@forum,comment) %></span>
             <span><%= link_to 'Eliminar', forum_comment_path(@forum,comment), method: :delete, data: { confirm: 'Are you sure?' }%></span><hr>

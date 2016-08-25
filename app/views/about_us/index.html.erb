@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+<div class="container-fluid">
+	<div class="row breadcrum">
+		<div class="col-xs-2">
+      <%= link_to root_path do%>
+		    <i class="fa fa-angle-left icon-back color-black" aria-hidden="true"></i>
+      <%end%>
+		</div>
+		<div class="col-xs-2 push-xs-8">
+			<i class="fa fa-search icon-search" aria-hidden="true"></i>
+=======
 <% unless user_signed_in? %>
 	<div class="container-fluid">
 		<div class="row breadcrum">
@@ -10,6 +21,7 @@
 			<div class="col-xs-2">
 				<i class="fa fa-search icon-search" aria-hidden="true"></i>
 			</div>
+>>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
 		</div>
 	</div>
 <% end %>
@@ -17,17 +29,17 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-xs-6 col-xs-offset-3">
+		<div class="col-xs-6 push-xs-3">
 		<div class="white-space space-big"></div>
-			<%= image_tag "logo-yv.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid' %>
+			<%= image_tag "logo-yv.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid ' %>
 		</div>
-		<div class="col-xs-8 col-xs-offset-2">
+		<div class="col-xs-8 push-xs-2">
 			<span class="borderlogo"></span>
 		</div>
 
 	</div>
 
-	<div class="row">
+	<div class="row text-xs-center">
 		<a class="btn a-collapse center-block" data-toggle="collapse" href="#collapseVision" aria-expanded="false" aria-controls="collapseExample"><%= image_tag "vision.svg" %>
 		<br>VISIÓN <br>MISIÓN <br> OBJETIVOS</a>
 
@@ -43,16 +55,16 @@
 
 				<p>Contribuir al desarrollo personal y local la juventud: <br> <br>
 
-				De que forma: <br> <br>
+				De que forma: <br> <br></p>
 
-				<strong>1.    A nivel personal:</strong></p>
+				<p class="title-3">1.    A nivel personal:</p>
 				<ul class="list-red">
 					<li>Jóvenes capacitados.</li>
 					<li>Desarrollo e implementación de proyectos y objetivos personales de los jóvenes participantes.</li>
 					<li>Preparación y consistencia.</li>
 				</ul>
 
-				<p><strong>2.   A nivel local:</strong></p>
+				<p class="title-3">2.   A nivel local:</p>
 				<ul class="list-red">
 					<li>Contribuyendo el desarrollo sostenible de las comunidades de los jóvenes participantes.</li>
 					<li>Creando y brindando oportunidades a otros jóvenes dentro las comunidades de los jóvenes participantes.</li>
@@ -62,7 +74,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row text-xs-center">
 		<a class="btn a-collapse center-block" data-toggle="collapse" href="#collapseProject" aria-expanded="false" aria-controls="collapseExample"><%= image_tag "project.svg" %>
 		<br>PROYECTOS DE <br>EMPODERAMIENTO <br> DE LA JUVENTUD</a>
 
@@ -74,7 +86,7 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row text-xs-center">
 		<a class="btn a-collapse center-block" data-toggle="collapse" href="#collapseContact" aria-expanded="false" aria-controls="collapseExample"><%= image_tag "contact.svg" %>
 		<br>CONTACTO</a>
 
@@ -82,7 +94,7 @@
 			  <div >
 			  <h3 class="title-2">contacto</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
-				<div class="col-xs-6 col-xs-offset-3">
+				<div class="col-xs-8 push-xs-2">
 				<div class="white-space space-medium"></div>
 					<ul class="social">
 						<li><%= image_tag "fb.svg", class:'img-fluid' %></li>

@@ -75,3 +75,9 @@ gem 'jquery-turbolinks'
 
 #Can can gema para otorgar permisos
 gem 'cancancan', '~> 1.10'
+
+#Gema de Bootstrap V 4.0 NO BORRAR
+
+source 'http://insecure.rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end

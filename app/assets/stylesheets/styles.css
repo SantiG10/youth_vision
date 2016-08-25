@@ -4,7 +4,7 @@
 	font-family: 'Raleway', sans-serif;
 }
 p{
-	font-size: 1.3rem;
+	font-size: 2.5rem;
 	color:#383838;
 	font-weight: 500;
 }
@@ -109,14 +109,22 @@ span.borderlogo:after{
    background-color: #383838;
 }
 .a-collapse{
-	font-size: 1.5rem;
-	text-align: center;
-	font-weight: 900 !important;
-	color: #383838 !important;
-	line-height: 2rem;
+	font-size: 2rem;
+    text-align: center;
+    font-weight: 900 !important;
+    color: #383838 !important;
+    line-height: 2.5rem;
     margin: 2rem 0;
 }
 /* SECUNDARY LIST*/
+.title-2{
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	padding: 2rem 2rem;
+	color:#383838;
+}
 .title-2{
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -136,17 +144,17 @@ ul.list-red li {
     margin-bottom: 10px;
     line-height: 1.4;
     text-align: left;
-    font-size: 1.3rem
+    font-size: 1.9rem
 }
 ul.list-red li:before {
     content: '';
     border-radius: 100%;
     background-color: #EC1C24;
-    width: 6px;
-    height: 6px;
+    width: 1rem;
+    height: 1rem;
     position: absolute;
     left: -1.5em;
-    top: 8px;
+    top: 17px;
     display: block;
 }
 ul.social li{
@@ -161,7 +169,7 @@ ul.button-bt li{
 	display: inline-block;
 	text-transform: uppercase;
 	text-align: -webkit-center;
-	padding: 0rem 5rem;
+	padding: 0rem 4.3rem;
 }
 ul.button-bt li a{
 	color:#000;
@@ -173,7 +181,7 @@ ul.button-bt li a{
 	border-left: 1.4rem solid #FFCC05 !important;
     display: inline-block !important;
     width: 49% !important;
-    padding: .44rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.5rem;
     font-weight: 800;
     line-height: 1.5;
@@ -187,6 +195,9 @@ ul.button-bt li a{
  y pone en dos lineas los campos del formulario*/
  .field_with_errors{
 	display: inline;
+}
+.form-group .form-control{
+	padding:1rem;
 }
 .form-control.form-orange{
 	border-left: 1.4rem solid #F68E27;
@@ -203,7 +214,7 @@ ul.button-bt li a{
 .form-control.last-name{
 	display: inline-block !important;
     width: 49% !important;
-    padding: .44rem 2rem;
+    padding: 1rem 2rem;
 	background-color: #D0D2D3;
 }
 .form-control {
@@ -218,6 +229,9 @@ ul.button-bt li a{
     background-image: none;
     border: 0rem solid #ccc;
     border-radius: 0rem !important;
+}
+.form-control:select{
+
 }
 .form-group {
     margin-bottom: 1.5rem;
@@ -247,4 +261,105 @@ ul.button-bt li a{
 .link-frame {
     text-align: center;
     padding: 1rem 1.5rem;
+}
+/*header de las vistas*/
+.bar-register{
+	background-color: #F68E27;
+	z-index: 1;
+	height: 8rem;
+    opacity: 0.8;
+    position: static;
+}
+.bar-forum{
+	background-color: #E6E7E8;
+	z-index: 1;
+	height: 36rem;
+    opacity: 0.8;
+    position: static;
+    margin-bottom: 5rem;
+}
+.bar-forum-btn{
+	background-color: #E6E7E8;
+    height: 18rem;
+    opacity: 0.8;
+    position: static;
+    margin: 10rem 0rem 0rem 0rem;
+}
+.bar-forum-2{
+	background-color: #E6E7E8;
+    height: 13rem;
+    z-index: 1;
+    opacity: 0.8;
+    position: static;
+    margin: 3rem 0rem 5rem 0rem;
+    padding-top: 3rem;
+}
+.bar-forum p{
+	font-size: 2.7rem;
+    font-weight: 900;
+    line-height: 3rem;
+    padding: 6rem 0rem;
+}
+.img-forum{
+	margin-top: 2rem;
+}
+.register img{
+	background-color: #F68E27;
+	padding:2rem 2.5rem;
+	z-index: 1;
+	width: 100%;
+	position: absolute;
+	opacity: 0.8;
+}
+.forum img{
+	background-color: #B0D135;
+	padding:2rem 1.5rem;
+	z-index: 1;
+	width: 100%;
+	position: absolute;
+	opacity: 0.8;
+}
+.user-logged{
+	background-color: #EC1C24;
+}
+div.user-logged i{
+	color:#fff;
+	font-size: 2rem;
+}
+.user-login{
+	color:#fff;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+.dropdown-item{
+	font-size: 1.6rem;
+}
+.link-forums a{
+	text-transform: uppercase;
+    font-weight: 800;
+    color: #383838;
+    font-size: 3rem;
+}
+
+
+
+/* Media screen */
+@media (min-width: 1024px){
+	ul.button-bt li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: -webkit-center;
+	padding: 0rem 4.6rem;
+	}
+	.bar-register{
+		margin-top: 5rem;
+	}
+}
+@media (min-width:  1280px){
+	ul.button-bt li{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: -webkit-center;
+	padding: 0rem 7rem;
+	}
 }

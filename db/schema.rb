@@ -11,11 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160823024521) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160810202006) do
+=======
+
+ActiveRecord::Schema.define(version: 20160819155042) do
+>>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
+>>>>>>> 08f7cf95429df1de9f418a0b1c92c792d06518cf
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  create_table "comments", force: :cascade do |t|
+    t.text     "comment"
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "forums", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "forum_type"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+
+>>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
+>>>>>>> 08f7cf95429df1de9f418a0b1c92c792d06518cf
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
     t.text     "body"
@@ -49,14 +80,22 @@ ActiveRecord::Schema.define(version: 20160823024521) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 08f7cf95429df1de9f418a0b1c92c792d06518cf
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
     t.integer  "forum_id"
     t.integer  "user_id"
+<<<<<<< HEAD
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+=======
+=======
+>>>>>>> 08f7cf95429df1de9f418a0b1c92c792d06518cf
   create_table "experiences", force: :cascade do |t|
     t.string   "position"
     t.text     "description"
@@ -78,20 +117,32 @@ ActiveRecord::Schema.define(version: 20160823024521) do
 
   create_table "languages", force: :cascade do |t|
     t.string   "language"
+>>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+  create_table "forums", force: :cascade do |t|
+    t.text     "title"
+    t.text     "description"
+    t.integer  "forum_type"
+    t.integer  "user_id"
+=======
   create_table "languages_profiles", force: :cascade do |t|
     t.integer  "language_id"
     t.integer  "profile_id"
+>>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
+<<<<<<< HEAD
+=======
   add_index "languages_profiles", ["language_id"], name: "index_languages_profiles_on_language_id", using: :btree
   add_index "languages_profiles", ["profile_id"], name: "index_languages_profiles_on_profile_id", using: :btree
 
+>>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
   create_table "offers", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
