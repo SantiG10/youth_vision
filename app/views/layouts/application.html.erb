@@ -8,33 +8,8 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-=======
-  <% if user_signed_in? %>
-    <div class="container-fluid">
-    	<div class="row breadcrum">
-        <div class="col-xs-2 col-xs-offset-10">
-            <strong> <%= current_user.username.capitalize %> </strong>
-              <div class="dropdown">
-                <i class="fa fa-user icon-user color-black dropdown-toggle" aria-hidden="true"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><%= link_to "Home", root_path, class:"dropdown-item" %></li>
-                  <% if current_user.profile == nil%>
-                    <li><%= link_to "Crea tu Perfil", new_profile_path, class:"dropdown-item", onclick: "$('#profile_country').bfhcountries({country: 'US'})" %></li>
-                  <% else %>
-                    <li><%= link_to "Editar Perfil", edit_profile_path(current_user.profile), class:"dropdown-item", onclick: "$('#profile_country').bfhcountries({country: 'US'})" %></li>
-                  <% end %>
-                  <div class="dropdown-divider"></div>
-                  <li><%= link_to "Cerar sesión", destroy_user_session_path, method: :delete, class:"dropdown-item"%></li>
-                </div>
-              </div>
-    		</div>
-    	</div>
-    </div>
 
-  <% end %>
 
->>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
   <div class="container-fluid">
   	<div class="row">
       <% if flash[:alert] %>
@@ -71,7 +46,6 @@
         </div>
   <% end %> 
 
-<<<<<<< HEAD
 <!-- breadcrum de usuario -->
 <% if user_signed_in? %>
    <div class="container-fluid">
@@ -84,11 +58,13 @@
                <i class="fa fa-user icon-user color-black dropdown-toggle" aria-hidden="true"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                  <li><%= link_to "Home", root_path, class:"dropdown-item" %></li>
-                 
-                   <li><%= link_to "Editar Perfil", root_path, class:"dropdown-item", onclick: "$('#profile_country').bfhcountries({country: 'US'})" %></li>
-                
-                 <div class="dropdown-divider"></div>
-                 <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class:"dropdown-item"%></li>
+                  <% if current_user.profile == nil%>
+                    <li><%= link_to "Crea tu Perfil", new_profile_path, class:"dropdown-item", onclick: "$('#profile_country').bfhcountries({country: 'US'})" %></li>
+                  <% else %>
+                    <li><%= link_to "Editar Perfil", edit_profile_path(current_user.profile), class:"dropdown-item", onclick: "$('#profile_country').bfhcountries({country: 'US'})" %></li>
+                  <% end %>
+                  <div class="dropdown-divider"></div>
+                  <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class:"dropdown-item"%></li>
                </div>
              </div>
            </div>
@@ -96,10 +72,5 @@
    </div>
 
  <% end %>
-=======
-
-
-
->>>>>>> a05671d3941f156322cda01cf57fdb9654bfee9c
 </body>
 </html>
