@@ -1,0 +1,84 @@
+es:
+  sing:  "registrarse"
+  login: "iniciar sesión"
+  logout: "cerar sesión"
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: "El campo Contraseña no puede estar vacío."
+            email:
+              blank: "El campo Correo no puede estar vacío."
+              taken: "El correo ya existe."
+            first_name:
+              blank: "El campo Primer nombre no puede estar vacío."
+            last_name:
+              blank: "El campo Apellidos no puede estar vacío."
+            username:
+              blank: "El campo Usuario no puede estar vacío."
+              taken: "El Usuario ya existe."
+        profile:
+          attributes:
+            profession:
+              blank: "El campo Profesión no puede estar vacío"
+            last_company:
+              blank: "El campo Ultima empresa no puede estar vacío"
+            name:
+              blank: "El campo Nombre no puede estar vacío"
+            email:
+              blank: "El campo Email no puede estar vacío"
+            country:
+              blank: "El campo Ciudad no puede estar vacío"
+            state:
+              blank: "El campo Estado no puede estar vacío"
+            last_position:
+              blank: "El campo Última posición no puede estar vacío"
+            responsibilities:
+              blank: "El campo Responsabilidades no puede estar vacío"
+            honors:
+              blank: "El campo Honores/Actividades/Premios no puede estar vacío"
+
+        experience:
+          attributes:
+            position:
+              blank: "El campo Posición de la experiencia no puede estar vacío"
+            description:
+              blank: "El campo Descripción de la experiencia no puede estar vacío"
+            company:
+              blank: "El campo Compañía/Empresa de la experiencia no puede estar vacío"
+        study:
+          attributes:
+            study:
+              blank: "El campo Descripción del estudio no puede estar vacío"
+        skill:
+          attributes:
+            skill:
+              blank: "El campo Descripción de la habilidad no puede estar vacío"
+        forum:
+          attributes:
+            title:
+              blank: "El campo titulo no puede estar vacío"
+            description:
+              blank: "El campo descripción no puede estar vacío"
+        comment:
+          attributes:
+            comment:
+              blank: "El campo de comentario no puede estar vacío"      
+
+  errors:
+    messages:
+      not_saved: "Se ha producido un Error"
+
+  devise:
+    failure:
+      user:
+        invalid: "Usuario o contraseña incorrectas."
+        not_found_in_database: "El usuario no esta registrado."
+        unauthenticated: "Inicia sesión para continuar"
+    sessions:
+      user:
+        signed_in: "Bienvenido"
+        signed_out: "Salida exitosa."

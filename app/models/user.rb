@@ -11,7 +11,6 @@ class User < ActiveRecord::Base
 
   has_one :profile
 
-  validates :first_name , presence: true
-  validates :last_name, presence: true
-  validates :username, uniqueness: {case_sensitive: false ,message: "el usuario ya esta registrado"}
+  validates :first_name, :last_name, :username, presence: true
+  validates :username, uniqueness: {case_sensitive: false}
 end
