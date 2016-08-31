@@ -5,12 +5,22 @@ class ForumsController < ApplicationController
   # GET /forums
   # GET /forums.json
   def index
-    option = params[:option]
-    if option.present?
-      @forums = Forum.where(forum_type: option )
-    else
-      @forums = Forum.all
+    @option = params[:option]
+    if @option.present?
+      @forums = Forum.where(forum_type: @option )
     end
+  end
+
+  def forum_life
+    @forums = Forum.where(forum_type: 0)
+  end
+
+  def forum_endeavor
+    @forums = Forum.where(forum_type: 1)
+  end
+
+  def forum_professional
+    @forums = Forum.where(forum_type: 2)
   end
 
   # GET /forums/1
@@ -35,7 +45,7 @@ class ForumsController < ApplicationController
     @forum = current_user.forums.new(forum_params)
     respond_to do |format|
       if @forum.save
-        format.html { redirect_to forums_path, notice: 'Foro creado exitosamente.' }
+        format.html { redirect_to forum_path(@forum), notice: 'Foro creado exitosamente.' }
         format.json { render :show, status: :created, location: @forum }
       else
         format.html { render :new }

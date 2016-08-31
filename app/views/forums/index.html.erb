@@ -1,42 +1,62 @@
-<div class="row">
-      <div class="col-xs-12">
-          <div class="col-xs-2">
-              <%= link_to root_path do %>
-              <i class="fa fa-angle-left icon-back color-black" aria-hidden="true"></i>
-            <%end%>
-          </div>
-          <div class="col-xs-2 push-xs-3 forum">
-            <%= image_tag "forum.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid  center-block' %>
+<% if @option == nil %>
+  <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-2">
+                <%= link_to root_path do %>
+                <i class="fa fa-angle-left icon-back color-black" aria-hidden="true"></i>
+              <%end%>
+            </div>
+            <div class="col-xs-2 push-xs-3 forum">
+              <%= image_tag "forum.svg", :alt => "Logo Youth Vision", :title => "Youth Vision", class:'img-fluid  center-block' %>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="bar-forum">
+        <div class="white-space space-medium"></div>
+          <p class="text-xs-center">Por favor, comparta sus experiencias y preguntas aquí con otros jóvenes de unirse a uno de los tres foros de abajo. </p>
+          <%= link_to "Crear Foro", new_forum_path, class: "btn btn-login btn-red" %>
+          <div class="text-xs-center link-forums">
+          <%= link_to 'desarrollo profesional', forums_path(option:0) %><%= image_tag "proffesional-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
           </div>
       </div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="bar-forum">
-      <div class="white-space space-medium"></div>
-        <p class="text-xs-center">Por favor, comparta sus experiencias y preguntas aquí con otros jóvenes de unirse a uno de los tres foros de abajo. </p>
-        <div class="text-xs-center link-forums">
-        <%= link_to 'desarrollo profesional', root_path%><%= image_tag "proffesional-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
-        </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="bar-forum-2">
-        <div class="text-xs-center link-forums">
-        <%= link_to 'desarrollo de emprendimiento', root_path%><%= image_tag "endeavor-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
-        </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="bar-forum-2">
-        <div class="text-xs-center link-forums">
-        <%= link_to 'desarrollo de vida', root_path%><%= image_tag "life-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
-        </div>
     </div>
 
-    <div class="bar-forum-btn"></div>
+    <div class="row">
+      <div class="bar-forum-2">
+          <div class="text-xs-center link-forums">
+          <%= link_to 'desarrollo de emprendimiento', forums_path(option:1) %><%= image_tag "endeavor-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bar-forum-2">
+          <div class="text-xs-center link-forums">
+          <%= link_to 'desarrollo de vida', forums_path(option:2) %><%= image_tag "life-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+          </div>
+      </div>
+
+      <div class="bar-forum-btn"></div>
+    </div>
   </div>
-</div>
+<% else %>
+  <% if @option == 0 %>
+    <h1>Desarrollo de vida</h1>
+  <% elsif @option == 1%>
+    <h1>Desarrollo de emprendimiento</h1>
+  <% else %>
+    <h1>Desarrollo profesional</h1>
+  <% end %>
+  <%= link_to "Crear Foro", new_forum_path, class: "btn btn-login btn-red" %>
+  <h1>Lista de Foros</h1>
+  <% @forums.each do |forum| %>
+    <h3>Titulo</h3>
+    <%= link_to forum.title, forum_path(forum) %>
+    <h4>Contenido</h4>
+    <%= truncate(forum.description, length:50) %><br>
+    Escrito por: <%= forum.user.email %><br><hr>
+  <% end %>
+<% end %>

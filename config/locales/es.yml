@@ -66,7 +66,7 @@ es:
         comment:
           attributes:
             comment:
-              blank: "El campo de comentario no puede estar vacío"      
+              blank: "El campo de comentario no puede estar vacío"
 
   errors:
     messages:
@@ -82,3 +82,6 @@ es:
       user:
         signed_in: "Bienvenido"
         signed_out: "Salida exitosa."
+    registrations:
+      user:
+        signed_up: "Registro Exitoso, Bienvenido"
