@@ -74,13 +74,30 @@ es:
 
   devise:
     failure:
+      admin_user:
+        invalid: "Usuario o contraseña incorrectas."
+
+  time:
+     formats:
+       default: "%m-%d-%Y"
+       short: "%b %d"
+       long: "%B %d, %Y"
+
+  devise:
+    failure:
       user:
         invalid: "Usuario o contraseña incorrectas."
         not_found_in_database: "El usuario no esta registrado."
-        unauthenticated: "Inicia sesión para continuar"
+        unauthenticated: "Inicia sesión para continuar."
+      admin_user:
+        unauthenticated: "Salida exitosa."
+        invalid: "Usuario o contraseña incorrectas."
     sessions:
       user:
-        signed_in: "Bienvenido"
+        signed_in: "Bienvenido."
+        signed_out: "Salida exitosa."
+      admin_user:
+        signed_in: "Bienvenido Administrador."
         signed_out: "Salida exitosa."
     registrations:
       user:

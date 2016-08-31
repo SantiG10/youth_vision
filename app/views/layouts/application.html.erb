@@ -40,7 +40,11 @@
                       <%= image_tag "icon-home.svg", class:'img-fluid'%> inicio
                     <% end %>
                   </li>
-                  <li><a href=""><%= image_tag "icon-net.svg", class:'img-fluid'%>la red</a></li>
+                  <li>
+                    <%= link_to apply_path do %>
+                      <%= image_tag "icon-net.svg", class:'img-fluid'%> la red
+                    <% end %>
+                  </li>
                   <li><a href=""><%= image_tag "icon-resources.svg", class:'img-fluid'%>recursos</a></li>
                   <li>
                     <%= link_to forums_path(option:nil) do %>

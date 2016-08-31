@@ -1,38 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Offers</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Salary</th>
-      <th>Type offer</th>
-      <th>Url</th>
-      <th>Requirements</th>
-      <th>Location</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @offers.each do |offer| %>
-      <tr>
-        <td><%= offer.title %></td>
-        <td><%= offer.description %></td>
-        <td><%= offer.salary %></td>
-        <td><%= offer.type_offer %></td>
-        <% if offer.url =! nil%>
-          <td>
-            <%=link_to "External link", offer.url, target: "_blank", rel: "nofollow"%>
-          </td>
-        <% end %>
-        <td><%= offer.requirements %></td>
-        <td><%= offer.location %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <center><h1>Lista de ofertas</h1></center><hr>
+      <% @offers.each do |offer| %>
+          <strong>Título: </strong><%= offer.title %><br>
+          <strong>Descripción: </strong><%= offer.description %><br>
+          <strong>Requerimientos: </strong><%= offer.requirements %><br>
+          <%= link_to 'Show', offer %><hr>
+      <% end %>
+  <br>
+</div>
