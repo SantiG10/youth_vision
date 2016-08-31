@@ -1,4 +1,11 @@
 <%= render 'form' %>
-
-<%= link_to 'Show', @profile %> |
-<%= link_to 'Back', profiles_path %>
+   <div class="container-fluid">
+       <div class="col-xs-11 push-xs-1 col-sm-10 push-sm-2"><%= link_to edit_profile_path(@profile), class:'btn btn-login btn-red' do %>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar
+          <% end %> &nbsp;
+        	<%= link_to profiles_path, class:'btn btn-login btn-blue' do %>
+        	<i class="fa fa-angle-left" aria-hidden="true"></i> Atrás &nbsp;&nbsp;
+        <% end %>
+          <div class="white-space space-small"></div>
+      </div>
+  </div>

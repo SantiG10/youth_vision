@@ -8,7 +8,42 @@ p{
 	color:#383838;
 	font-weight: 500;
 }
-
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-top: .2rem solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+th{
+	text-align: center;
+}
+.add-remove{
+	margin-left: 1rem;
+    color: #EC1C24 !important;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: color .4s ease-in-out;
+}
+.add-remove:hover{
+	color:#a01d22 !important;
+}
+.add-remove2{
+	margin-left: 1rem;
+    color: #B0D135;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: color .4s ease-in-out;
+}
+.add-remove2:hover{
+	color:#7f9627;
+}
 /* White Space */
 .white-space {display: block; width: 100%;}
 .white-space.space-mini { padding:5px 0;}
@@ -58,7 +93,7 @@ a:hover{
 }
 .btn-red{
 	background-color: #EC1C24;
-	padding: 2rem 8rem;
+	padding: 2rem 7rem;
 }
 a.btn-red:hover{
 	color:#a91f1f;
@@ -125,13 +160,10 @@ span.borderlogo:after{
 	padding: 2rem 2rem;
 	color:#383838;
 }
-.title-2{
-	font-size: 2rem;
-	text-transform: uppercase;
-	font-weight: 600;
-	text-align: center;
-	padding: 2rem 2rem;
-	color:#383838;
+.title-profile {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #383838;
 }
 /*LIST*/
 ul.list-red{
@@ -191,6 +223,43 @@ ul.button-bt li a{
     border: 0rem solid #ccc;
     border-radius: 0rem !important;
 }
+.form-control.profile {
+    display: inline-block !important;
+    width: 100% !important;
+    padding: 1rem 1rem !important;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+    background-color: #E6E7E8;
+    background-image: none;
+    border: 0rem solid #ccc;
+    border-radius: 0rem !important;
+}
+.form-control.profile.name{
+	border-left: 1rem solid #FFCC05;
+}
+.form-control.profile.email{
+	border-left: 1rem solid #EC1C24;
+}
+.form-control.profile.proffesion{
+	border-left: 1rem solid #B0D135;
+}
+.form-control.profile.blue{
+	border-left: 1rem solid #4BC6E8;
+}
+.form-control.profile.description{
+	border-left: 1rem solid #B0D135;
+	height: auto;
+	font-size: 2rem !important;
+	font-weight: 400!important;
+}
+.form-control.skills{
+	text-transform: uppercase;
+}
+select.form-control:not([size]):not([multiple]) {
+  height:5rem;
+}
 /*Corrección de error cuando el cliente no agregue ningun dato en el formulario de regist
  y pone en dos lineas los campos del formulario*/
  .field_with_errors{
@@ -235,6 +304,9 @@ ul.button-bt li a{
 }
 .form-group {
     margin-bottom: 1.5rem;
+}
+.btn-profile{
+	font-size: 2.5rem;
 }
 /*Estilos para el color de la letra del placeholder*/
 ::-webkit-input-placeholder, {
@@ -294,6 +366,15 @@ ul.button-bt li a{
     margin: 3rem 0rem 5rem 0rem;
     padding-top: 3rem;
 }
+.bar-profile-user{
+	background-color: #FFCC05;
+    height: 13rem;
+    z-index: 1;
+    opacity: 0.8;
+    position: static;
+    margin: 1rem 0rem 3rem 0rem;
+    padding-top: 7rem;
+}
 .bar-forum p{
 	font-size: 2.7rem;
     font-weight: 900;
@@ -313,6 +394,14 @@ ul.button-bt li a{
 }
 .forum img{
 	background-color: #B0D135;
+	padding:2rem 1.5rem;
+	z-index: 1;
+	width: 100%;
+	position: absolute;
+	opacity: 0.8;
+}
+.profile-user img{
+	background-color: #FFCC05;
 	padding:2rem 1.5rem;
 	z-index: 1;
 	width: 100%;
@@ -340,6 +429,12 @@ div.user-logged i{
     color: #383838;
     font-size: 3rem;
 }
+.link-profile a{
+	text-transform: uppercase;
+    font-weight: 800;
+    color: #383838;
+    font-size: 2.5rem;
+}
 
 
 
@@ -362,4 +457,13 @@ div.user-logged i{
 	text-align: -webkit-center;
 	padding: 0rem 7rem;
 	}
+}
+	.bar-profile-user {
+    background-color: #FFCC05;
+    height: 13rem;
+    z-index: 1;
+    opacity: 0.8;
+    position: static;
+    margin: 4rem 0rem 3rem 0rem;
+    padding-top: 7rem;
 }

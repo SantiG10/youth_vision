@@ -1,42 +1,60 @@
 <div class="container-fluid">
+   <div class="row">
+      <div class="col-xs-12">
+         <div class="col-xs-2">
+            <%= link_to root_path do %>
+            <i class="fa fa-angle-left icon-back color-black" aria-hidden="true"></i>
+            <%end%>
+         </div>
+         <div class="col-xs-2 push-xs-3 profile-user">
+            <%= image_tag "profile-user.svg", :alt => "Profile User", :title => "Youth Vision", class:'img-fluid  center-block' %>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="row">
+   <div class="bar-profile-user">
+      <div class="text-xs-center link-profile">
+         <%= link_to 'perfil profesional', root_path%>
+      </div>
+   </div>
+</div>
+
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-xs-6 col-xs-offset-3">
-      <p>
-        <br><strong>Nombre:</strong>
-        <%= @profile.name %>
-      </p>
-
-      <p>
-        <strong>Email:</strong>
-        <%= @profile.email %>
-      </p>
-
-      <p>
-        <strong>Profesión:</strong>
-        <%= @profile.profession %>
-      </p>
-
-			<p>
-				<strong>Estudios:</strong>
-				<% @profile.studies.each do |study| %>
-					<li>
-						<%= study.study%>
-					</li>
+		<div class="col-xs-12">
+      <p class="title-profile">Nombre: <strong><%= @profile.name %></strong></p>
+      <p class="title-profile">Email: <strong><%= @profile.email %></strong></p>
+      <p class="title-profile">Profesión: <strong><%= @profile.profession %></strong></p>
+      <p class="title-profile">Estudios:</p>
+			<ul class="list-red">
+      <% @profile.studies.each do |study| %>
+					<li><%= study.study%></li>
 				<% end %>
-			</p>
+			</ul>
 
-			<p>
-				<strong>Experiencia:</strong>
-				<% @profile.experiences.each do |experience| %>
-					<li>
-						<strong>Posición:</strong> <%= experience.position%><br>
-						<strong>Descripción:</strong> <%= experience.description%><br>
-						<strong>Empresa / Compañia:</strong> <%= experience.company%><br>
-						<strong>Duración:</strong> <%= experience.duration %><br>
-					</li>
+			<p class="title-profile">Experiencia: <strong><% @profile.experiences.each do |experience| %></strong> </p>
+      <ul class="list-red">
+					<li>Posición: <strong><%= experience.position%></strong> </li>
+					<li>Descripción: <strong><%= experience.description%></strong></li>
+					<li>Empresa | Compañia: <strong><%= experience.company%></strong></li>
+					<li>Duración: <strong><%= experience.duration %></strong></li>
 				<% end %>
-			</p>
+		</ul>
 
+<<<<<<< HEAD
+      <p class="title-profile">Ultima Empresa: <strong> <%= @profile.last_company %></strong></p>
+      <p class="title-profile">Ultima posición: <strong><%= @profile.last_position %></strong></p>
+      <p class="title-profile">País: <strong><%= @profile.country %></strong></p>
+      <p class="title-profile">Departamento: <strong><%= @profile.city %></strong></p>
+      <p class="title-profile">Responsabilidades de trabajo | Proyectos | Éxitos: <strong><%= @profile.responsibilities %></strong></p>
+			<p class="title-profile">Habilidades:</p>
+				<strong><% @profile.skills.each do |skill| %></strong>
+					<ul class="list-red">
+            <li><%= skill.skill%> - Nivel: <%= skill.level %></li>
+          </ul>
+          <% end %>
+=======
       <p>
         <strong>Ultima Empresa:</strong>
         <%= @profile.last_company %>
@@ -56,32 +74,20 @@
         <strong>Departmento:</strong>
         <%= @profile.state %>
       </p>
+>>>>>>> 4a11e3aa97cb2b9ba9dcede6dfffe7048726764f
 
-      <p>
-        <strong>Responsabilidades de trabajo / Proyectos / Éxitos:</strong>
-        <%= @profile.responsibilities %>
-      </p>
 
-			<p>
-				<strong>Habilidades:</strong>
-				<% @profile.skills.each do |skill| %>
-					<li>
-						<%= skill.skill%> - Nivel: <%= skill.level %>
-					</li>
-				<% end %>
-			</p>
-
-      <p>
+      <p class="title-profile">
         <strong>Buscando para:</strong>
         <%= @profile.type_job %>
       </p>
 
-      <p>
-        <strong>Honores / Premios / Actividades:</strong>
+      <p class="title-profile">
+        <strong>Honores | Premios | Actividades:</strong>
         <%= @profile.honors %>
       </p>
 
-			<p>
+			<p class="title-profile">
 				<strong>Idiomas:</strong>
 				<% @profile.languages.each do |language| %>
 					<li>
@@ -89,10 +95,23 @@
 					</li>
 				<% end %>
 			</p>
+<<<<<<< HEAD
+  <div class="container-fluid">
+       <div class="col-xs-11 push-xs-1 col-sm-10 push-sm-2"><%= link_to edit_profile_path(@profile), class:'btn btn-login btn-red' do %>
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar
+          <% end %> &nbsp;
+          <%= link_to profiles_path, class:'btn btn-login btn-blue' do %>
+          <i class="fa fa-angle-left" aria-hidden="true"></i> Atrás &nbsp;&nbsp;
+        <% end %>
+          <div class="white-space space-small"></div>
+      </div>
+  </div>
+=======
 			<% if can? :manage, @profile%>
       	<%= link_to 'Edit', edit_profile_path(@profile) %>
 			<% end %>	
       <!-- <%= link_to 'Back', profiles_path %> -->
+>>>>>>> 4a11e3aa97cb2b9ba9dcede6dfffe7048726764f
     </div>
   </div>
 </div>
