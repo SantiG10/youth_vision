@@ -1,28 +1,27 @@
 <p class="title-2">Listing Profiles</p>
 
 <table class="table table-responsive table-xs text-xs-center">
-  <thead class="thead-default">
-    <tr>
-      <th>Nombre</th>
-      <th>Email</th>
-      <th>Profesión</th>
-      <th>Última Compañía</th>
-      <th colspan="2">Último Cargo</th>
-      
-    </tr>
-  </thead>
 
   <tbody>
     <% @profiles.each do |profile| %>
+    <thead class="thead-default">
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Profesión</th>
+        <th>Última Compañía</th>
+        <th colspan="2">Último Cargo</th>
+
+      </tr>
+    </thead>
       <tr>
         <td><%= profile.name %></td>
         <td><%= profile.email %></td>
         <td><%= profile.profession %></td>
         <td><%= profile.last_company %></td>
-<<<<<<< HEAD
         <td colspan="2"><%= profile.last_position %></td>
       </tr>
-    
+
   </tbody>
 
   <thead class="thead-default">
@@ -31,38 +30,22 @@
       <th>Ciudad</th>
       <th>Responsabilidades</th>
       <th>Tipo de Trabajo</th>
-      <th>Honores</th>
-      <th>Usuario</th>
+      <th colspan="2">Honores</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><%= profile.country %></td>
-        <td><%= profile.city %></td>
-        <td><%= profile.responsibilities %></td>
-        <td><%= profile.type_job %></td>
-        <td><%= profile.honors %></td>
-        <td><strong><%= link_to 'Mostrar', profile %></strong> <br>
-        <strong><%= link_to 'Editar', edit_profile_path(profile) %></strong> <br>
-        <strong><%= link_to 'Eleminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
-    </tr>
-=======
-        <td><%= profile.last_position %></td>
-        <td><%= profile.country %></td>
         <td><%= profile.state %></td>
         <td><%= profile.responsibilities %></td>
         <td><%= profile.type_job %></td>
         <td><%= profile.honors %></td>
-        <td><%= link_to 'Show', profile %></td>
+        <td><strong><%= link_to 'Mostrar', profile %></strong> <br>
         <% if can? :manage, profile%>
-          <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-          <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <strong><%= link_to 'Editar', edit_profile_path(profile) %></strong> <br>
+          <strong><%= link_to 'Eleminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
         <% end %>
-      </tr>
->>>>>>> 4a11e3aa97cb2b9ba9dcede6dfffe7048726764f
+    </tr>
     <% end %>
-  </tbody>
+  </tbody><br>
 </table>
-
-<br>
-

@@ -42,11 +42,10 @@
 				<% end %>
 		</ul>
 
-<<<<<<< HEAD
       <p class="title-profile">Ultima Empresa: <strong> <%= @profile.last_company %></strong></p>
       <p class="title-profile">Ultima posición: <strong><%= @profile.last_position %></strong></p>
       <p class="title-profile">País: <strong><%= @profile.country %></strong></p>
-      <p class="title-profile">Departamento: <strong><%= @profile.city %></strong></p>
+      <p class="title-profile">Departamento: <strong><%= @profile.state %></strong></p>
       <p class="title-profile">Responsabilidades de trabajo | Proyectos | Éxitos: <strong><%= @profile.responsibilities %></strong></p>
 			<p class="title-profile">Habilidades:</p>
 				<strong><% @profile.skills.each do |skill| %></strong>
@@ -54,28 +53,6 @@
             <li><%= skill.skill%> - Nivel: <%= skill.level %></li>
           </ul>
           <% end %>
-=======
-      <p>
-        <strong>Ultima Empresa:</strong>
-        <%= @profile.last_company %>
-      </p>
-
-      <p>
-        <strong>Ultima posición:</strong>
-        <%= @profile.last_position %>
-      </p>
-
-      <p>
-        <strong>País:</strong>
-        <%= @profile.country %>
-      </p>
-
-      <p>
-        <strong>Departmento:</strong>
-        <%= @profile.state %>
-      </p>
->>>>>>> 4a11e3aa97cb2b9ba9dcede6dfffe7048726764f
-
 
       <p class="title-profile">
         <strong>Buscando para:</strong>
@@ -95,23 +72,20 @@
 					</li>
 				<% end %>
 			</p>
-<<<<<<< HEAD
+
   <div class="container-fluid">
-       <div class="col-xs-11 push-xs-1 col-sm-10 push-sm-2"><%= link_to edit_profile_path(@profile), class:'btn btn-login btn-red' do %>
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar
-          <% end %> &nbsp;
+      <% if can? :manage, @profile%>
+       <div class="col-xs-11 push-xs-1 col-sm-10 push-sm-2">
+         <%= link_to edit_profile_path(@profile), class:'btn btn-login btn-red' do %>
+            <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar
+         <% end %> &nbsp;
+      <% end %>
           <%= link_to profiles_path, class:'btn btn-login btn-blue' do %>
           <i class="fa fa-angle-left" aria-hidden="true"></i> Atrás &nbsp;&nbsp;
         <% end %>
           <div class="white-space space-small"></div>
       </div>
   </div>
-=======
-			<% if can? :manage, @profile%>
-      	<%= link_to 'Edit', edit_profile_path(@profile) %>
-			<% end %>	
-      <!-- <%= link_to 'Back', profiles_path %> -->
->>>>>>> 4a11e3aa97cb2b9ba9dcede6dfffe7048726764f
     </div>
   </div>
 </div>
