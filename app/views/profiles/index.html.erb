@@ -19,7 +19,6 @@
         <td><%= profile.email %></td>
         <td><%= profile.profession %></td>
         <td><%= profile.last_company %></td>
-<<<<<<< HEAD
         <td colspan="2"><%= profile.last_position %></td>
       </tr>
     
@@ -38,7 +37,7 @@
   <tbody>
     <tr>
       <td><%= profile.country %></td>
-        <td><%= profile.city %></td>
+        <td><%= profile.state %></td>
         <td><%= profile.responsibilities %></td>
         <td><%= profile.type_job %></td>
         <td><%= profile.honors %></td>
@@ -46,20 +45,6 @@
         <strong><%= link_to 'Editar', edit_profile_path(profile) %></strong> <br>
         <strong><%= link_to 'Eleminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
     </tr>
-=======
-        <td><%= profile.last_position %></td>
-        <td><%= profile.country %></td>
-        <td><%= profile.state %></td>
-        <td><%= profile.responsibilities %></td>
-        <td><%= profile.type_job %></td>
-        <td><%= profile.honors %></td>
-        <td><%= link_to 'Show', profile %></td>
-        <% if can? :manage, profile%>
-          <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-          <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
->>>>>>> 4a11e3aa97cb2b9ba9dcede6dfffe7048726764f
     <% end %>
   </tbody>
 </table>

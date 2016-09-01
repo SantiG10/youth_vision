@@ -42,11 +42,10 @@
 				<% end %>
 		</ul>
 
-<<<<<<< HEAD
       <p class="title-profile">Ultima Empresa: <strong> <%= @profile.last_company %></strong></p>
       <p class="title-profile">Ultima posición: <strong><%= @profile.last_position %></strong></p>
       <p class="title-profile">País: <strong><%= @profile.country %></strong></p>
-      <p class="title-profile">Departamento: <strong><%= @profile.city %></strong></p>
+      <p class="title-profile">Departamento: <strong><%= @profile.state %></strong></p>
       <p class="title-profile">Responsabilidades de trabajo | Proyectos | Éxitos: <strong><%= @profile.responsibilities %></strong></p>
 			<p class="title-profile">Habilidades:</p>
 				<strong><% @profile.skills.each do |skill| %></strong>
@@ -54,7 +53,6 @@
             <li><%= skill.skill%> - Nivel: <%= skill.level %></li>
           </ul>
           <% end %>
-=======
       <p>
         <strong>Ultima Empresa:</strong>
         <%= @profile.last_company %>

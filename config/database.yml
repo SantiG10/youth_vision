@@ -16,20 +16,22 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  encoding: unicode
   pool: 5
-  # username: postgres
-  # password: 12345
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  
+  #username: postgres
+  #password: 12345
+  username: postgres
+  password: gaitan9103
+
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
 
 development:
   <<: *default
   database: youth_vision_development
-  pool: 5
-
-  #Comentar user & pass
-  # username: postgres
-  # password: gaitan9103
 
 
   # The specified database role being used to connect to postgres.
@@ -38,7 +40,6 @@ development:
   # the same name as the operating system user that initialized the database.
   #username: postgresapp
   #username: contact_list
-
 
   # The password associated with the postgres role (username).
   #password:
@@ -67,11 +68,9 @@ development:
 
 test:
   <<: *default
+  database: postgresapp_test
   database: youth_vision_test
-  # database: youth_vision_test
-#username: postgres
-#password: gaitan9103
-
+  username: postgresapp
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -94,7 +93,10 @@ test:
 #
 production:
   <<: *default
-  #database: postgresapp_production
-  #username: postgresapp
-  #password: <%= ENV['POSTGRESAPP_DATABASE_PASSWORD'] %>
+
+  database: postgresapp_production
+  username: postgresapp
+  password: <%= ENV['POSTGRESAPP_DATABASE_PASSWORD'] %>
+
   database: youth_vision_production
+

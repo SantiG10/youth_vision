@@ -24,6 +24,13 @@ hr {
 th{
 	text-align: center;
 }
+.table thead th{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+.table th, .table td{
+	font-size: 1.3rem;
+}
 .add-remove{
 	margin-left: 1rem;
     color: #EC1C24 !important;
