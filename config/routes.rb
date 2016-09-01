@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   get '/about_us' => "about_us#index"
+  get '/apply' => "offers#apply"
+  put '/offers/:id/apply', to: "offers#apply_save"
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'

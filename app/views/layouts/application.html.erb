@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
    <head>
       <title>YouthVision</title>
       <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -69,3 +70,86 @@
       <% end %>
    </body>
 </html>
+=======
+<head>
+  <title>YouthVision</title>
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div class="container-fluid">
+  	<div class="row">
+      <% if flash[:alert] %>
+        <div class="alert alert-danger alert-dismissible fade in" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <p><%= alert %></p>
+        </div>
+      <% end %>
+      <% if flash[:notice] %>
+        <div class="alert alert-success alert-dismissible fade in" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <p><%= notice %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<%= yield %>
+
+  <!-- footer excluido del inicio de la app por convención del diseño -->
+  <% if user_signed_in? %>
+        <div class="container-fluid">
+            <div class="row breadcrum-top">
+                <ul class="button-bt">
+                  <li>
+                    <%= link_to root_path do %>
+                      <%= image_tag "icon-home.svg", class:'img-fluid'%> inicio
+                    <% end %>
+                  </li>
+                  <li>
+                    <%= link_to apply_path do %>
+                      <%= image_tag "icon-net.svg", class:'img-fluid'%> la red
+                    <% end %>
+                  </li>
+                  <li><a href=""><%= image_tag "icon-resources.svg", class:'img-fluid'%>recursos</a></li>
+                  <li>
+                    <%= link_to forums_path(option:nil) do %>
+                      <%= image_tag "icon-forum.svg", class:'img-fluid'%> foro de jóvenes
+                    <% end %>
+                  </li>
+                </ul>
+            </div>
+        </div>
+  <% end %>
+<!-- breadcrum de usuario -->
+<% if user_signed_in? %>
+  <div class="container-fluid">
+    <div class="row user-logged">
+      <div class="col-xs-3 push-xs-9">
+        <div class="dropup">
+        <!-- crear clases para icono de user, nombre, barra y flecha dropup -->
+          <span  class="user-login"> <%= current_user.username.capitalize %></span>
+          <i class="fa fa-user icon-user color-black dropdown-toggle" aria-hidden="true"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><%= link_to "Home", root_path, class:"dropdown-item" %></li>
+                <% if current_user.profile == nil%>
+                  <li><%= link_to "Crea tu Perfil", new_profile_path, class:"dropdown-item" %></li>
+                <% else %>
+                <li><%= link_to "Ver Perfil", profile_path(current_user.profile), class:"dropdown-item"%></li>
+                <li><%= link_to "Editar Perfil", edit_profile_path(current_user.profile), class:"dropdown-item"%></li>
+                <% end %>
+                <div class="dropdown-divider"></div>
+                <li><%= link_to "Cerar sesión", destroy_user_session_path, method: :delete, class:"dropdown-item"%></li>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+</html>
+>>>>>>> d00b6835af9e4a8ffd19e6ef54ab879a55d17472

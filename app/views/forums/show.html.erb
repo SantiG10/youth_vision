@@ -1,22 +1,23 @@
 <div class="container">
     <p>
-      <strong>Title:</strong>
+      <strong>Title:</strong><br>
       <%= @forum.title %>
     </p>
     <p>
-      <strong>Description:</strong>
+      <strong>Contenido:</strong><br>
       <%= @forum.description %>
     </p>
-    <p>
+    <!-- <p>
       <strong>Forum type:</strong>
       <%= @forum.forum_type %>
-    </p>
+    </p> -->
     <p>
-      <strong>User:</strong>
+      <strong>Escrito por:</strong>
       <%= @forum.user.first_name%> <%= @forum.user.last_name%>
     </p><hr>
 
     <div class="">
+      <h2>Comentarios</h2><hr>
       <%@forum.comments.each do |comment|%>
           <%= comment.user.username%>
           <br>
@@ -24,7 +25,6 @@
           <% if can? :manage, comment%>
             <span><%= link_to "Editar", edit_forum_comment_path(@forum,comment) %></span>
             <span><%= link_to 'Eliminar', forum_comment_path(@forum,comment), method: :delete, data: { confirm: 'Are you sure?' }%></span><hr>
-
           <% end %>
       <%end%>
     </div>

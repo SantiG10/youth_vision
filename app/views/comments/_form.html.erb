@@ -26,11 +26,11 @@
   <%= form_for ([@forum, @comment]) do |f| %>
     <div class="field">
       <strong><%= f.label :comment, "Comentario" %></strong><br>
-      <%= f.text_area :comment,placeholder:"Comenta tu opinion", class:"form-control" %>
+      <%= f.text_area :comment,placeholder:"Comenta tu opinión", class:"form-control" %>
     </div><br>
 
     <div class="actions">
-      <%= f.submit class:"btn btn-primary"%>
+      <%= f.submit "Crear comentario", class:"btn btn-primary"%>
     </div>
     <!--
     <div class="field">

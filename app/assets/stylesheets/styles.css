@@ -464,6 +464,7 @@ div.user-logged i{
 	text-align: -webkit-center;
 	padding: 0rem 7rem;
 	}
+}
 	.bar-profile-user {
     background-color: #FFCC05;
     height: 13rem;
@@ -472,5 +473,4 @@ div.user-logged i{
     position: static;
     margin: 4rem 0rem 3rem 0rem;
     padding-top: 7rem;
-}
 }

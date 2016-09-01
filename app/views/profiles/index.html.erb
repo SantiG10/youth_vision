@@ -1,19 +1,19 @@
 <p class="title-2">Listing Profiles</p>
 
 <table class="table table-responsive table-xs text-xs-center">
-  <thead class="thead-default">
-    <tr>
-      <th>Nombre</th>
-      <th>Email</th>
-      <th>Profesión</th>
-      <th>Última Compañía</th>
-      <th colspan="2">Último Cargo</th>
-      
-    </tr>
-  </thead>
 
   <tbody>
     <% @profiles.each do |profile| %>
+    <thead class="thead-default">
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Profesión</th>
+        <th>Última Compañía</th>
+        <th colspan="2">Último Cargo</th>
+
+      </tr>
+    </thead>
       <tr>
         <td><%= profile.name %></td>
         <td><%= profile.email %></td>
@@ -21,7 +21,7 @@
         <td><%= profile.last_company %></td>
         <td colspan="2"><%= profile.last_position %></td>
       </tr>
-    
+
   </tbody>
 
   <thead class="thead-default">
@@ -30,8 +30,7 @@
       <th>Ciudad</th>
       <th>Responsabilidades</th>
       <th>Tipo de Trabajo</th>
-      <th>Honores</th>
-      <th>Usuario</th>
+      <th colspan="2">Honores</th>
     </tr>
   </thead>
   <tbody>
@@ -42,12 +41,16 @@
         <td><%= profile.type_job %></td>
         <td><%= profile.honors %></td>
         <td><strong><%= link_to 'Mostrar', profile %></strong> <br>
+<<<<<<< HEAD
         <strong><%= link_to 'Editar', edit_profile_path(profile) %></strong> <br>
         <strong><%= link_to 'Eleminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
+=======
+        <% if can? :manage, profile%>
+          <strong><%= link_to 'Editar', edit_profile_path(profile) %></strong> <br>
+          <strong><%= link_to 'Eleminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
+        <% end %>
+>>>>>>> d00b6835af9e4a8ffd19e6ef54ab879a55d17472
     </tr>
     <% end %>
-  </tbody>
+  </tbody><br>
 </table>
-
-<br>
-

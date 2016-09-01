@@ -48,7 +48,7 @@
          <label >Estudios</label>
          <%= f.fields_for :studies do |studie_form| %>
          <%= studie_form.text_field :study, class:"form-control profile blue" , placeholder:"descripción"%>
-            <%= studie_form.link_to_remove do %> 
+            <%= studie_form.link_to_remove do %>
                 <span class="add-remove">Remover Estudio <i class="fa fa-minus-circle" aria-hidden="true"></i></span>
             <% end %>
          <% end %>
@@ -84,7 +84,7 @@
       <div class="form-group">
       <div class="white-space space-small"></div>
          <label>País</label>
-         <%= f.select :country, {}, {}, {class:"form-control bfh-countries profile name", "data-country" => "US", "data-name" => "country" }%>
+         <%= f.select :country, {}, {}, {class:"form-control bfh-countries profile name", "data-country" => "Colombia", "data-name" => "country" }%>
       </div>
 <div class="form-group">
          <label>Ciudad | Estado</label>
@@ -115,7 +115,7 @@
             <%= skill_form.select :level, options_for_select([["Básico", :Basico],["Medio", :Medio],["Avanzado", :Avanzado]]),{},{class:"form-control profile name"} %>
          </div>
             <%= skill_form.link_to_remove do %>
-           <span class="add-remove">Remover Habilidad  <i class="fa fa-minus-circle" aria-hidden="true"></i></span> 
+           <span class="add-remove">Remover Habilidad  <i class="fa fa-minus-circle" aria-hidden="true"></i></span>
             <% end %>
          <% end %>
          <%= f.link_to_add :skills do %>
@@ -139,9 +139,10 @@
          <%= f.submit "GUARDAR", class: "btn btn-register btn-orange btn-block" %>
       </div>
       <% end %>
-            <div class="clearfix"></div>
+        <div class="clearfix"></div>
    </div>
 </div>
+<<<<<<< HEAD
 
 <script>
    $('#profile_country').bfhcountries({country: 'US'});
@@ -152,3 +153,5 @@
    }
 </script>
 
+=======
+>>>>>>> d00b6835af9e4a8ffd19e6ef54ab879a55d17472

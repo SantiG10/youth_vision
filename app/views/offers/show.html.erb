@@ -1,38 +1,69 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+    <br>
+    <center>
+    <div class="row">
+      <h1>Oferta</h1>
+    </div></center>
 
-<p>
-  <strong>Title:</strong>
-  <%= @offer.title %>
-</p>
+    <div class="row">
+      <div class="col-xs-3">
+        <strong>Oferta: </strong>
+      </div>
+      <div class="col-xs-9">
+         <%= @offer.title %>
+      </div>
+    </div><hr>
 
-<p>
-  <strong>Description:</strong>
-  <%= @offer.description %>
-</p>
+    <div class="row">
+      <div class="col-xs-3">
+        <strong>Decripción: </strong>
+      </div>
+      <div class="col-xs-9">
+         <%= @offer.description %>
+      </div>
+    </div><hr>
 
-<p>
-  <strong>Salary:</strong>
-  <%= @offer.salary %>
-</p>
+    <div class="row">
+      <div class="col-xs-3">
+        <strong>Salario:</strong>
+      </div>
+      <div class="col-xs-9">
+         <%= @offer.salary %>
+      </div><hr>
 
-<p>
-  <strong>Type offer:</strong>
-  <%= @offer.type_offer %>
-</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+         <strong>Url:</strong>
+      </div>
+      <div class="col-xs-9">
+         <a href="<%=@offer.url%> " target="_blank" ><%= @offer.url%></a>
+      </div>
+    </div><hr>
 
-<p>
-  <strong>Url:</strong>
-  <%= @offer.url %>
-</p>
+    <div class="row">
+      <div class="col-xs-3">
+        <strong>Requirimientos:</strong>
+      </div>
+      <div class="col-xs-9">
+        <%= @offer.requirements %>
+      </div>
+    </div><hr>
 
-<p>
-  <strong>Requirements:</strong>
-  <%= @offer.requirements %>
-</p>
+    <div class="row">
+      <div class="col-xs-3">
+        <strong>Ubicación:</strong>
+      </div>
+       <div class="col-xs-9">
+         <%= @offer.location %>
+       </div>
+    </div><hr>
 
-<p>
-  <strong>Location:</strong>
-  <%= @offer.location %>
-</p>
-
-<%= link_to 'Back', offers_path %>
+    <br>
+    <center>
+       <div>
+          <%= link_to "Aplicar","/offers/#{@offer.id}/apply", method: :put, class:"btn btn-info center",data: { confirm: 'Está seguro?' }%>
+      </div>
+      </center>
+    <%= link_to 'Back', offers_path %>
+</div>

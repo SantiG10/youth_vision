@@ -6,6 +6,9 @@ class User < ActiveRecord::Base
   has_many :forums #Un usuario aportar tants foros como el quiera
   has_many :comments #Un usuario puede comentar cuantas veces el quiera
 
+  has_many :user_offers
+  has_many :offers, through: :user_offers
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
