@@ -24,6 +24,13 @@ hr {
 th{
 	text-align: center;
 }
+.table thead th{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+.table th, .table td{
+	font-size: 1.3rem;
+}
 .add-remove{
 	margin-left: 1rem;
     color: #EC1C24 !important;
@@ -102,7 +109,10 @@ a.btn-red:hover{
 	background-color: #4BC6E8;
 	padding: 2rem 7rem;
 }
-
+.btn-green{
+	background-color: #B0D135;
+	padding: 2rem 7rem;
+}
 .btn-orange{
 	background-color: #F68E27;
 	padding: 2rem 7rem;
@@ -160,10 +170,29 @@ span.borderlogo:after{
 	padding: 2rem 2rem;
 	color:#383838;
 }
+.title-3{
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+	padding: 2rem 2rem;
+	color:#383838;
+}
 .title-profile {
     font-size: 1rem;
     font-weight: 500;
     color: #383838;
+}
+.title-offer{
+	font-size: 3rem;
+}
+.title-offer-2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+a.title-offer-2{
+	font-size: 1.9rem;
+    font-weight: 600;
 }
 /*LIST*/
 ul.list-red{
@@ -350,6 +379,22 @@ select.form-control:not([size]):not([multiple]) {
     position: static;
     margin-bottom: 5rem;
 }
+.bar-forum-green{
+	background-color: #B0D135;
+	z-index: 1;
+	height: 14rem;
+    opacity: 0.8;
+    position: static;
+    margin-bottom: 5rem;
+}
+.bar-offers{
+	background-color: #FFCC05;
+	z-index: 1;
+	height: 18rem;
+    opacity: 0.8;
+    position: static;
+    margin-bottom: 5rem;
+}
 .bar-forum-btn{
 	background-color: #E6E7E8;
     height: 18rem;
@@ -384,6 +429,9 @@ select.form-control:not([size]):not([multiple]) {
 .img-forum{
 	margin-top: 2rem;
 }
+.img-offer{
+	margin-top: 3rem;
+}
 .register img{
 	background-color: #F68E27;
 	padding:2rem 2.5rem;
@@ -394,6 +442,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 .forum img{
 	background-color: #B0D135;
+	padding:2rem 1.5rem;
+	z-index: 1;
+	width: 100%;
+	position: absolute;
+	opacity: 0.8;
+}
+.offers img{
+	background-color: #FFCC05;
 	padding:2rem 1.5rem;
 	z-index: 1;
 	width: 100%;

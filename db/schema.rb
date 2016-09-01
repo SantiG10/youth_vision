@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160823024521) do
+=======
 ActiveRecord::Schema.define(version: 20160831210525) do
+>>>>>>> d00b6835af9e4a8ffd19e6ef54ab879a55d17472
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -105,6 +109,8 @@ ActiveRecord::Schema.define(version: 20160831210525) do
   end
 
   create_table "profiles", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
     t.string   "profession"
     t.string   "last_company"
     t.string   "last_position"
@@ -112,12 +118,10 @@ ActiveRecord::Schema.define(version: 20160831210525) do
     t.string   "state"
     t.text     "responsibilities"
     t.integer  "type_job"
+    t.text     "honors"
     t.integer  "user_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.string   "name"
-    t.string   "email"
-    t.text     "honors"
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree

@@ -12,6 +12,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
   <div class="container-fluid">
@@ -19,9 +20,9 @@
       <div class="bar-forum">
         <div class="white-space space-medium"></div>
           <p class="text-xs-center">Por favor, comparta sus experiencias y preguntas aquí con otros jóvenes de unirse a uno de los tres foros de abajo. </p>
-          <%= link_to "Crear Foro", new_forum_path, class: "btn btn-login btn-red" %>
+            <!--<%= link_to "Crear Foro", new_forum_path, class: "btn btn-login btn-green" %>-->
           <div class="text-xs-center link-forums">
-          <%= link_to 'desarrollo profesional', forums_path(option:0) %><%= image_tag "proffesional-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+          <%= link_to 'desarrollo profesional', forums_path(option:2) %><%= image_tag "proffesional-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
           </div>
       </div>
     </div>
@@ -37,7 +38,7 @@
     <div class="row">
       <div class="bar-forum-2">
           <div class="text-xs-center link-forums">
-          <%= link_to 'desarrollo de vida', forums_path(option:2) %><%= image_tag "life-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
+          <%= link_to 'desarrollo de vida', forums_path(option:0) %><%= image_tag "life-dev.svg", class:'m-x-auto d-block img-fluid img-forum' %>
           </div>
       </div>
 
@@ -45,20 +46,24 @@
     </div>
   </div>
 <% else %>
-  <% if @option == 0 %>
-    <h1>Desarrollo de vida</h1>
-  <% elsif @option == 1%>
-    <h1>Desarrollo de emprendimiento</h1>
-  <% else %>
-    <h1>Desarrollo profesional</h1>
-  <% end %>
-  <%= link_to "Crear Foro", new_forum_path, class: "btn btn-login btn-red" %>
-  <h1>Lista de Foros</h1>
-  <% @forums.each do |forum| %>
-    <h3>Titulo</h3>
-    <%= link_to forum.title, forum_path(forum) %>
-    <h4>Contenido</h4>
-    <%= truncate(forum.description, length:50) %><br>
-    Escrito por: <%= forum.user.email %><br><hr>
-  <% end %>
+<div class="container-fluid">
+  <div class="text-xs-center title-offer"><br>
+    <% if @option == "2" %>
+      <p class="title-2">Desarrollo Profesional</p>
+    <% elsif @option == "1"%>
+      <p class="title-2">Desarrollo de emprendimiento</p>
+    <% elsif @option == "0" %>
+      <p class="title-2">Desarrollo de Vida</p>
+    <% end %>
+    <%= link_to "Crear Foro", new_forum_path, class: "btn btn-login btn-green" %>
+      <p class="title-2">Lista de Foros</p><hr>
+      <% @forums.each do |forum| %>
+        <p class="title-2">Título: </p>
+        <%= link_to forum.title, forum_path(forum), class:"title-3"%><br>
+        <p class="title-2">Contenido: </p>
+        <%= truncate(forum.description, length:50) %><br>
+        Escrito por: <%= link_to forum.user.username, profile_path(forum.user), class:"title-3" %> <br><hr>
+      <% end %>
+    </div>
+  </div>
 <% end %>

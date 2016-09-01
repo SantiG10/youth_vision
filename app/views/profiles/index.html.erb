@@ -43,7 +43,7 @@
         <td><strong><%= link_to 'Mostrar', profile %></strong> <br>
         <% if can? :manage, profile%>
           <strong><%= link_to 'Editar', edit_profile_path(profile) %></strong> <br>
-          <strong><%= link_to 'Eleminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
+          <strong><%= link_to 'Eliminar', profile, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
         <% end %>
     </tr>
     <% end %>
