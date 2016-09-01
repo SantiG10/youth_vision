@@ -14,22 +14,26 @@
     <p>
       <strong>Escrito por:</strong>
       <%= @forum.user.first_name%> <%= @forum.user.last_name%>
-    </p><hr>
+    </p>
+    <% if can? :manege, @forum %>
+      <span><%= link_to "Editar", edit_forum_path(@forum) %></span>
+      <span><%= link_to 'Eliminar', forum_path(@forum), method: :delete, data: { confirm: 'Esta seguro de Eliminar?' }%></span>
+    <% end %><hr>
 
     <div class="">
       <h2>Comentarios</h2><hr>
       <%@forum.comments.each do |comment|%>
           <%= comment.user.username%>
           <br>
-          <span class="title-2"><%=comment.comment%></span><hr>
+          <span class="title-2"><%=comment.comment%></span><br>
           <% if can? :manage, comment%>
             <span><%= link_to "Editar", edit_forum_comment_path(@forum,comment) %></span>
-            <span><%= link_to 'Eliminar', forum_comment_path(@forum,comment), method: :delete, data: { confirm: 'Are you sure?' }%></span><hr>
-          <% end %>
+            <span><%= link_to 'Eliminar', forum_comment_path(@forum,comment), method: :delete, data: { confirm: 'Esta seguro de Eliminar?' }%></span>
+          <% end %><hr>
       <%end%>
     </div>
 
 
-  <%= render "comments/form" %>
-  <%= link_to 'Regresar', forums_path %>
+  <%= render "comments/form" %><br>
+  <%= link_to 'Regresar', forums_path, class:"btn btn-login btn-green" %><br><br>
 </div>

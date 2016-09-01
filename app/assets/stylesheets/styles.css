@@ -170,6 +170,13 @@ span.borderlogo:after{
 	padding: 2rem 2rem;
 	color:#383838;
 }
+.title-3{
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+	padding: 2rem 2rem;
+	color:#383838;
+}
 .title-profile {
     font-size: 1rem;
     font-weight: 500;
