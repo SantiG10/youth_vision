@@ -1,3 +1,0 @@
- > Creación de estilos CSS 
- > Integración de las vistas y modelos
- 
